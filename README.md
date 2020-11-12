@@ -40,11 +40,13 @@ As I mentioned I kept the automation at the minimum. These is what you have:
 
 * **(ALT+6)** It cycles between **3 Modes**.
 
-1. **Mode 1:** Provided you are in the **SPC** or **ORB Page** it turns the ship *ProGrade* and ARM the function to maintain a stable and circular orbit. It will engage if you are in the **ORB page** and if an orbit is achieved. It will maintain the orbit at the *Target PE Altitude* and can be changed anytime using the **Navigator interface**.
+1. **Mode 1:** Provided you are in the **SPC** or **ORB Page** this will only keep your ship in a *ProGrade* direction, useful during a trip to accelerate or if you want to adjust an orbit by yourself accelerating or braking if you have thrusters to do so.
 
-2. **Mode 2:** Provided the same condition this will only keep your ship in a *ProGrade* direction, useful during a trip to accelerate or if you want to adjust an orbit by yourself accelerating or braking if you have thrusters to do so.
+2. **Mode 2:** Provided the same conditions for **Mode 1** it turns the ship *ProGrade* and ARM the function to maintain a stable and circular orbit. It will engage if you are in the **ORB page** and *PE Altitude* > 6000 mt and if an orbit is achieved. It will maintain the orbit at the *Target PE Altitude* and can be changed anytime using the **Navigator interface**.
 
-3. **Mode 3:** Same conditions this will engage after 3 seconds to give you the option to don't engage it and turn off all the modes. This will turn the ship in the direction of the destination planet/moon.
+3. **Mode 3:** Same conditions of preceeding **Modes** this will engage after 3 seconds to give you the option to don't engage it and turn off all the modes. This will turn the ship in the direction of the destination planet/moon.
+
+4. All **Modes** can be disengaged pressing a 4th time **(ALT+6)** or if in **AI Page** pressing 1 time **(ALT+6)**. All HUD pages can be view while **Modes** are on.
 
 * **(Alt+7)** It will ARM or ENGAGE the **Autobrake**. I set it up to stop at about 2 Su from the center of the destination planet/moon, it can be modified **editing the LUA Parameters**. In the **SPC page** it will show you in how many Su it will engage. You can point your ship to the target accelerate as much as you wish and let it go. The ship will stop by itself and if engines were still on they will be turned off. This is used also to DISARM the **Autobrake** in the event that the **Mode 1** engaged it if something was wrong in the orbit and it became unsafe.
 
