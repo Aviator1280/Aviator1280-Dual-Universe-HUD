@@ -22,19 +22,19 @@ To navigate between them you just need to use **ALT+1,2,3,4**.
 
 * **(ALT+1) Load.** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
 
-![Load_page](/pict_01.png)
+![Load_page](/gallery/pict_01.png)
 
 * **(ALT+2) AI (Attitude Indicator).** The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated the *Flight Path Vector* (In Airbus airplane called "Bird"). It shows you where your ship is really flying.
 
-![AI_page](/pict_02.png)
+![AI_page](/gallery/pict_02.png)
 
 * **(ALT+3) SPC (Space).** This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is, so to align your velocity properly. Plus there are some indicators to know when you are 90 or 180 degrees with your *Velocity Vector* to make the most important maneuvers. Here you can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure planet/point and destination planet/moon with distances and time you need to arrive there at the current speed.
 
-![SPC_page](/pict_03.png)
+![SPC_page](/gallery/pict_03.png)
 
 * **(ALT+4) ORB (Orbit).** Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed **editing the LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orient your ship in space and the *Braking Distance* and this time is the distance to achieve the *Circular Orbit Speed*.
 
-![ORB_page](/pict_04.png)
+![ORB_page](/gallery/pict_04.png)
 
 As I mentioned I kept the automation at the minimum. These is what you have:
 
@@ -125,9 +125,9 @@ Discord **Aviator1280#5727**
 
 # Gallery
 
-![Climbing](/pict_05.png)
-![Orbiting](/pict_06.png)
-![Bird](/pict_07.png)
+![Climbing](/gallery/pict_05.png)
+![Orbiting](/gallery/pict_06.png)
+![Bird](/gallery/pict_07.png)
 
 # Credits
 
