@@ -75,7 +75,7 @@ There are few requirements a ship needs to run this HUD.
 2. at least 1 **Atmo Fuel Tank**;
 3. at least 1 **Space Fuel Tank**;
 4. at least 1 **Cargo Container** any size;
-5. at least 1 **Vertical Booster** or in alternative 1 **Telemeter**. This is for the Radio Altimeter. I personally use the Vertical Booster, while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
+5. at least 1 **Vertical Booster** or in alternative 1 **Telemeter** (if you don't have **Vertical Boosters** and you use a **Telemeter** you need to link it manually and change the **Slot** name in **radio_alt**). This is for the Radio Altimeter. I personally use the Vertical Booster, while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
 
 > NOTE: If you want to install the **Navigator Interface** you need additionally 1 **Screen**, 1 **Databank** and 1 **Programmable Block**.
 
