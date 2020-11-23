@@ -97,6 +97,9 @@ There are few requirements a ship needs to run this HUD.
 3. Link the **Screen**, the **Databank** and the **CORE** of the ship to the **Programming Board** according the sequence you saw in the **Lua Editor**;
 5. Turn it on and use it. First time you turn it on the top left button for some reason may not appear in that case switch it off then on.
 
+> NOTE: one day I will also find the solution may be to solve the error "HTML CONTENT CANNOT EXCEED 20000 CHARACTERS", unfortunatelly the SGUI function is a bit bugged and I couldn't do exactly how I wanted and for now the solution is just turn off then on the **Programming Board**. All the data inserted are stored.
+Going in pages like *From*, *Destination* you may find the first box already filled, that is because it is stored but the coordinates you will see *nil* in that case to write you may use CLR or if you press ENT you simply confirm that string and the coordinates should appear. If for any reason you can't do anything may be you are having the error mentioned befroe so just turn it off then on.
+
 ## How To Use It
 
 1. Activate the **Programming Board**, the screen will turn ON and will show you a firt page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
