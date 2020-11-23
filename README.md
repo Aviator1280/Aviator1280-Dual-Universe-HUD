@@ -104,26 +104,26 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 1. Activate the **Programming Board**, the screen will turn ON and will show you a firt page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
-2. *Stored WP 10/20* is one of the 2 pages where you can see the name you gave to the waypoints you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen.
+2. **Stored WP 10/20** is one of the 2 pages where you can see the name you gave to the waypoints you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen.
 
-3. *Su Time Calculator* a simple tool where to insert an Su distance a speed and you will get the time to travel it, the Warp Cells required in case you warp at the actual weight and at the MTOW (supposing you want to travel to load your ship and you want to go back for planning purpose). Note the MTOW is the one you set on the *Settings*.
-In the *Distance* box if you inserted a destination it will automatically set the distance from your present position *(PPOS)* to the destination. To remove that distance you need to CLR the destination.
+3. **Su Time Calculator** a simple tool where to insert an Su distance a speed and you will get the time to travel it, the Warp Cells required in case you warp at the actual weight and at the MTOW (supposing you want to travel to load your ship and you want to go back for planning purpose). Note the MTOW is the one you set on the **Settings**.
+In the **Distance** box if you inserted a destination it will automatically set the distance from your present position *(PPOS)* to the destination. To remove that distance you need to CLR the destination.
 On the *Speed* box you can set the speed you prefer from 1 to 30000 Km/h or if you simply press ENT it will automatically set your actual speed.
 If the Warp Cells needed shows 0 it's because you are not using the ship since some time, just seat on the command/hover seat or Cockpit and it will be updated.
 
-4. *From* here you can set your departure point, the one you want to see on the HUD. Planets and Moons are already in the database, you just type their name with the keyboard and press ENT. If the Planet/Moon is in the database it will show their VEC3 coordinates.
+4. **From** here you can set your departure point, the one you want to see on the HUD. Planets and Moons are already in the database, you just type their name with the keyboard and press ENT. If the Planet/Moon is in the database it will show their VEC3 coordinates.
 if you don't insert anything on the box and simply press ENT it will set for you the *PPOS* and your actual coordinates. You may notice that in this case the lateral arrow will go next to the box where you can write the name of the waypoint. This is for the purpose of storing waypoints. You simply write the name you want to give to the WP and click on *ADD WP* (top left of the screen). From this moment you will have the WP Wtored and visible in the list.
 To clear a WP you can anytime use this page and press ENT to have *PPOS* then in the WP box you simply write the WP number you want to clear (es. wp1, wp2 etc) and press *CLR WP* the WP will be removed from the list. Is you write *all* and use *CLR WP* ALL the stored WP will be delated, use it carefully.
 When you have a WP stored in the page *From* or *Destination* you can simply write the wp number you want to select (same as per clear them) and it will show you the name.
 
-5. *Destination* here you will set your destination that will be shown also in the HUD. Can be a Planet/Moon from the database or a stored wp.
+5. **Destination** here you will set your destination that will be shown also in the HUD. Can be a Planet/Moon from the database or a stored wp.
 
-6. *Settings* is an important page, it has the basic settings of your ship. Here you can set your *MTOW* in Tons instead to use the *Lua Paramenters* (the *Lua Parameters* can be set before to seat but can't be changed while flying instead everything you set on the screen is live) and this weight will be the reference for the maximum number of Warp Cells needed to cover a distance and it will be sent to the HUD for the pilot to check if within the limits of the intended maximum take off weight.
+6. **Settings** is an important page, it has the basic settings of your ship. Here you can set your *MTOW* in Tons instead to use the *Lua Paramenters* (the *Lua Parameters* can be set before to seat but can't be changed while flying instead everything you set on the screen is live) and this weight will be the reference for the maximum number of Warp Cells needed to cover a distance and it will be sent to the HUD for the pilot to check if within the limits of the intended maximum take off weight.
 The *Autobrake* box is where you can set the distance you want your ship will stop from your destination engaging the Autobrakes if armed. Note that is the distance from the center of the Planet/Moon/wp (es. Alioth radius 0,63 Su, it means the ship will stop at about 1.4 Su from the planet).
 
-7. *Pe Target Altitude* is the lowest altitude you wan to orbit around a Planet/Moon. It will be represented with a white circle on the HUD around the Planet/Moon in the *ORB page*. It will be also the reference altitude for the *Mode 2* of the autopilot that will keep a circular orbit. Also this can be setted in the *Lua Parameter* but doing on the screen is live and no need to stand up or going out of the cockpit. Can be changed also if the autopilot is on it will adapt to the new altitude.
+7. **Pe Target Altitude** is the lowest altitude you wan to orbit around a Planet/Moon. It will be represented with a white circle on the HUD around the Planet/Moon in the *ORB page*. It will be also the reference altitude for the *Mode 2* of the autopilot that will keep a circular orbit. Also this can be setted in the *Lua Parameter* but doing on the screen is live and no need to stand up or going out of the cockpit. Can be changed also if the autopilot is on it will adapt to the new altitude.
 
-8. *Show WP* will simply bring you to the Stored WP page.
+8. **Show WP** will simply bring you to the Stored WP page.
 
 # Piloting TIPS and how to use the instruments.
 
