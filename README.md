@@ -43,6 +43,7 @@ As I mentioned I kept the automation at the minimum. These is what you have:
 1. **Mode 1:** Provided you are in the **SPC** or **ORB Page** this will only keep your ship in a *ProGrade* direction, useful during a trip to accelerate or if you want to adjust an orbit by yourself accelerating or braking if you have thrusters to do so.
 
 2. **Mode 2:** Provided the same conditions for **Mode 1** it turns the ship *ProGrade* and ARM the function to maintain a stable and circular orbit. It will engage if you are in the **ORB page** and *PE Altitude* > 6000 mt and if an orbit is achieved. It will maintain the orbit at the *Target PE Altitude* and can be changed anytime using the **Navigator interface**.
+If your ship has really strong brakes using **Mode 2** it may not be advisable. You can try but monitor it and in case take over.
 
 3. **Mode 3:** Same conditions of preceeding **Modes** this will engage after 3 seconds to give you the option to don't engage it and turn off all the modes. This will turn the ship in the direction of the destination planet/moon.
 
@@ -74,27 +75,52 @@ There are few requirements a ship needs to run this HUD.
 1. a **Gyroscope**;
 2. at least 1 **Atmo Fuel Tank**;
 3. at least 1 **Space Fuel Tank**;
-4. at least 1 **Cargo Container** any size;
+4. **Cargo Containers** are not required. To save slots you can chose to connect them or not or connect 1 single **Container HUB**. The weight calculations will be still correct but in case you will not connect them their weight will be included in the *DOW* and not in *Load*;
 5. at least 1 **Vertical Booster** or in alternative 1 **Telemeter** (if you don't have **Vertical Boosters** and you use a **Telemeter** you need to link it manually and change the **Slot** name in **radio_alt**). This is for the Radio Altimeter. I personally use the Vertical Booster, while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
 
-> NOTE: If you want to install the **Navigator Interface** you need additionally 1 **Screen**, 1 **Databank** and 1 **Programmable Block**.
+> NOTE: If you want to install the **Navigator Interface** you need additionally 1 **Screen (xs, s, m, transparent or not are tested)**, 1 **Databank** and 1 **Programming Board**.
 
 # Installation
 
 ## HUD
 1. Choose the .conf file that is suitable for your ship and download it;
-2. Past it in **Dual Universe\Game\data\lua\autoconf\custom**
-3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing.
-4. The autoconfig should do everything automatically and you are ready to go. If a script error comes out contact me via Discord **Aviator1280#5727**.
+2. Past it in **Dual Universe\Game\data\lua\autoconf\custom**;
+3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing. If you are going to manually link the Fuel tanks run the Autoconfig again. Also the **Rocket Fuel Tanks** need to be connected manually if you have enough slots to do so. You can also chose to connect only 1 tank per type but you will only have indication for those and not for others not connected.
+4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out contact me via Discord **Aviator1280#5727**.
 
 ## Navigator interface
 
-1. Download **Navigator_Interface.txt** and save it wherever you prefer.
-2. In the game place the **Programming Board**, the **Databank** and the **Screen**.
-3. Copy the content of the **.txt** file and Right click on the **Programming Board**. Go to **Advanced -> Paste Lua Configuration From Clipboard**.
-4. Enter in the **Lua Editor** of the **Programming Board** *(CTRL+L)* and check that 3 of the slots are grey and have the name of **core**, **screen** and **databank**. Check their order.
-3. Connect the **Screen**, the **Databank** and the **CORE** of the ship to the **Programming Board** according the sequence you saw in the **Lua Editor**..
+1. Download **Navigator_Interface.txt** and save it wherever you prefer;
+2. In the game place the **Programming Board**, the **Databank** and the **Screen**;
+3. Copy the content of the **.txt** file and Right click on the **Programming Board**. Go to **Advanced -> Paste Lua Configuration From Clipboard**;
+4. Enter in the **Lua Editor** of the **Programming Board** *(CTRL+L)* and check that 3 of the slots are grey and have the name of **core**, **screen** and **databank**. Check their order;
+3. Link the **Screen**, the **Databank** and the **CORE** of the ship to the **Programming Board** according the sequence you saw in the **Lua Editor**;
 5. Turn it on and use it. First time you turn it on the top left button for some reason may not appear in that case switch it off then on.
+
+## How To Use It
+
+1. Activate the **Programming Board**, the screen will turn ON and will show you a firt page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
+
+2. *Stored WP 10/20* is one of the 2 pages where you can see the name you gave to the waypoints you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen.
+
+3. *Su Time Calculator* a simple tool where to insert an Su distance a speed and you will get the time to travel it, the Warp Cells required in case you warp at the actual weight and at the MTOW (supposing you want to travel to load your ship and you want to go back for planning purpose). Note the MTOW is the one you set on the *Settings*.
+In the *Distance* box if you inserted a destination it will automatically set the distance from your present position *(PPOS)* to the destination. To remove that distance you need to CLR the destination.
+On the *Speed* box you can set the speed you prefer from 1 to 30000 Km/h or if you simply press ENT it will automatically set your actual speed.
+If the Warp Cells needed shows 0 it's because you are not using the ship since some time, just seat on the command/hover seat or Cockpit and it will be updated.
+
+4. *From* here you can set your departure point, the one you want to see on the HUD. Planets and Moons are already in the database, you just type their name with the keyboard and press ENT. If the Planet/Moon is in the database it will show their VEC3 coordinates.
+if you don't insert anything on the box and simply press ENT it will set for you the *PPOS* and your actual coordinates. You may notice that in this case the lateral arrow will go next to the box where you can write the name of the waypoint. This is for the purpose of storing waypoints. You simply write the name you want to give to the WP and click on *ADD WP* (top left of the screen). From this moment you will have the WP Wtored and visible in the list.
+To clear a WP you can anytime use this page and press ENT to have *PPOS* then in the WP box you simply write the WP number you want to clear (es. wp1, wp2 etc) and press *CLR WP* the WP will be removed from the list. Is you write *all* and use *CLR WP* ALL the stored WP will be delated, use it carefully.
+When you have a WP stored in the page *From* or *Destination* you can simply write the wp number you want to select (same as per clear them) and it will show you the name.
+
+5. *Destination* here you will set your destination that will be shown also in the HUD. Can be a Planet/Moon from the database or a stored wp.
+
+6. *Settings* is an important page, it has the basic settings of your ship. Here you can set your *MTOW* in Tons instead to use the *Lua Paramenters* (the *Lua Parameters* can be set before to seat but can't be changed while flying instead everything you set on the screen is live) and this weight will be the reference for the maximum number of Warp Cells needed to cover a distance and it will be sent to the HUD for the pilot to check if within the limits of the intended maximum take off weight.
+The *Autobrake* box is where you can set the distance you want your ship will stop from your destination engaging the Autobrakes if armed. Note that is the distance from the center of the Planet/Moon/wp (es. Alioth radius 0,63 Su, it means the ship will stop at about 1.4 Su from the planet).
+
+7. *Pe Target Altitude* is the lowest altitude you wan to orbit around a Planet/Moon. It will be represented with a white circle on the HUD around the Planet/Moon in the *ORB page*. It will be also the reference altitude for the *Mode 2* of the autopilot that will keep a circular orbit. Also this can be setted in the *Lua Parameter* but doing on the screen is live and no need to stand up or going out of the cockpit. Can be changed also if the autopilot is on it will adapt to the new altitude.
+
+8. *Show WP* will simply bring you to the Stored WP page.
 
 # Piloting TIPS and how to use the instruments.
 
