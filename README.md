@@ -39,6 +39,8 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 | FUEL    | WP Distance        | Space Orientation         | ... and more      |                      |
 | GW      | Acc                | Braking Distance and more |                   |                      |
 
+> NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest to install it.
+
 #### LOAD **(ALT+1)**
 *(Loading)* Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
 
@@ -122,10 +124,10 @@ There are few requirements a ship needs to run this HUD.
 # How To Install
 
 ## HUD
-1. Choose the .conf file that is suitable for your ship and download it;
-2. Past it in **Dual Universe\Game\data\lua\autoconf\custom**;
-3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing. If you are going to manually link the Fuel tanks run the Autoconfig again. Also the **Rocket Fuel Tanks** need to be connected manually if you have enough slots to do so. You can also chose to connect only 1 tank per type but you will only have indication for those and not for others not connected.
-4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out contact me via [Discord](https://discord.gg/eUPwvHQcdT).
+1. Choose the file (.conf) that is suitable for your ship and download it, downloadalso the 3 require lua files;
+2. Past all of them in **Dual Universe\Game\data\lua\autoconf\custom**;
+3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing. If you are going to manually link the Fuel Tanks choose the autoconf file intended to do so. The **Rocket Fuel Tanks** need to be connected manually if you have enough slots to do so. You can also chose to connect only 1 tank per type (Atmo and Space) but you will only have indication for those and not for others not connected.
+4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out and you can't find out the problem contact me via [Discord](https://discord.gg/eUPwvHQcdT).
 
 ## Navigator Interface
 
