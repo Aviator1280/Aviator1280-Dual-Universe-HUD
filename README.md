@@ -106,7 +106,7 @@ There are few requirements a ship needs to run this HUD.
 1. Choose the .conf file that is suitable for your ship and download it;
 2. Past it in **Dual Universe\Game\data\lua\autoconf\custom**;
 3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing. If you are going to manually link the Fuel tanks run the Autoconfig again. Also the **Rocket Fuel Tanks** need to be connected manually if you have enough slots to do so. You can also chose to connect only 1 tank per type but you will only have indication for those and not for others not connected.
-4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out contact me via Discord **Aviator1280#5727**.
+4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out contact me via [Discord](https://discord.gg/eUPwvHQcdT).
 
 ## Navigator interface
 
