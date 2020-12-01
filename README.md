@@ -20,6 +20,13 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 |------|
 | [Functions](##Functions) |
 | [Ship Requirements](#Ship-Requirements)
+| [How To Install](#How-To-Install)|
+| [How To Use It](##How-To-Use-It)
+| [Piloting TIPS and how to use the instruments](#Piloting-TIPS-and-how-to-use-the-instruments)|
+| [Warnings](#Warnings)
+| [Contacts](#Contacts)|
+| [Gallery](#Gallery)
+| [Credits](#Credits)|
 
 
 ## Functions
@@ -91,7 +98,9 @@ There are few requirements a ship needs to run this HUD.
 
 > NOTE: If you want to install the **Navigator Interface** you need additionally 1 **Screen (xs, s, m, transparent or not are tested)**, 1 **Databank** and 1 **Programming Board**.
 
-# Installation
+[Return to INDEX](#INDEX)
+
+# How To Install
 
 ## HUD
 1. Choose the .conf file that is suitable for your ship and download it;
@@ -110,6 +119,8 @@ There are few requirements a ship needs to run this HUD.
 
 > NOTE: one day I will also find the solution may be to solve the error "HTML CONTENT CANNOT EXCEED 20000 CHARACTERS", unfortunatelly the SGUI function is a bit bugged and I couldn't do exactly how I wanted and for now the solution is just turn off then on the **Programming Board**. All the data inserted are stored.
 Going in pages like *From*, *Destination* you may find the first box already filled, that is because it is stored but the coordinates you will see *nil* in that case to write you may use CLR or if you press ENT you simply confirm that string and the coordinates should appear. If for any reason you can't do anything may be you are having the error mentioned befroe so just turn it off then on.
+
+[Return to INDEX](#INDEX)
 
 ## How To Use It
 
@@ -136,7 +147,7 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 
 8. **Show WP** will simply bring you to the Stored WP page.
 
-# Piloting TIPS and how to use the instruments.
+# Piloting TIPS and how to use the instruments
 
 * **Load page**, nothing special, be familiar with your ship and determine wisely the MTOW that it may be different from planet to planet. Also be in mind that you will burn fuel this will make you lighter but better don't exaggerate carrying fuel you don't need, be as light as you can.
 
@@ -145,6 +156,8 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 * **SPC page**, is time to travel between planets and moons. Did you set a destination? If not or if you can't because you are not using the **Navigator Interface** as default your destination will be the closest planet. If so, point by yourself where you want to go and pilot to have the *velocity vector* (White circle) in the correct direction. If you could set a destination, align the white circle with the light blue circle and you can also activate the **Mode 3** of the autopilot. If you are too lazy to follow the flight, activate the **Autobrake** function. Recall that it will stop you about 2 Su from the destination (Center of the planet/moon). It means if you couldn't set the destination it will engage at the closest planet, so if you are going away from it wait to be more than 2.3 Su (or the Su you edited in **LUA Parameters**) then activate it if there are no other planets between you and your destination. Once you will be closest to the next planet the destination will update so the **Autobrake**.
 
 * **ORB page**, so now you are approaching your planet/moon. Check that the gravity affecting your ship is actually from that planet you intend to go, one way to do it is to switch to **AI mode** and see where the terrain is in the **Attitude Indicator**. It may happen planets near moons will influence your ship even when you are well close to the moon. Once the gravity is the correct one the data for the orbit are correct. Initially you will only have a *PE Altitude* so what to do now? You can increase or decrease that altitude based on your preference. All you need to do is to align the ship 90 degrees respect your *Velocity Vector* and burn to increase or decrease it, just choose the correct side. While burning look at the *PE Altitude* when you are satisfied cut the thrust. Now you need to wait, you will have the *distance to the PE* and the calculated speed for a *circular orbit*. Also you have the *braking distance* to achieve that speed. Once you are approaching the desired braking distance brake! Be aware for planets with a strong gravity while braking your *PE Altitude* may decrease a bit. So you can initially have a higher altitude or while braking you can burn again 90 degrees respect your *Velocity Vector* to keep that altitude. While braking monitor the *braking distance*, the *PE distance* and the *Eccentricity* (ECC), once the *ECC* will be less than 1 it means you are in orbit and the graphic changes to represent it. If you previously ARMED the **Orbit Maintaining** function it will take controls and will adjust, at the proper time, the orbit, if not **you have control!** Once satisfied with the orbib if already not engaged you can engage the **Mode 1** of the autopilot. Be aware that it will aim for the *Target Altitude* you set or the *default 20.000 mt*. You can set a lower altitude down to 10.000 mt, less than that better not to be in orbit, on some planet you may hit the atmosphere or if something happens you don't really have time to recover.
+
+[Return to INDEX](#INDEX)
 
 # Warnings
 
@@ -162,9 +175,13 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 1. In the cockpit if looking around I click by mistake on the instruments;
 2. On a seat if pressing **TAB** to interact with the widget and by mistake clicking out of them.
 
+[Return to INDEX](#INDEX)
+
 # Contact
 
 [Discord](https://discord.gg/eUPwvHQcdT)
+
+[Return to INDEX](#INDEX)
 
 # Gallery
 
@@ -172,8 +189,12 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 ![Orbiting](/gallery/pict_06.png)
 ![Bird](/gallery/pict_07.png)
 
+[Return to INDEX](#INDEX)
+
 # Credits
 
-Jayle Break made possible to have orbital data - https://gitlab.com/JayleBreak/dualuniverse/-/tree/master/DUflightfiles/autoconf/custom
+Jayle Break (orbital data) - https://gitlab.com/JayleBreak/dualuniverse/-/tree/master/DUflightfiles/autoconf/custom
+Catharius (Damages Report) - https://github.com/Catharius/DU-MINIMALIST-HUD
+DU Lua Scripting Community - https://discord.gg/dualuniverse
 
-DU Lua Scripting Community
+[Return to INDEX](#INDEX)
