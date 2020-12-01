@@ -155,7 +155,7 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 
 # Contact
 
-Discord **Aviator1280#5727**
+[Discord](https://discord.gg/eUPwvHQcdT)
 
 # Gallery
 
