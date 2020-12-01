@@ -31,7 +31,7 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 ## Functions
 
 
-| [LOAD](#load-alt-1)    | AI                 | SPC                       | ORB               | DMG                  |
+| [LOAD](#load-alt1)    | AI                 | SPC                       | ORB               | DMG                  |
 |---------|--------------------|---------------------------|-------------------|----------------------|
 | ALT+1   | ALT+2              | ALT+3                     | ALT+4             | ALT+5                |
 | DOW     | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        |
