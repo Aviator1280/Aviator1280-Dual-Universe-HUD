@@ -31,7 +31,7 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 ## Functions
 
 
-| [LOAD](*-**LOAD)    | AI                 | SPC                       | ORB               | DMG                  |
+| [LOAD](#LOAD)    | AI                 | SPC                       | ORB               | DMG                  |
 |---------|--------------------|---------------------------|-------------------|----------------------|
 | ALT+1   | ALT+2              | ALT+3                     | ALT+4             | ALT+5                |
 | DOW     | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        |
@@ -40,7 +40,8 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 | FUEL    | WP Distance        | Space Orientation         | ... and more      |                      |
 | GW      | Acc                | Braking Distance and more |                   |                      |
 
-* **LOAD (ALT+1).** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
+#### LOAD **(ALT+1)**
+Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
 
 ![Load_page](/gallery/pict_01.png)
 
