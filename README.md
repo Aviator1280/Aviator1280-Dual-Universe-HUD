@@ -18,8 +18,8 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 # INDEX
 | |
 |------|
-| [Functions](##Functions) |
-| [Ship Requirements](#Ship Requirements)|
+| [Functions](## Functions) |
+| [Ship Requirements](# Ship Requirements)
 
 
 ## Functions
