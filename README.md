@@ -18,23 +18,29 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 # INDEX
 | |
 |------|
-| [Functions](##Functions) |
-| [Ship Requirements](#Ship-Requirements)
+| [Functions](##Functions)|
+| [Ship Requirements](#Ship-Requirements)|
 | [How To Install](#How-To-Install)|
-| [How To Use It](##How-To-Use-It)
+| [How To Use It](##How-To-Use-It)|
 | [Piloting TIPS and how to use the instruments](#Piloting-TIPS-and-how-to-use-the-instruments)|
-| [Warnings](#Warnings)
+| [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
-| [Gallery](#Gallery)
+| [Gallery](#Gallery)|
 | [Credits](#Credits)|
-
 
 ## Functions
 
-At the moment 4 pages, I left 1 spare page in case someone needs a new feature so I can implement it easily.
-To navigate between them you just need to use **ALT+1,2,3,4**.
 
-* **(ALT+1) Load.** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
+| [LOAD](LOAD)    | AI                 | SPC                       | ORB               | DMG                  |
+|---------|--------------------|---------------------------|-------------------|----------------------|
+| ALT+1   | ALT+2              | ALT+3                     | ALT+4             | ALT+5                |
+| DOW     | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        |
+| Loading | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       |
+| ZFW     | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List |
+| FUEL    | WP Distance        | Space Orientation         | ... and more      |                      |
+| GW      | Acc                | Braking Distance and more |                   |                      |
+
+* **(ALT+1) LOAD.** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
 
 ![Load_page](/gallery/pict_01.png)
 
