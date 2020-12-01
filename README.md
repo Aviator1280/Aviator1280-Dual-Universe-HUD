@@ -36,6 +36,8 @@ To navigate between them you just need to use **ALT+1,2,3,4**.
 
 ![ORB_page](/gallery/pict_04.png)
 
+* **(ALT+5) DMG (Damage Report).** On any other HUD page if any damage to the ship occurres the text **DMG** will be red to warn you that something happened. You don't need to do anything else that shitch to the **DMG** page to see what's wrong. Here you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the *Lua Parameters* the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
+
 As I mentioned I kept the automation at the minimum. These is what you have:
 
 * **(ALT+6)** It cycles between **3 Modes**.
