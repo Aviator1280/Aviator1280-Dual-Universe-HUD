@@ -1,4 +1,4 @@
-# Overview
+# Overview (HUD + Navigator Interface)
 
 I'm an airline pilot and when for the first time I jumped in the DU cockpit everything I could think was "this thing is not made to fly".
 
