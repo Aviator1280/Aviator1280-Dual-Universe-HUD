@@ -15,6 +15,12 @@ pilot can also interact with it while piloting using the touch screen.
 Creating it I used the MFD (Multi Functional Display) concept assigning to the different phases of the flight a different page. Easy to apply to your ship
 and easy to use but a powerful instrument for your flights and yes id does make the difference.
 
+# INDEX
+| |
+|------|
+| [Functions](##Functions) |
+
+
 ## Functions
 
 At the moment 4 pages, I left 1 spare page in case someone needs a new feature so I can implement it easily.
