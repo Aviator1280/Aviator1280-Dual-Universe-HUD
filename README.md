@@ -30,7 +30,6 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 
 ## Functions
 
-
 | [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3)   | [ORB](#orb-alt4)  | [DMG](#dmg-alt5)     |
 |---------|--------------------|---------------------------|-------------------|----------------------|
 | ALT+1   | ALT+2              | ALT+3                     | ALT+4             | ALT+5                |
@@ -43,25 +42,35 @@ and easy to use but a powerful instrument for your flights and yes id does make 
 #### LOAD **(ALT+1)**
 *(Loading)* Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
 
+[Functions](#functions)
+
 ![Load_page](/gallery/pict_01.png)
 
 #### AI **(ALT+2)**
 *(Attitude Indicator)* The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated the *Flight Path Vector* (In Airbus airplane called "Bird"). It shows you where your ship is really flying.
+
+[Functions](#functions)
 
 ![AI_page](/gallery/pict_02.png)
 
 #### SPC **(ALT+3)**
 *(Space)* This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is, so to align your velocity properly. Plus there are some indicators to know when you are 90 or 180 degrees with your *Velocity Vector* to make the most important maneuvers. Here you can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure planet/point and destination planet/moon with distances and time you need to arrive there at the current speed.
 
+[Functions](#functions)
+
 ![SPC_page](/gallery/pict_03.png)
 
 #### ORB **(ALT+4)**
 *(Orbit)* Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed **editing the LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orient your ship in space and the *Braking Distance* and this time is the distance to achieve the *Circular Orbit Speed*.
 
+[Functions](#functions)
+
 ![ORB_page](/gallery/pict_04.png)
 
 #### DMG **(ALT+5)**
 *(Damage Report)* On any other HUD page if any damage to the ship occurres the text **DMG** will be red to warn you that something happened. You don't need to do anything else that shitch to the **DMG** page to see what's wrong. Here you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the *Lua Parameters* the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
+
+[Functions](#functions)
 
 As I mentioned I kept the automation at the minimum. These is what you have:
 
@@ -97,7 +106,6 @@ At the moment I also keep the possibility to recall the DU widgets. When you ent
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the LUA parameter you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot once to go back and point at the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
 [Return to INDEX](#INDEX)
-
 # Ship Requirements
 
 There are few requirements a ship needs to run this HUD.
