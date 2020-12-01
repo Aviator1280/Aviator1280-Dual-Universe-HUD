@@ -194,7 +194,9 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 # Credits
 
 Jayle Break (orbital data) - https://gitlab.com/JayleBreak/dualuniverse/-/tree/master/DUflightfiles/autoconf/custom
+
 Catharius (Damages Report) - https://github.com/Catharius/DU-MINIMALIST-HUD
+
 DU Lua Scripting Community - https://discord.gg/dualuniverse
 
 [Return to INDEX](#INDEX)
