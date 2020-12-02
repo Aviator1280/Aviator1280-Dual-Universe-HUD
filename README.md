@@ -35,13 +35,13 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 ## Functions
 
 | [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3)   | [ORB](#orb-alt4)  | [DMG](#dmg-alt5)     |
-|---------|--------------------|---------------------------|-------------------|----------------------|
-| ALT+1   | ALT+2              | ALT+3                     | ALT+4             | ALT+5                |
-| DOW     | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        |
-| Loading | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       |
-| ZFW     | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List |
-| FUEL    | WP Distance        | Space Orientation         | ... and more      |                      |
-| GW      | Acc                | Braking Distance and more |                   |                      |
+| :---:     | :---:              | :---:                     | :---:             | :---:                |
+| **ALT+1** | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            |
+| DOW       | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        |
+| Loading   | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       |
+| ZFW       | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List |
+| FUEL      | WP Distance        | Space Orientation         | ... and more      |                      |
+| GW        | Acc                | Braking Distance and more |                   |                      |
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest to install it.
 
