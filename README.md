@@ -131,9 +131,11 @@ There are few requirements a ship needs to run this HUD.
 
 ## Navigator Interface
 
-1. Download **Navigator_Interface.txt** and save it wherever you prefer;
+* Before to place the *Elements* be sure to remove from them the *Dynamic Properties*.
+
+1. Download **Navigator_Interface.txt** and save it wherever you prefer or copy the **RAW** format from GitHub;
 2. In the game place the **Programming Board**, the **Databank** and the **Screen**;
-3. Copy the content of the **.txt** file and Right click on the **Programming Board**. Go to **Advanced -> Paste Lua Configuration From Clipboard**;
+3. Copy the content of the **.txt** file or if you already copied the **RAW** format make a Right click on the **Programming Board**. Go to **Advanced -> Paste Lua Configuration From Clipboard**;
 4. Enter in the **Lua Editor** of the **Programming Board** *(CTRL+L)* and check that 3 of the slots are grey and have the name of **core**, **screen** and **databank**. Check their order;
 3. Link the **Screen**, the **Databank** and the **CORE** of the ship to the **Programming Board** according the sequence you saw in the **Lua Editor**;
 5. Turn it on and use it. First time you turn it on the top left button for some reason may not appear in that case switch it off then on.
