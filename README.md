@@ -33,7 +33,6 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [Credits](#Credits)|
 
 ## Functions
-
 | [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3)   | [ORB](#orb-alt4)  | [DMG](#dmg-alt5)     |
 | :---:     | :---:              | :---:                     | :---:             | :---:                |
 | **ALT+1** | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            |
@@ -112,8 +111,8 @@ At the moment I also keep the possibility to recall the DU widgets. When you ent
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the LUA parameter you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot once to go back and point at the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
 [Return to INDEX](#INDEX)
-# Ship Requirements
 
+# Ship Requirements
 There are few requirements a ship needs to run this HUD.
 1. a **Gyroscope**;
 2. at least 1 **Atmo Fuel Tank**;
@@ -134,7 +133,6 @@ There are few requirements a ship needs to run this HUD.
 4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out and you can't find out the problem contact me via [Discord](https://discord.gg/eUPwvHQcdT).
 
 ## Navigator Interface
-
 * Before to place the *Elements* be sure to remove from them the *Dynamic Properties*.
 
 1. Download **Navigator_Interface.txt** and save it wherever you prefer or copy the **RAW** format from GitHub;
@@ -150,7 +148,6 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 [Return to INDEX](#INDEX)
 
 ## How To Use It
-
 1. Activate the **Programming Board**, the screen will turn ON and will show you a firt page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
 2. **Stored WP 1/2** is one of the 2 pages where you can see the name you gave to the waypoints you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen.
@@ -174,8 +171,9 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 
 8. **Show WP** will simply bring you to the Stored WP page.
 
-# Piloting TIPS and how to use the instruments
+[Return to INDEX](#INDEX)
 
+# Piloting TIPS and how to use the instruments
 * **Load page**, nothing special, be familiar with your ship and determine wisely the MTOW that it may be different from planet to planet. Also be in mind that you will burn fuel this will make you lighter but better don't exaggerate carrying fuel you don't need, be as light as you can.
 
 * **AI page**, you will be always aware where your ship is flying. How many times you pitch up but you are still going down? Well here you can see it and you can also achieve a nicely level flight, it is pretty accurate. You want to have a level flight? Just bring the *Bird* on the horizon if it goes down you are going down if goes up you are going up, easy. Note that the angle between the pitch and the *Bird* is your *Angle of Attack*. If you are very heavy and you want to reach the orbit don't climb too fast, try to keep high speed, if very heavy you may need to fly with a pitch not more then 10 degrees, keep your vertical speed positive and the bird above the horizon, don't be in rush to climb if you don't have speed. Once your Space engine turns on be gentle but don't let the ship go down again so reduce carefully your pitch help yourself with the *Bird* and keep it on the horizon until you will have a good speed. Once the speed is increasing pitch up, you want to be out of the atmosphere to don't burn, when the atmosphere is at 0% then level off again and accelerate to get the *AP Altitude* you desire (here you may switch in **ORB page** to check it), once you have established the *AP altitude* cut the thrust and wait to reach it. When you reach the *AP* burn *ProGrade* and increase your *PE Altitude* to the desired one.
@@ -187,7 +185,6 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 [Return to INDEX](#INDEX)
 
 # Warnings
-
 > DISCLAIMER: I do not accept any responsibility for incorrect use of this HUD. Recall **you are still the pilot and if something goes wrong take over**.
 
 * Enjoy flying more then use automations, if you use them choose the proper time and proper situation when to activate them. Monitor their behaviour.
@@ -205,13 +202,11 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 [Return to INDEX](#INDEX)
 
 # Contacts
-
 [Discord](https://discord.gg/eUPwvHQcdT)
 
 [Return to INDEX](#INDEX)
 
 # Gallery
-
 ![Climbing](/gallery/pict_05.png)
 ![Orbiting](/gallery/pict_06.png)
 ![Bird](/gallery/pict_07.png)
@@ -219,7 +214,6 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 [Return to INDEX](#INDEX)
 
 # Credits
-
 Jayle Break (orbital data) - https://gitlab.com/JayleBreak/dualuniverse/-/tree/master/DUflightfiles/autoconf/custom
 
 Catharius (Damages Report) - https://github.com/Catharius/DU-MINIMALIST-HUD
