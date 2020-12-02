@@ -1,5 +1,9 @@
 # Overview (HUD + Navigator Interface)
 
+## Command/Hover Seat and Cockpit supported
+
+### For support contact me on [Discord](https://discord.gg/eUPwvHQcdT)
+
 I'm an airline pilot and when for the first time I jumped in the DU cockpit everything I could think was "this thing is not made to fly".
 
 With the help of the LUA community I got an introduction to script in LUA so I decided to apply what I was learning to have a better flying experience with
