@@ -23,6 +23,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | |
 |------|
 | [Functions](##Functions)|
+| [Automations](##automations)|
 | [Ship Requirements](#Ship-Requirements)|
 | [How To Install](#How-To-Install)|
 | [How To Use It](##How-To-Use-It)|
@@ -83,6 +84,8 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 ***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you shitch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
 
 [Functions](#functions)
+
+## Automations
 
 As I mentioned I kept the automation at the minimum. These is what you have:
 
