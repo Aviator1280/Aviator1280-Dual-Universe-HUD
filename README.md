@@ -88,9 +88,9 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 
 ## Automations
 ### Autopilot / Autobrake
-| [Mode 1](#mode-1)    | Mode 2                | Mode 3                | Autobrake             |
+| [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press-3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press-3-seconds-delay)| [Autobrake](#autobrake-alt7)|
 | :---:     | :---:                 | :---:                 | :---:                 |
-| **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | ALT+7                 |
+| **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | **ALT+7**             |
 | ProGrade  | ProGrade              | Destination           | Parking Brake         |
 |           | Orbiting ARM          |                       | Destination Autobrake |
 |           | Maintaining Orbit     |                       | Emergency Autobrake   |
@@ -259,13 +259,6 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 
 # Contacts
 [Discord](https://discord.gg/Rve2jjZbvz)
-
-[Return to INDEX](#INDEX)
-
-# Gallery
-![Climbing](/gallery/pict_05.png)
-![Orbiting](/gallery/pict_06.png)
-![Bird](/gallery/pict_07.png)
 
 [Return to INDEX](#INDEX)
 
