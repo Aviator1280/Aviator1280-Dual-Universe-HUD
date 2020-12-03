@@ -2,7 +2,7 @@
 
 ## Command/Hover Seat and Cockpit supported
 
-### For support and keep updated please be my guest [Discord](https://discord.gg/eUPwvHQcdT)
+### For support and keep updated please be my guest [Discord](https://discord.gg/Rve2jjZbvz)
 
 I'm an airline pilot and when for the first time I jumped in the DU cockpit everything I could think was "this thing is not made to fly".
 
@@ -130,7 +130,7 @@ There are few requirements a ship needs to run this HUD.
 1. Choose the file (.conf) that is suitable for your ship and download it, downloadalso the 3 require lua files;
 2. Past all of them in **Dual Universe\Game\data\lua\autoconf\custom**;
 3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing. If you are going to manually link the Fuel Tanks choose the autoconf file intended to do so. The **Rocket Fuel Tanks** need to be connected manually if you have enough slots to do so. You can also chose to connect only 1 tank per type (Atmo and Space) but you will only have indication for those and not for others not connected.
-4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out and you can't find out the problem contact me via [Discord](https://discord.gg/eUPwvHQcdT).
+4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out and you can't find out the problem contact me via [Discord](https://discord.gg/Rve2jjZbvz).
 
 ## Navigator Interface
 * Before to place the *Elements* be sure to remove from them the *Dynamic Properties*.
@@ -202,7 +202,7 @@ The *Autobrake* box is where you can set the distance you want your ship will st
 [Return to INDEX](#INDEX)
 
 # Contacts
-[Discord](https://discord.gg/eUPwvHQcdT)
+[Discord](https://discord.gg/Rve2jjZbvz)
 
 [Return to INDEX](#INDEX)
 
