@@ -45,11 +45,12 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest to install it.
 
 #### LOAD **(ALT+1)**
-*(Loading)* Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight). Editing the LUA Parameters you can set up the desired *MTOW* (Maximum Take Off Weight). I will probably add this setting in the Navigator interface later on.
+![Load_page](/gallery/load_explained.png)
+
+*(Load)* Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
+> Note: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
 
 [Functions](#functions)
-
-![Load_page](/gallery/pict_01.png)
 
 #### AI **(ALT+2)**
 *(Attitude Indicator)* The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated the *Flight Path Vector* (In Airbus airplane called "Bird"). It shows you where your ship is really flying.
