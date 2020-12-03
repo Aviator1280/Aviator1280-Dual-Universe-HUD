@@ -25,10 +25,10 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [Functions](#Functions)|
 | [Automations](#automations)|
 | [DU Widgets](#du-widgets)|
-| [Ship Requirements](#Ship-Requirements)|
-| [How To Install](#How-To-Install)|
-| [How To Use It](##How-To-Use-It)|
-| [Piloting TIPS and how to use the instruments](#Piloting-TIPS-and-how-to-use-the-instruments)|
+| [Ship Requirements](#ship-requirements)|
+| [How To Install](#how-to-install)|
+| [How To Use It](#how-to-use-it)|
+| [Piloting TIPS and how to use the instruments](#Piloting-tips-and-how-to-use-the-instruments)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
 | [Gallery](#Gallery)|
@@ -52,7 +52,8 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 ***(Load)*** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
 > Note: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
 
-[Functions](#functions)
+[Return to Functions](#functions)
+[Return to INDEX](#INDEX)
 
 #### AI **(ALT+2)**
 ![AI_page](/gallery/ai_explained.png)
@@ -61,7 +62,8 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 Integrated in the *AI* you will find the *RA* (Radioaltimeter) that will come out when at 60 mt (Using Vertical Booster) from the ground/water.
 You can find also the selected wayypoint distance and its direction.
 
-[Functions](#functions)
+[Return to Functions](#functions)
+[Return to INDEX](#INDEX)
 
 #### SPC **(ALT+3)**
 ![SPC_page](/gallery/spc_explained.png)
@@ -70,21 +72,24 @@ You can find also the selected wayypoint distance and its direction.
 You can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure point and destination Planet/Moon with distances and the time you will need to travel to arrive at the current speed.
 > Note: If the **Navigator Interface** is not installed or the *Departure*/*Arrival* point are not selected the system will automatically chose for you. The *Departure* point will be your Present Position *(PPOS)* or if you are in an orbit the *(PPOS)* at the moment you will leave the orbit. The *Arrival* point will be the closest Planet/Moon. As consequence when flying between Planets/Moons you will always see there the closes one.
 
-[Functions](#functions)
+[Return to Functions](#functions)
+[Return to INDEX](#INDEX)
 
 #### ORB **(ALT+4)**
 ![ORB_page](/gallery/orb_explained.png)
 
 ***(Orbit)*** Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed editing the **LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orientate your ship in space and the *Braking Distance*. This time the *Braking Distance* is the distance to achieve the *Circular Orbit Speed*.
 
-[Functions](#functions)
+[Return to Functions](#functions)
+[Return to INDEX](#INDEX)
 
 #### DMG **(ALT+5)**
 ![DMG_page](/gallery/dmg_explained.png)
 
 ***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you shitch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
 
-[Functions](#functions)
+[Return to Functions](#functions)
+[Return to INDEX](#INDEX)
 
 ## Automations
 ### Autopilot / Autobrake
