@@ -31,7 +31,6 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [Piloting TIPS and how to use the instruments](#Piloting-tips-and-how-to-use-the-instruments)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
-| [Gallery](#Gallery)|
 | [Credits](#Credits)|
 
 ## Functions
