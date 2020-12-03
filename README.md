@@ -52,8 +52,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 ***(Load)*** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
 > Note: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
 
-[Return to Functions](#functions)
-[Return to INDEX](#INDEX)
+[Return to Functions](#functions) [Return to INDEX](#INDEX)
 
 #### AI **(ALT+2)**
 ![AI_page](/gallery/ai_explained.png)
@@ -93,7 +92,7 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 
 ## Automations
 ### Autopilot / Autobrake
-| [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press-3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press-3-seconds-delay)| [Autobrake](#autobrake-alt7)|
+| [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Autobrake](#autobrake-alt7)|
 | :---:     | :---:                 | :---:                 | :---:                 |
 | **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | **ALT+7**             |
 | ProGrade  | ProGrade              | Destination           | Parking Brake         |
