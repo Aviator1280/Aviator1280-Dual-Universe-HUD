@@ -2,7 +2,7 @@
 
 ## Command/Hover Seat and Cockpit supported
 
-### For support contact me on [Discord](https://discord.gg/eUPwvHQcdT)
+### For support and keep updated please be my guest [Discord](https://discord.gg/eUPwvHQcdT)
 
 I'm an airline pilot and when for the first time I jumped in the DU cockpit everything I could think was "this thing is not made to fly".
 
