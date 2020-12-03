@@ -47,17 +47,19 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 #### LOAD **(ALT+1)**
 ![Load_page](/gallery/load_explained.png)
 
-*(Load)* Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
+***(Load)*** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
 > Note: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
 
 [Functions](#functions)
 
 #### AI **(ALT+2)**
-*(Attitude Indicator)* The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated the *Flight Path Vector* (In Airbus airplane called "Bird"). It shows you where your ship is really flying.
+![AI_page](/gallery/ai_explained.png)
+
+***(Attitude Indicator)*** The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated in it the *Flight Path Vector* (in Airbus airplane called "Bird"). It shows you the direction where your ship is really flying to.
+Integrated in the *AI* you will find the *RA* (Radioaltimeter) that will come out when at 60 mt (Using Vertical Booster) from the ground/water.
+You can find also the selected wayypoint distance and its direction.
 
 [Functions](#functions)
-
-![AI_page](/gallery/pict_02.png)
 
 #### SPC **(ALT+3)**
 *(Space)* This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is, so to align your velocity properly. Plus there are some indicators to know when you are 90 or 180 degrees with your *Velocity Vector* to make the most important maneuvers. Here you can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure planet/point and destination planet/moon with distances and time you need to arrive there at the current speed.
