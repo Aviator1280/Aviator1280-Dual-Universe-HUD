@@ -52,7 +52,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 ***(Load)*** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
 > Note: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
 
-[Return to Functions](#functions) [Return to INDEX](#INDEX)
+[Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 #### AI **(ALT+2)**
 ![AI_page](/gallery/ai_explained.png)
