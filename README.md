@@ -71,14 +71,16 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 [Functions](#functions)
 
 #### ORB **(ALT+4)**
-*(Orbit)* Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed **editing the LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orient your ship in space and the *Braking Distance* and this time is the distance to achieve the *Circular Orbit Speed*.
+![ORB_page](/gallery/orb_explained.png)
+
+***(Orbit)*** Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed editing the **LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orientate your ship in space and the *Braking Distance*. This time the *Braking Distance* is the distance to achieve the *Circular Orbit Speed*.
 
 [Functions](#functions)
 
-![ORB_page](/gallery/pict_04.png)
-
 #### DMG **(ALT+5)**
-*(Damage Report)* On any other HUD page if any damage to the ship occurres the text **DMG** will be red to warn you that something happened. You don't need to do anything else that shitch to the **DMG** page to see what's wrong. Here you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the *Lua Parameters* the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
+![ORB_page](/gallery/dmg_explained.png)
+
+***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you shitch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
 
 [Functions](#functions)
 
