@@ -86,21 +86,28 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 [Functions](#functions)
 
 ## Automations
+# Autopilot / Autobrake
+| [Mode 1](#mode-1)    | Mode 2                | Mode 3                | Autobrake             |
+| :---:     | :---:                 | :---:                 | :---:                 |
+| **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | ALT+7                 |
+| ProGrade  | ProGrade              | Destination           | Parking Brake         |
+|           | Orbiting Armed        |                       | Destination Autobrake |
+|           | Orbiting Maintaining  |                       | Emergency Autobrake   |
 
-As I mentioned I kept the automation at the minimum. These is what you have:
+> Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
-* **(ALT+6)** It cycles between **3 Modes**.
+### **Mode 1**
+Provided you are in the **SPC** or **ORB Page** this will only keep your ship in a *ProGrade* direction, useful during a trip to accelerate or if you want to adjust an orbit by yourself accelerating or braking if you have thrusters to do so.
 
-1. **Mode 1:** Provided you are in the **SPC** or **ORB Page** this will only keep your ship in a *ProGrade* direction, useful during a trip to accelerate or if you want to adjust an orbit by yourself accelerating or braking if you have thrusters to do so.
-
-2. **Mode 2:** Provided the same conditions for **Mode 1** it turns the ship *ProGrade* and ARM the function to maintain a stable and circular orbit. It will engage if you are in the **ORB page** and *PE Altitude* > 6000 mt and if an orbit is achieved. It will maintain the orbit at the *Target PE Altitude* and can be changed anytime using the **Navigator interface**.
+### **Mode 2**
+Provided the same conditions for **Mode 1** it turns the ship *ProGrade* and ARM the function to maintain a stable and circular orbit. It will engage if you are in the **ORB page** and *PE Altitude* > 6000 mt and if an orbit is achieved. It will maintain the orbit at the *Target PE Altitude* and can be changed anytime using the **Navigator interface**.
 If your ship has really strong brakes using **Mode 2** it may not be advisable. You can try but monitor it and in case take over.
 
-3. **Mode 3:** Same conditions of preceeding **Modes** this will engage after 3 seconds to give you the option to don't engage it and turn off all the modes. This will turn the ship in the direction of the destination planet/moon.
+### **Mode 3**
+Same conditions of preceeding **Modes** this will engage after 3 seconds to give you the option to don't engage it and turn off all the modes. This will turn the ship in the direction of the destination planet/moon.
 
-4. All **Modes** can be disengaged pressing a 4th time **(ALT+6)** or if in **AI Page** pressing 1 time **(ALT+6)**. All HUD pages can be view while **Modes** are on.
-
-* **(Alt+7)** It will ARM or ENGAGE the **Autobrake**. I set it up to stop at about 2 Su from the center of the destination planet/moon, it can be modified **editing the LUA Parameters**. In the **SPC page** it will show you in how many Su it will engage. You can point your ship to the target accelerate as much as you wish and let it go. The ship will stop by itself and if engines were still on they will be turned off. This is used also to DISARM the **Autobrake** in the event that the **Mode 1** engaged it if something was wrong in the orbit and it became unsafe.
+### Autobrake
+will ARM or ENGAGE the **Autobrake**. I set it up to stop at about 2 Su from the center of the destination planet/moon, it can be modified **editing the LUA Parameters**. In the **SPC page** it will show you in how many Su it will engage. You can point your ship to the target accelerate as much as you wish and let it go. The ship will stop by itself and if engines were still on they will be turned off. This is used also to DISARM the **Autobrake** in the event that the **Mode 1** engaged it if something was wrong in the orbit and it became unsafe.
 
 At the moment I also keep the possibility to recall the DU widgets. When you enter the cockpit or the seat they will be there, just to give a crosscheck.
 
