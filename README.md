@@ -62,11 +62,13 @@ You can find also the selected wayypoint distance and its direction.
 [Functions](#functions)
 
 #### SPC **(ALT+3)**
-*(Space)* This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is, so to align your velocity properly. Plus there are some indicators to know when you are 90 or 180 degrees with your *Velocity Vector* to make the most important maneuvers. Here you can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure planet/point and destination planet/moon with distances and time you need to arrive there at the current speed.
+![SPC_page](/gallery/spc_explained.png)
+
+***(Space)*** This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is to align your velocity properly. Plus there are some indicators that will show you are 90 or 180 degrees respect to the *Velocity Vector*, this with the scope to make the most important space maneuvers.
+You can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure point and destination Planet/Moon with distances and the time you will need to travel to arrive at the current speed.
+> Note: If the **Navigator Interface** is not installed or the *Departure*/*Arrival* point are not selected the system will automatically chose for you. The *Departure* point will be your Present Position *(PPOS)* or if you are in an orbit the *(PPOS)* at the moment you will leave the orbit. The *Arrival* point will be the closest Planet/Moon. As consequence when flying between Planets/Moons you will always see there the closes one.
 
 [Functions](#functions)
-
-![SPC_page](/gallery/pict_03.png)
 
 #### ORB **(ALT+4)**
 *(Orbit)* Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed **editing the LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orient your ship in space and the *Braking Distance* and this time is the distance to achieve the *Circular Orbit Speed*.
