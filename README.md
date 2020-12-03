@@ -22,8 +22,8 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 # INDEX
 | |
 |------|
-| [Functions](##Functions)|
-| [Automations](##automations)|
+| [Functions](#Functions)|
+| [Automations](#automations)|
 | [Ship Requirements](#Ship-Requirements)|
 | [How To Install](#How-To-Install)|
 | [How To Use It](##How-To-Use-It)|
