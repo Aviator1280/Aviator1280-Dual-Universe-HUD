@@ -61,8 +61,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 Integrated in the *AI* you will find the *RA* (Radioaltimeter) that will come out when at 60 mt (Using Vertical Booster) from the ground/water.
 You can find also the selected wayypoint distance and its direction.
 
-[Return to Functions](#functions)
-[Return to INDEX](#INDEX)
+[Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 #### SPC **(ALT+3)**
 ![SPC_page](/gallery/spc_explained.png)
@@ -71,24 +70,21 @@ You can find also the selected wayypoint distance and its direction.
 You can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure point and destination Planet/Moon with distances and the time you will need to travel to arrive at the current speed.
 > Note: If the **Navigator Interface** is not installed or the *Departure*/*Arrival* point are not selected the system will automatically chose for you. The *Departure* point will be your Present Position *(PPOS)* or if you are in an orbit the *(PPOS)* at the moment you will leave the orbit. The *Arrival* point will be the closest Planet/Moon. As consequence when flying between Planets/Moons you will always see there the closes one.
 
-[Return to Functions](#functions)
-[Return to INDEX](#INDEX)
+[Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 #### ORB **(ALT+4)**
 ![ORB_page](/gallery/orb_explained.png)
 
 ***(Orbit)*** Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed editing the **LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orientate your ship in space and the *Braking Distance*. This time the *Braking Distance* is the distance to achieve the *Circular Orbit Speed*.
 
-[Return to Functions](#functions)
-[Return to INDEX](#INDEX)
+[Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 #### DMG **(ALT+5)**
 ![DMG_page](/gallery/dmg_explained.png)
 
 ***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you shitch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
 
-[Return to Functions](#functions)
-[Return to INDEX](#INDEX)
+[Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 ## Automations
 ### Autopilot / Autobrake
@@ -107,6 +103,8 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 * **ProGrade**
 Provided you are in the **SPC** or **ORB** *MFD page* this will turn your ship in a *ProGrade* direction, useful during a trip to accelerate or keep your ship facing the orbit direction and to adjust it by yourself accelerating or braking.
 When **Mode 1** is active you don't have anymore authority on direction.
+
+[Return to Automations](#automations) | [Return to INDEX](#INDEX)
 
 ### Mode 2 **(ALT+6)** (second press + 3 seconds delay)
 ![Trajectory](/gallery/trajectory_adjust_explained.png)
@@ -139,6 +137,8 @@ On this picture you can see the ship maintainig the orbit we achieved before. Si
 The *Target PE Altitude* is represented on the screen by the white circle, when your orbit will be above that circle it will become Cyan. The yellow line starting from the center of the planet/moon is your position respect the *PE* and *AP*.
 > Note: If your ship has really strong brakes using **Mode 2** it may not be advisable. You can try but monitor it and in case take over. In future I may find the way to reduce the effect of the brakes.
 
+[Return to Automations](#automations) | [Return to INDEX](#INDEX)
+
 ### Mode 3 **(ALT+6)** (third press + 3 seconds delay)
 ![Mode 3](/gallery/mode3_leaving_orbit_autobrake_armed_explained.png)
 
@@ -147,6 +147,8 @@ Time to leave our orbit. Select with the **Navigator Interface** the new destina
 What I did in this picture I waited the right moment to give full thrust, you will see your *Pe Alt* reducing if you do it too early and it is ok but stop the thrust if you see the *Pe Alt* goint to touch the planet atmosphere, you don't want to burn ot be destroyed.
 You can notice also I armed the *Autobrake*, they will engage only when close to the destination so again, if you can't select a destination don't arm them now or you will stop.
 If everything is ok you will see your ship pointing in the direction of the destination and leaving the actual orbit. Just keep the thrust at full power.
+
+[Return to Automations](#automations) | [Return to INDEX](#INDEX)
 
 ### Autobrake **(ALT+7)**
 It will ARM or ENGAGE the **Autobrake**. I set it up to stop at about 2 Su from the center of the destination planet/moon, it can be modified editing the **LUA Parameters** or in the **Settings** of the **Navigator Interface**.
@@ -162,7 +164,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the **LUA parameter** you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot and then go back and point at the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
-[Return to INDEX](#INDEX)
+[Return to Automations](#automations) | [Return to INDEX](#INDEX)
 
 ## DU Widgets
 At the moment I also keep the possibility to recall the DU Widgets. When you enter the cockpit or the seat they will be there, just to give a crosscheck.
