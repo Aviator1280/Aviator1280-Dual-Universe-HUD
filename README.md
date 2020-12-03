@@ -105,8 +105,9 @@ At the moment I also keep the possibility to recall the DU widgets. When you ent
 3. Pitch and Roll;
 4. Altitude;
 5. Vertical speed;
-6. Average Percentage of fuel for each tank of the 3 different types;
-7. Time left based on the Fuel Tank that will be empty as first and when it will be empty the next will be shown.
+6. Radar Warning System
+7. Average Percentage of fuel for each tank of the 3 different types;
+8. Time left based on the Fuel Tank that will be empty as first and when it will be empty the next will be shown.
 
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the LUA parameter you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot once to go back and point at the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
