@@ -22,7 +22,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 # INDEX
 | |
 |------|
-| [Functions](#Functions)|
+| [KEYS](#keys)|
 | [Automations](#automations)|
 | [DU Widgets](#du-widgets)|
 | [Ship Requirements](#ship-requirements)|
@@ -33,7 +33,8 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [Contacts](#Contacts)|
 | [Credits](#Credits)|
 
-## Functions
+## KEYS
+### Functions
 | [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3)   | [ORB](#orb-alt4)  | [DMG](#dmg-alt5)     |
 | :---:     | :---:              | :---:                     | :---:             | :---:                |
 | **ALT+1** | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            |
@@ -45,7 +46,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest to install it.
 
-## Autopilot / Autobrake
+### Autopilot / Autobrake
 | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Autobrake](#autobrake-alt7)|
 | :---:     | :---:                 | :---:                 | :---:                 |
 | **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | **ALT+7**             |
@@ -55,7 +56,17 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 > Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
-### LOAD **(ALT+1)**
+### DU Widgets
+|**ALT+8**    | **ALT+9**  |
+| ---         | ---        |
+| Hide/Show   | Hide/Show  |
+|Radar Widget | DU Widgets |
+
+> Note: At the moment I also keep the possibility to recall the DU Widgets. When you enter the cockpit or the seat they will be there, just to give a crosscheck.
+
+[Return to INDEX](#INDEX)
+
+#### LOAD **(ALT+1)**
 ![LOAD_page](/gallery/load_explained.png)
 
 ***(Load)*** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
@@ -63,7 +74,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
-### AI **(ALT+2)**
+#### AI **(ALT+2)**
 ![AI_page](/gallery/ai_explained.png)
 
 ***(Attitude Indicator)*** The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated in it the *Flight Path Vector* (in Airbus airplane called "Bird"). It shows you the direction where your ship is really flying to.
@@ -72,7 +83,7 @@ You can find also the selected wayypoint distance and its direction.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
-### SPC **(ALT+3)**
+#### SPC **(ALT+3)**
 ![SPC_page](/gallery/spc_explained.png)
 
 ***(Space)*** This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is to align your velocity properly. Plus there are some indicators that will show you are 90 or 180 degrees respect to the *Velocity Vector*, this with the scope to make the most important space maneuvers.
@@ -81,23 +92,23 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
-### ORB **(ALT+4)**
+#### ORB **(ALT+4)**
 ![ORB_page](/gallery/orb_explained.png)
 
 ***(Orbit)*** Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position respect the *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed editing the **LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orientate your ship in space and the *Braking Distance*. This time the *Braking Distance* is the distance to achieve the *Circular Orbit Speed*.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
-### DMG **(ALT+5)**
+#### DMG **(ALT+5)**
 ![DMG_page](/gallery/dmg_explained.png)
 
 ***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you shitch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
-## Automations
+### Automations
 
-### Mode 1 **(ALT+6)** (first press)
+#### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
 
 * **ProGrade**
@@ -106,7 +117,7 @@ When **Mode 1** is active you don't have anymore authority on direction.
 
 [Return to Automations](#automations) | [Return to INDEX](#INDEX)
 
-### Mode 2 **(ALT+6)** (second press + 3 seconds delay)
+#### Mode 2 **(ALT+6)** (second press + 3 seconds delay)
 ![Trajectory](/gallery/trajectory_adjust_explained.png)
 
 In the picture we are approaching a moon. Few minutes before to reach it (in this case 4 minutes 22 second) we need to adjust our trajectory. If we are pointing to the planet/moon we need to turn 90 degrees in the direction we want to "push" our trajectory and give thrust.
@@ -139,7 +150,7 @@ The *Target PE Altitude* is represented on the screen by the white circle, when 
 
 [Return to Automations](#automations) | [Return to INDEX](#INDEX)
 
-### Mode 3 **(ALT+6)** (third press + 3 seconds delay)
+#### Mode 3 **(ALT+6)** (third press + 3 seconds delay)
 ![Mode 3](/gallery/mode3_leaving_orbit_autobrake_armed_explained.png)
 
 Same conditions of preceeding **Modes**. This will turn the ship in the direction of the destination planet/moon.
@@ -150,7 +161,7 @@ If everything is ok you will see your ship pointing in the direction of the dest
 
 [Return to Automations](#automations) | [Return to INDEX](#INDEX)
 
-### Autobrake **(ALT+7)**
+#### Autobrake **(ALT+7)**
 It will ARM or ENGAGE the **Autobrake**. I set it up to stop at about 2 Su from the center of the destination planet/moon, it can be modified editing the **LUA Parameters** or in the **Settings** of the **Navigator Interface**.
 ![Autobrake ARM](/gallery/autobrake_arm_spc_explained.png)
 We left our orbit and on course to Alioth. On the left lower panel you can read *Autobrake ARM*, this means that a *Destination* has been set (if no *Destination* they will not ARM, sometime you will need to go in the **SPC** *MFD page* to activate the *Destination*).
@@ -165,14 +176,6 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the **LUA parameter** you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot and then go back and point at the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
 [Return to Automations](#automations) | [Return to INDEX](#INDEX)
-
-## DU Widgets
-At the moment I also keep the possibility to recall the DU Widgets. When you enter the cockpit or the seat they will be there, just to give a crosscheck.
-
-* **(ALT+9)** Hide/Show DU widgets
-* **(ALT+8)** Hide/Show Radar Widgets
-
-[Return to INDEX](#INDEX)
 
 # Ship Requirements
 There are few requirements a ship needs to run this HUD.
