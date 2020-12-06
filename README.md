@@ -179,7 +179,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 # Ship Requirements
 * To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs at least **4 slots**.
 * To add the **Navigator Interface** additional **1 slot**
-* The rest of the **slots** are up to you.
+* The rest of the **slots** are **optionals** and  up to you.
 > Note: The **HUD** and the **Navigator Interface** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** runs on a **Programming Board** and the only *Element* they share is a **Databank**.
 ### HUD
 #### Required Slots and Elements
@@ -191,11 +191,12 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 #### Required Slot and Element if the Navigator Interface is installed
 5. **Databank** 1 *(Linked Automatically refet to the Note)*;
 > Note: if your ship has more then 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before to install it if you were using the databank for another script please remove the **Dynamic Properties**.
-#### Optional Slots and Elements needed for Cargo Containers/Containers HUB
-6. **Vertical Booster** 1 or **Hover Engine** 1 *(Linked Manually refer to the Note)*;
-> Note: in alternative 1 **Telemeter**, in this case you need to link it manually and change the **slot** name in **radio_alt_1**. This is for the *Radio Altimeter* to work. I personally use the **Vertical Booster** or **Hover Engine**, while they have a 60 meters range instead of 100 meters they returns water as an obstacle and the telemeter doesn't.
-7. **Cargo Containers** or **Container HUB** *(Linked Manually refet to the Note)*
-> Note: according your free **slots** availabe you can chose to connect them all or not or connect 1 single **Container HUB** (recomanded). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*;
+#### Optional Slots and Elements (Radioaltimeter, Cargo Containers, Rocket Fuel Tanks)
+6. **Vertical Booster** 1 or **Hover Engine** 1 or **Telemeter** 1 *(Linked Manually refer to the Note)*;
+> Note: **Vertical Booster** and **Hover Engine**, while they have a 60 meters range instead of 100 meters they returns water as an obstacle and the telemeter doesn't.
+7. **Cargo Containers** or **Container HUB** *(Linked Manually refet to the Note)*;
+> Note: according your free **slots** availabe you can chose to connect them all or not or connect 1 single **Container HUB** (recomanded). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*.
+8. **Rocket Fuel Tanks** if you wish to see the *Level* the *Time Left* and if the *Rockets* are engaged *LINK* at least 1 **Rocket Fuel Tank**
 
 ### Navigator Interface
 #### Required Elements
@@ -206,9 +207,11 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 [Return to INDEX](#INDEX)
 
 # HUD Installation
+* When you will seat on the lower left screen if some of the **optional** Elements are not *LINKED* it will be written or if a wrong **Databank** is *LINKED* it will tell you to check it. While the **optional** Elements are not required if you connect a wrong **Databank** you will have a *Script Error*.
 1. Choose the file (.conf) that is suitable for your ship and download it, download also the 3 require_\*.lua files;
 2. Past all of them in **Dual Universe\Game\data\lua\autoconf\custom**;
-3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing. If you are going to manually link the Fuel Tanks choose the autoconf file intended to do so. The **Rocket Fuel Tanks** need to be connected manually if you have enough slots. You can also chose to connect only 1 tank per type (Atmo and Space) but you will only have indication for those and not for others not connected.
+3. Connect **manually** the **optional** *Elements* if you want them (1 **Vertical Booster** or 1 **Hover Engine** or 1 **Telemeter** to have the *Radio Altimeter*, **Containers** or 1 **Container HUB** to get their mass in the *LOAD*). If you choose the file **(Fuel Tank Manual)** *LINK* at least 1 **Atmo Fuel Tank** and 1 **Space Fuel Tank** 
+4. In the game Right click on the **Command/Hover Seat or Cockpit -> Advanced -> Update Custom Autoconf List**. Do it again and this time open **Run Custom Autoconfigure** choose the configuration you want to install.
 
 # Navigator Interface Installation
 * Before to place the *Elements* be sure to remove from them the *Dynamic Properties*.
