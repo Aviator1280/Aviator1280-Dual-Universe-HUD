@@ -115,7 +115,7 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 Provided you are in the **SPC** or **ORB** *MFD page* this will turn your ship in a *ProGrade* direction, useful during a trip to accelerate or keep your ship facing the orbit direction and to adjust it by yourself accelerating or braking.
 When **Mode 1** is active you don't have anymore authority on direction.
 
-[Return to Automations](#automations) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 #### Mode 2 **(ALT+6)** (second press + 3 seconds delay)
 ![Trajectory](/gallery/trajectory_adjust_explained.png)
@@ -148,7 +148,7 @@ On this picture you can see the ship maintainig the orbit we achieved before. Si
 The *Target PE Altitude* is represented on the screen by the white circle, when your orbit will be above that circle it will become Cyan. The yellow line starting from the center of the planet/moon is your position respect the *PE* and *AP*.
 > Note: If your ship has really strong brakes using **Mode 2** it may not be advisable. You can try but monitor it and in case take over. In future I may find the way to reduce the effect of the brakes.
 
-[Return to Automations](#automations) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 #### Mode 3 **(ALT+6)** (third press + 3 seconds delay)
 ![Mode 3](/gallery/mode3_leaving_orbit_autobrake_armed_explained.png)
@@ -159,7 +159,7 @@ What I did in this picture I waited the right moment to give full thrust, you wi
 You can notice also I armed the *Autobrake*, they will engage only when close to the destination so again, if you can't select a destination don't arm them now or you will stop.
 If everything is ok you will see your ship pointing in the direction of the destination and leaving the actual orbit. Just keep the thrust at full power.
 
-[Return to Automations](#automations) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 #### Autobrake **(ALT+7)**
 It will ARM or ENGAGE the **Autobrake**. I set it up to stop at about 2 Su from the center of the destination planet/moon, it can be modified editing the **LUA Parameters** or in the **Settings** of the **Navigator Interface**.
@@ -175,17 +175,34 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the **LUA parameter** you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot and then go back and point at the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
-[Return to Automations](#automations) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 # Ship Requirements
-There are few requirements a ship needs to run this HUD.
-1. a **Gyroscope**;
-2. at least 1 **Atmo Fuel Tank**;
-3. at least 1 **Space Fuel Tank**;
-4. **Cargo Containers** are not required. To save slots you can chose to connect them or not or connect 1 single **Container HUB**. The weight calculations will be still correct but in case you will not connect them their weight will be included in the *DOW* and not in *LOAD*;
-5. at least 1 **Vertical Booster** or in alternative 1 **Telemeter** (if you don't have **Vertical Boosters** and you use a **Telemeter** you need to link it manually and change the **Slot** name in **radio_alt**). This is for the Radio Altimeter. I personally use the **Vertical Booster** while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
+* To run the HUD your **Command/Hover Seat** or **Cockpit** needs **5 slots**.
+* To add the **Navigator Interface** additional **1 slot**
+* The rest of the **slots** are up to you.
+> Note: The **HUD** and the **Navigator Interface** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** runs on a **Programming Board** and the only *Element* they share is the **Databank**.
+### HUD
+###### Required Slots and Elements
+1. **Core** *(Linked Automatically)*;
+2. **Gyroscope** 1 *(Linked Automatically)*;
+3. **Atmo Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
+4. **Space Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
+> Note: 2 version of files, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second one and *LINK* only **1 Atmo Fuel Tank** and **1 Space Fuel tank**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
+5. **Vertical Booster** 1 *(Linked Automatically refer to the Note)*;
+> Note: in alternative 1 **Telemeter**, in this case you need to link it manually and change the **slot** name in **radio_alt**. This is for the *Radio Altimeter* to work. I personally use the **Vertical Booster**, while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
+###### Required Slot and Element if the Navigator Interface is installed
+6. **Databank** 1 *(Linked Automatically refet to the Note)*;
+> Note: if your ship has more then 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before to install it if you were using the databank for another script please remove the **Dynamic Properties**.
+###### Optional Slots and Elements needed for Cargo Containers/Containers HUB
+7. **Cargo Containers** or **Container HUB** *(Linked Manually refet to the Note)*
+> Note: according your free **slots** availabe you can chose to connect them all or not or connect 1 single **Container HUB** (recomanded). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*;
 
-> NOTE: If you want to install the **Navigator Interface** you need additionally 1 **Screen (xs, s, m, transparent or not are all tested)**, 1 **Databank** and 1 **Programming Board**.
+### Navigator Interface
+###### Required Elements
+1. **Programming Board**
+2. **Screen** (Tested on XS, S, M, Transparent and not Transparent)
+3. **Databank** (This databank need to be connected to the Command/Hover seat or Cockpit)
 
 [Return to INDEX](#INDEX)
 
@@ -200,15 +217,16 @@ There are few requirements a ship needs to run this HUD.
 ## Navigator Interface
 * Before to place the *Elements* be sure to remove from them the *Dynamic Properties*.
 
-1. Download **Navigator_Interface.txt** and save it wherever you prefer or copy the **RAW** format from GitHub;
-2. In the game place the **Programming Board**, the **Databank** and the **Screen**;
-3. Copy the content of the **.txt** file or if you already copied the **RAW** format make a Right click on the **Programming Board**. Go to **Advanced -> Paste Lua Configuration From Clipboard**;
-4. Enter in the **Lua Editor** of the **Programming Board** *(CTRL+L)* and check that 3 of the slots are grey and have the name of **core**, **screen** and **databank**. Check their order;
-3. Link the **Screen**, the **Databank** and the **CORE** of the ship to the **Programming Board** according the sequence you saw in the **Lua Editor**;
-5. Turn it on and use it. First time you turn it on the top left button for some reason may not appear in that case switch it off then on.
+1. Download **Navigator_Interface.txt** and save it wherever you prefer **or** copy the **RAW** format from GitHub;
+2. In the game place the **Programming Board**, the **Databank** and the **Screen** and don't *LINK* them yet;
+> Note: Remove the **Dynamic Properties** if any.
+3. Copy the content of the **.txt** file **or** if you already copied the **RAW** format make a Right click on the **Programming Board**. Go to **Advanced -> Paste Lua Configuration From Clipboard**;
+4. Enter in the **Lua Editor** of the **Programming Board** *( Look at it and press CTRL+L)* and check that **3** of the slots are grey and have the name of **core**, **screen** and **databank**. Check their order;
+3. Now *LINK* the **Screen**, the **Databank** and the **CORE** of the ship to the **Programming Board** according the sequence you saw in the **Lua Editor**;
+5. Activate the **Programming Board**. The first time you turn it on the top left button for some reason may not appear in that case switch it off then on.
 
-> NOTE: one day I will also find the solution may be to solve the error "HTML CONTENT CANNOT EXCEED 20000 CHARACTERS", unfortunatelly the SGUI function is a bit bugged and I couldn't do exactly how I wanted to do and for now the solution is just turn off then on the **Programming Board**. All the data inserted are stored.
-Going in pages like *From*, *Destination* you may find the first box already filled, that is because it is stored but the coordinates box will show *nil* in that case to write you may use *CLR* or if you press *ENT* you simply confirm that string and the coordinates should appear. If for any reason you can't do anything may be you are having the error mentioned befroe so just turn it off then on.
+> NOTE: one day may be I will also find the solution to solve the error *HTML CONTENT CANNOT EXCEED 20000 CHARACTERS*, unfortunatelly the *SGUI* function at the moment is a bit bugged and I couldn't do exactly how I wanted to do and for now the work around is simply turn off then on the **Programming Board**. All the data inserted are stored.
+Going in pages like *From*, *Destination* you may find the first box already filled, that is because that data is stored but the coordinates box will show *nil* in that case to write you may use *CLR* or if you press *ENT* you simply confirm that string and the coordinates will appear. If for any reason you can't do anything may be you are having the error mentioned befroe so just turn it off then on.
 
 [Return to INDEX](#INDEX)
 
