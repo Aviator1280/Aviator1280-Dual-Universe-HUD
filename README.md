@@ -25,7 +25,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [KEYS](#keys)|
 | [Ship Requirements](#ship-requirements)|
 | [HUD Installation](#hud-installation)|
-| [Navigator Interface Installation](#navigator-interface-installation)|
+| [NAVIGATOR INTERFACE Installation](#navigator-interface-installation)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [Piloting TIPS and how to use the instruments](#Piloting-tips-and-how-to-use-the-instruments)|
 | [Warnings](#Warnings)|
@@ -177,7 +177,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 # Ship Requirements
-* To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs **5 slots**.
+* To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs at least **4 slots**.
 * To add the **Navigator Interface** additional **1 slot**
 * The rest of the **slots** are up to you.
 > Note: The **HUD** and the **Navigator Interface** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** runs on a **Programming Board** and the only *Element* they share is a **Databank**.
@@ -188,12 +188,12 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 3. **Atmo Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
 4. **Space Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
 > Note: 2 version of autoconfiguration file, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second one and *LINK* only **1 Atmo Fuel Tank** and **1 Space Fuel tank**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
-5. **Vertical Booster** 1 *(Linked Automatically refer to the Note)*;
-> Note: in alternative 1 **Telemeter**, in this case you need to link it manually and change the **slot** name in **radio_alt**. This is for the *Radio Altimeter* to work. I personally use the **Vertical Booster**, while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
 #### Required Slot and Element if the Navigator Interface is installed
-6. **Databank** 1 *(Linked Automatically refet to the Note)*;
+5. **Databank** 1 *(Linked Automatically refet to the Note)*;
 > Note: if your ship has more then 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before to install it if you were using the databank for another script please remove the **Dynamic Properties**.
 #### Optional Slots and Elements needed for Cargo Containers/Containers HUB
+6. **Vertical Booster** 1 or **Hover Engine** 1 *(Linked Manually refer to the Note)*;
+> Note: in alternative 1 **Telemeter**, in this case you need to link it manually and change the **slot** name in **radio_alt_1**. This is for the *Radio Altimeter* to work. I personally use the **Vertical Booster** or **Hover Engine**, while they have a 60 meters range instead of 100 meters they returns water as an obstacle and the telemeter doesn't.
 7. **Cargo Containers** or **Container HUB** *(Linked Manually refet to the Note)*
 > Note: according your free **slots** availabe you can chose to connect them all or not or connect 1 single **Container HUB** (recomanded). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*;
 
