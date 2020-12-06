@@ -23,11 +23,10 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | |
 |------|
 | [KEYS](#keys)|
-| [Automations](#automations)|
-| [DU Widgets](#du-widgets)|
 | [Ship Requirements](#ship-requirements)|
-| [How To Install](#how-to-install)|
-| [How To Use It](#how-to-use-it)|
+| [HUD Installation](#hud-installation)|
+| [Navigator Interface Installation](#navigator-interface-installation)|
+| [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [Piloting TIPS and how to use the instruments](#Piloting-tips-and-how-to-use-the-instruments)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
@@ -178,12 +177,12 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 # Ship Requirements
-* To run the HUD your **Command/Hover Seat** or **Cockpit** needs **5 slots**.
+* To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs **5 slots**.
 * To add the **Navigator Interface** additional **1 slot**
 * The rest of the **slots** are up to you.
-> Note: The **HUD** and the **Navigator Interface** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** runs on a **Programming Board** and the only *Element* they share is the **Databank**.
+> Note: The **HUD** and the **Navigator Interface** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** runs on a **Programming Board** and the only *Element* they share is a **Databank**.
 ### HUD
-###### Required Slots and Elements
+#### Required Slots and Elements
 1. **Core** *(Linked Automatically)*;
 2. **Gyroscope** 1 *(Linked Automatically)*;
 3. **Atmo Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
@@ -191,32 +190,28 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 > Note: 2 version of files, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second one and *LINK* only **1 Atmo Fuel Tank** and **1 Space Fuel tank**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
 5. **Vertical Booster** 1 *(Linked Automatically refer to the Note)*;
 > Note: in alternative 1 **Telemeter**, in this case you need to link it manually and change the **slot** name in **radio_alt**. This is for the *Radio Altimeter* to work. I personally use the **Vertical Booster**, while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
-###### Required Slot and Element if the Navigator Interface is installed
+#### Required Slot and Element if the Navigator Interface is installed
 6. **Databank** 1 *(Linked Automatically refet to the Note)*;
 > Note: if your ship has more then 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before to install it if you were using the databank for another script please remove the **Dynamic Properties**.
-###### Optional Slots and Elements needed for Cargo Containers/Containers HUB
+#### Optional Slots and Elements needed for Cargo Containers/Containers HUB
 7. **Cargo Containers** or **Container HUB** *(Linked Manually refet to the Note)*
 > Note: according your free **slots** availabe you can chose to connect them all or not or connect 1 single **Container HUB** (recomanded). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*;
 
 ### Navigator Interface
-###### Required Elements
+#### Required Elements
 1. **Programming Board**
 2. **Screen** (Tested on XS, S, M, Transparent and not Transparent)
 3. **Databank** (This databank need to be connected to the Command/Hover seat or Cockpit)
 
 [Return to INDEX](#INDEX)
 
-# How To Install
-
-## HUD
+# HUD Installation
 1. Choose the file (.conf) that is suitable for your ship and download it, download also the 3 require_\*.lua files;
 2. Past all of them in **Dual Universe\Game\data\lua\autoconf\custom**;
 3. In the game Right click on the **control unit -> Advanced -> Update Custom Autoconf List**. Do it again and this time in **Run Custom Autoconfigure** choose the configuration you are installing. If you are going to manually link the Fuel Tanks choose the autoconf file intended to do so. The **Rocket Fuel Tanks** need to be connected manually if you have enough slots. You can also chose to connect only 1 tank per type (Atmo and Space) but you will only have indication for those and not for others not connected.
-4. The autoconfig should do everything automatically (except for those elementes that need to be manually linked) and you are ready to go. If a script error comes out and you can't find out the problem contact me via [Discord](https://discord.gg/Rve2jjZbvz).
 
-## Navigator Interface
+# Navigator Interface Installation
 * Before to place the *Elements* be sure to remove from them the *Dynamic Properties*.
-
 1. Download **Navigator_Interface.txt** and save it wherever you prefer **or** copy the **RAW** format from GitHub;
 2. In the game place the **Programming Board**, the **Databank** and the **Screen** and don't *LINK* them yet;
 > Note: Remove the **Dynamic Properties** if any.
@@ -230,7 +225,7 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 [Return to INDEX](#INDEX)
 
-## How To Use It
+## How To Use The Navigator Interface
 1. Activate the **Programming Board**, the screen will turn ON and will show you a firt page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
 2. **Stored WP 1/2** is one of the 2 pages where you can see the name you gave to the waypoints you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen.
