@@ -187,7 +187,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 2. **Gyroscope** 1 *(Linked Automatically)*;
 3. **Atmo Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
 4. **Space Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
-> Note: 2 version of files, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second one and *LINK* only **1 Atmo Fuel Tank** and **1 Space Fuel tank**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
+> Note: 2 version of autoconfiguration file, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second one and *LINK* only **1 Atmo Fuel Tank** and **1 Space Fuel tank**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
 5. **Vertical Booster** 1 *(Linked Automatically refer to the Note)*;
 > Note: in alternative 1 **Telemeter**, in this case you need to link it manually and change the **slot** name in **radio_alt**. This is for the *Radio Altimeter* to work. I personally use the **Vertical Booster**, while it has a 60 meters range instead of 100 meters it returns water as an obstacle and the telemeter doesn't.
 #### Required Slot and Element if the Navigator Interface is installed
