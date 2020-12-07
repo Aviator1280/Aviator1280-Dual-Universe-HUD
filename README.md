@@ -18,7 +18,7 @@ pilot can also interact with it while piloting using the touch screen.
 
 Creating it I used the MFD (Multi Functional Display) concept assigning to the different phases of the flight a different page. Easy to apply to your ship
 and easy to use but a powerful instrument for your flights and yes it does make the difference.
-<a href="http://www.google.com" target="_blank">TEST</a>
+
 # INDEX
 | |
 |------|
