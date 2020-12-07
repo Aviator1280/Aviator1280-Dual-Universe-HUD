@@ -231,6 +231,8 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 [Return to INDEX](#INDEX)
 
 ## How To Use The Navigator Interface
+> Note: You can set up your favourite colors editing the **Lua Parameters**. The colors need to be in the **\" \"** and need to be a **string** *(ex blue)*. If you insert colors in **RGB** or in the format **#00ffff** it will not work and to see them again in the **Lua Parameters** you will need to reload the script. A good tool to find your favourite name colors can be found [here](https://www.w3schools.com/colors/colors_picker.asp).
+
 1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
 2. **Stored WP 1/2** is one of the 2 pages where you can see the name you gave to the waypoints you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen.
