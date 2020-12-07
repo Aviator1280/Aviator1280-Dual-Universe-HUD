@@ -231,7 +231,7 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 [Return to INDEX](#INDEX)
 
 ## How To Use The Navigator Interface
-> Note: You can set up your favourite colors editing the **Lua Parameters**. The colors need to be in the **\" \"** and need to be a **string** *(ex blue)*. If you insert colors in **RGB** or in the format **#00ffff** it will not work and to see them again in the **Lua Parameters** you will need to reload the script. A good tool to find your favourite name colors can be found [here](https://www.w3schools.com/colors/colors_picker.asp).
+> Note: You can set up your favourite colors editing the **Lua Parameters**. The colors need to be in the **\" \"** and need to be a **string** *(ex blue)*. If you insert colors in **RGB** or in the format **#00ffff** it will not work and to see them again in the **Lua Parameters** you will need to reload the script. A good tool to find your favourite name colors can be found <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">HERE</a>.
 
 1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
