@@ -1,4 +1,4 @@
-# Overview (HUD + Navigator Interface)
+# Overview (HUD + Navigator Interface + Way Point Sync)
 
 ## Command/Hover Seat and Cockpit supported
 
