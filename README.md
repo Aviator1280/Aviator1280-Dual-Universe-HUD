@@ -286,7 +286,7 @@ The *Autobrake* box is where you can set the distance you want your ship to stop
 
 [Return to INDEX](#INDEX)
 
-## How To Use The Way Points Sync
+## How To Use The Way Point Sync
 * Most actions are done from the **Navigator Interface** (*Downlink*, *Uplink* on the **Settings** page).
 1. Keep the **Way Point Sync** on if you want to transmit/receive data.
 2. The **Screen** will show you a table  with number of *Way Points* received, the *Way Point* list, a *Progress Bar* when syncing and the *Way Points* stored.
