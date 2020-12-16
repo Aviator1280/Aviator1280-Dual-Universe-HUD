@@ -1,4 +1,4 @@
-# Overview (HUD + Navigator Interface + Way Point Sync)
+# Overview (HUD + Navigator Interface + WayPoint Sync)
 
 ## Command/Hover Seat and Cockpit supported
 
@@ -26,9 +26,9 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [Requirements](#requirements)|
 | [HUD Installation](#hud-installation)|
 | [NAVIGATOR INTERFACE Installation](#navigator-interface-installation)|
-| [WAY POINT SYNC Installation](#way-point-sync-installation)|
+| [WAYPOINT SYNC Installation](#way-point-sync-installation)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
-| [How To Use - Way Point Sync](#how-to-use-the-way-point-sync)|
+| [How To Use - WayPoint Sync](#how-to-use-the-way-point-sync)|
 | [Piloting TIPS and how to use the instruments](#Piloting-tips-and-how-to-use-the-instruments)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
@@ -80,7 +80,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 ***(Attitude Indicator)*** The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated it with the *Flight Path Vector* (in an Airbus airplane called "Bird"). It shows you the direction where your ship is really flying to.
 Integrated in the *AI* you will find the *RA* (Radioaltimeter) that will come out when at 60 mt (Using Vertical Booster) from the ground/water.
-You can also find the selected waypoint distance and its direction.
+You can also find the selected *WayPoint distance and its direction.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -210,7 +210,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 4. **Emitter**
 5. **Receiver**
 
-## Way Point Sync
+## WayPoint Sync
 #### Required Emelents
 1. **Programming Board**
 2. **Screen**
@@ -244,7 +244,7 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 [Return to INDEX](#INDEX)
 
-# Way Point Sync Installation
+# WayPoint Sync Installation
 * At the moment there is a bug that prevent Emitters/Receivers to operate at a range more than 20/30 mt.
 1. Download **WP_Sync_Base.txt** and save it wherever you prefer **or** copy the **RAW** format from GitHub;
 2. In the game place the **Programming Board**, the **Databank**, the **Screen**, the **Emitter**, the **Receiver** and don't *LINK* them yet;
@@ -258,9 +258,9 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 ## How To Use The Navigator Interface
 > Note: You can set up your favourite colors editing the **Lua Parameters**. The colors need to be in the **\" \"** and need to be a **string** *(ex blue)*. If you insert colors in **RGB** or in the format **#00ffff** it will not work and to see them again in the **Lua Parameters** you will need to reload the script. A good tool to find your favourite name colors can be found [HERE](https://www.w3schools.com/colors/colors_picker.asp).
 
-1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored Waypoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
+1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored WayPoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
-2. **Stored WP 1/2** is one of the 2 pages where you can see the name you gave to the waypoints you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen. Here you can also select with the small arrow the *Way Points* you want to clear and press **CLR WP**.
+2. **Stored WP 1/2** is one of the 2 pages where you can see the name you gave to the *WayPoints* you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen. Here you can also select with the small arrow the *WayPoints* you want to clear and press **CLR WP**.
 
 3. **Su Time Calculator** is a simple tool where to insert an Su distance a speed and you will get the time to travel it, the Warp Cells required in case you warp at the actual weight and at the MTOW (supposing you want to travel to load your ship and you want to go back for planning purpose). Note the MTOW is the one you set on the **Settings**.
 In the **Distance** box if you insert a destination it will automatically set the distance from your present position *(PPOS)* to the destination. To remove that distance you need to *CLR* the *Destination*.
@@ -268,17 +268,17 @@ On the *Speed* box you can set the speed you prefer from 1 to 30000 Km/h or if y
 If the Warp Cells needed shows 0 it's because you have not used the ship since some time and it is like "sleeping", just sit on the Command/Hover seat or Cockpit and it will be updated.
 
 4. **From** here you can set your departure point, the one you want to see on the HUD. Planets and moons are already in the database, you just type their name with the keyboard and press *ENT*. If the planet/moon is in the database it will show their VEC3 coordinates.
-If you don't insert anything on the box and simply press *ENT* it will set for you the *PPOS* and your actual coordinates. You may notice that in this case the lateral white arrow will go next to the box where you can write the name of the **waypoint**. This is for the purpose of storing **waypoints**. You simply write the name you want to give to it and click on **ADD WP** (top left of the screen). From this moment you will have the *Way Point* stored and visible in the list. If you want to store a *Way Point* from *Map Coordinates* you can do it in **Settings**.
-If you write ***all*** and use **CLR WP**, **ALL** the stored *Way Points* will be deleted, use it carefully.
-When you have a *Way Point* stored in the page *From* or *Destination* you can simply write the wp number you want to select (same as per clear them) and it will show you their name once you press *ENT*.
+If you don't insert anything on the box and simply press *ENT* it will set for you the *PPOS* and your actual coordinates. You may notice that in this case the lateral white arrow will go next to the box where you can write the name of the **WayPoint**. This is for the purpose of storing **WayPoints**. You simply write the name you want to give to it and click on **ADD WP** (top left of the screen). From this moment you will have the *WayPoint* stored and visible in the list. If you want to store a *WayPoint* from *Map Coordinates* you can do it in **Settings**.
+If you write ***all*** and use **CLR WP**, **ALL** the stored *WayPoints* will be deleted, use it carefully.
+When you have a *WayPoint* stored in the page *From* or *Destination* you can simply write the **wp** number you want to select (same as per clear them) and it will show you their name once you press *ENT*.
 
 5. **Destination** here you will set your destination that will be shown also in the HUD. Can be a planet/moon from the database or a **stored wp**.
 
 6. **Settings** is an important page, it has the basic settings of your ship.
 * **Page 1** Here you can set your *MTOW* in Tons instead to use the **Lua Paramenters** (the **Lua Parameters** can be set before to seat but can't be changed while flying instead everything you set on the screen is live). The *MTOW* will be the reference for the maximum number of *Warp Cells* needed to cover a distance and it will be also sent to the HUD for the pilot to check if the ship is within the take off limits.
 The *Autobrake* box is where you can set the distance you want your ship to stop from your destination if the system is armed. Note that this is the distance from the center of the planet/moon/wp (es. Alioth radius 0,63 Su, it means the ship will stop at about 1.4 Su from the planet surface).
-* **Page 2** Here you can manually store *Way Points* giving them a name and inserting the coordinates given from the Map.
-* **Page 3** Here you can syncronize *Way Points* stored in your ship and in your base. Pressing **Downlink** you will send all your *Way Point* list to your base where they will be stored and displayed. If some *Way Point* has the same name of an existing one the existing one will be overwritten. Pressing **Uplink** all the stored *Way Points* in your base **Databank** will be sent to your ship. The ship *Way Point* list will not be overwritten and additional *Way Points* will be added even if they have the same name. If you want to prevent this behaviour for any reason just be sure you sent all your *Way Points* to your base **Databank** then before to **Uplink** clear your ship list so you will not have duplicates.
+* **Page 2** Here you can manually store *WayPoints* giving them a name and inserting the coordinates given from the Map.
+* **Page 3** Here you can syncronize *WayPoints* stored in your ship and in your base. Pressing **Downlink** you will send all your *WayPoint* list to your base where they will be stored and displayed. If some *WayPoint* has the same name of an existing one the existing one will be overwritten. Pressing **Uplink** all the stored *WayPoints* in your base **Databank** will be sent to your ship. The ship *WayPoint* list will not be overwritten and additional *WayPoints* will be added even if they have the same name. If you want to prevent this behaviour for any reason just be sure you sent all your *WayPoints* to your base **Databank** then before to **Uplink** clear your ship list so you will not have duplicates.
 
 7. **Pe Target Altitude** is the lowest altitude you want to orbit around a planet/moon. It will be represented with a white circle on the HUD around the planet/moon in the **ORB** *MFD page*. It will also be the reference altitude for the **Mode 2** of the autopilot to keep a circular orbit. Also this can be setted in the **Lua Parameter** but doing on the screen is live and no need to stand up or go out of the Cockpit. This parameter can also be changed while the autopilot is ON and it will adapt to the new altitude.
 
@@ -286,12 +286,12 @@ The *Autobrake* box is where you can set the distance you want your ship to stop
 
 [Return to INDEX](#INDEX)
 
-## How To Use The Way Point Sync
+## How To Use The WayPoint Sync
 * Most actions are done from the **Navigator Interface** (*Downlink*, *Uplink* on the **Settings** page).
-1. Keep the **Way Point Sync** on if you want to transmit/receive data.
-2. The **Screen** will show you a table  with number of *Way Points* received, the *Way Point* list, a *Progress Bar* when syncing and the *Way Points* stored.
-3. Once the *Way Points* are stored the next time you will turn on the **Programming Board** the list of them will be displayed in a different colour (Cyan) to distinguish them from a new series of incoming *Way Points*
-4. On the right side a simple series of *buttons*. To scroll the table up, down or to go back to the top. A *button* **Send** to send all the *Way Points* stored to all the ship with the **Navigator Interface** turned ON. A *button* **CLR DB** to clear **ALL** the *Way Points* stored. (It is my intention to add the possibility to clear only selected *Way Points*)
+1. Keep the **WayPoint Sync** on if you want to transmit/receive data.
+2. The **Screen** will show you a table  with number of *WayPoints* received, the *WayPoint* list, a *Progress Bar* when syncing and the *WayPoints* stored.
+3. Once the *WayPoints* are stored the next time you will turn on the **Programming Board** the list of them will be displayed in a different colour (Cyan) to distinguish them from a new series of incoming *WayPoints*
+4. On the right side a simple series of *buttons*. To scroll the table up, down or to go back to the top. A *button* **Send** to send all the *WayPoints* stored to all the ship with the **Navigator Interface** turned ON. A *button* **CLR DB** to clear **ALL** the *WayPoints* stored. (It is my intention to add the possibility to clear only selected *WayPoints*)
 
 [Return to INDEX](#INDEX)
 
