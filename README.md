@@ -244,7 +244,7 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 [Return to INDEX](#INDEX)
 
-# Way Points Sync Installation
+# Way Point Sync Installation
 * At the moment there is a bug that prevent Emitters/Receivers to operate at a range more than 20/30 mt.
 1. Download **WP_Sync_Base.txt** and save it wherever you prefer **or** copy the **RAW** format from GitHub;
 2. In the game place the **Programming Board**, the **Databank**, the **Screen**, the **Emitter**, the **Receiver** and don't *LINK* them yet;
