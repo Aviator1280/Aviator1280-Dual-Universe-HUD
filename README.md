@@ -26,9 +26,9 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [Requirements](#requirements)|
 | [HUD Installation](#hud-installation)|
 | [NAVIGATOR INTERFACE Installation](#navigator-interface-installation)|
-| [WAYPOINT SYNC Installation](#way-point-sync-installation)|
+| [WAYPOINT SYNC Installation](#waypoint-sync-installation)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
-| [How To Use - WayPoint Sync](#how-to-use-the-way-point-sync)|
+| [How To Use - WayPoint Sync](#how-to-use-the-waypoint-sync)|
 | [Piloting TIPS and how to use the instruments](#Piloting-tips-and-how-to-use-the-instruments)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
