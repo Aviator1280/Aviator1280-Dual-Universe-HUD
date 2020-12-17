@@ -224,8 +224,8 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 
 # HUD Installation
 * When you will seat on the lower left screen if some of the **optional** Elements are not *LINKED* it will be written or if a wrong **Databank** is *LINKED* it will tell you to check it. While the **optional** Elements are not required if you connect a wrong **Databank** you will have a *Script Error*.
-1. Choose the file (.conf) that is suitable for your ship and download it, download also the 3 require_\*.lua files;
-2. Past all of them in **Dual Universe\Game\data\lua\autoconf\custom**;
+1. Choose the file (.conf) that is suitable for your ship and download it;
+2. Past it in **Dual Universe\Game\data\lua\autoconf\custom**;
 3. Connect **manually** the **optional** *Elements* if you want them (1 **Vertical Booster** or 1 **Hover Engine** or 1 **Telemeter** to have the *Radio Altimeter*, **Containers** or 1 **Container HUB** to get their mass in the *LOAD*). If you choose the file **(Fuel Tank Manual)** *LINK* at least 1 **Atmo Fuel Tank** and 1 **Space Fuel Tank** 
 4. In the game Right click on the **Command/Hover Seat or Cockpit -> Advanced -> Update Custom Autoconf List**. Do it again and this time open **Run Custom Autoconfigure** choose the configuration you want to install.
 
