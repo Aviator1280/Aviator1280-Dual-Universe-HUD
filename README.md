@@ -31,7 +31,6 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [WAYPOINT SYNC Installation](#waypoint-sync-installation)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [How To Use - WayPoint Sync](#how-to-use-the-waypoint-sync)|
-| [Piloting TIPS and how to use the instruments](#Piloting-tips-and-how-to-use-the-instruments)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
 | [Credits](#Credits)|
@@ -49,13 +48,13 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it.
 
-### Autopilot / Autobrake
-| [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Autobrake](#autobrake-alt7)|
-| :---:     | :---:                 | :---:                 | :---:                 |
-| **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | **ALT+7**             |
-| ProGrade  | ProGrade              | Destination           | Parking Brake         |
-|           | Orbiting ARM          |                       | Destination Autobrake |
-|           | Maintaining Orbit     |                       | Emergency Autobrake   |
+### Autopilot / Autobrake / Parking Brake
+| [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
+| :---:     | :---:                 | :---:                 | :---:                           |
+| **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | **ALT+7**                       |
+| ProGrade  | ProGrade              | Destination           | Parking Brake  (LOAD, AI Mode)  |
+|           | Orbiting ARM          |                       | Destination Autobrake (SPC Mode)|
+|           | Maintaining Orbit     |                       |                                 |
 
 > Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
@@ -65,7 +64,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | Hide/Show   | Hide/Show  |
 |Radar Widget | DU Widgets |
 
-> Note: At the moment I also keep the possibility to recall the DU Widgets. When you enter the cockpit or the seat they will be there, just to give a cross check.
+> Note: When you seat the DU Widgets are hided by default. You can change this behaviour in *Lua Paramenters* flagging (*Widgets_ON_OFF*). 
 
 [Return to INDEX](#INDEX)
 
@@ -82,7 +81,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 ***(Attitude Indicator)*** The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated it with the *Flight Path Vector* (in an Airbus airplane called "Bird"). It shows you the direction where your ship is really flying to.
 Integrated in the *AI* you will find the *RA* (Radioaltimeter) that will come out when at 60 mt (Using Vertical Booster) from the ground/water.
-You can also find the selected *WayPoint distance and its direction.
+You can also find the selected *WayPoint* distance and its direction (Cyan lozenge), the direction is precise when wings are level, during turns higher is the bank angle less precise is the direction.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -164,8 +163,9 @@ If everything is ok you will see your ship pointing in the direction of the dest
 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
-#### Autobrake **(ALT+7)**
-It will ARM or ENGAGE the **Autobrake**. I set it up to stop the ship at about 2 Su from the center of the destination planet/moon, it can be modified by editing the **LUA Parameters** or in the **Settings** of the **Navigator Interface**. It can be used also as **Parking Brake** if your *Destination* is within the **Autobrake Distance**. To use as **Parking Brake** press **(ALT+7)** at any time, if you get the message *Autobrake NO Dest.* simply switch on **SPC** for the system  to acknowledge it. 
+#### Brake System **(ALT+7)**
+It will ENG the **Parking Brake** if **LOAD** or **AI** Mode are active, it will ARM or ENGAGE the **Autobrake** if the **SPC** Mode is active.
+The **Autobrake** is set to stop the ship at about **2 Su** from the **center** of the destination planet/moon, it can be modified by editing the *LUA Parameters* or in the **Settings** of the **Navigator Interface**.
 ![Autobrake ARM](/gallery/autobrake_arm_spc_explained.png)
 We left our orbit and on course to Alioth. On the left lower panel you can read *Autobrake ARM*, this means that a *Destination* has been set (if no *Destination* they will not ARM, sometime you will need to go in the **SPC** *MFD page* to activate the *Destination*).
 On the upper right panel you can read *Autobrake in:*, this is the distance left before they will engage, it will show *Autobrake OFF* if they are not active. Next to it you can read the distance at which you want to stop your ship. Be aware that this is the distance from the **center** of the target planet/moon (ex. going to Alioth that has a radius of 0.63Su your ship will stop at 2.3 - 0.63 Su from the surface so be careful). On my trip the selected destination is my base on Alioth that's why the ship is not pointing to the center of the planet. In this case be even more careful if the destination you set in on the other side of the planet/moon.
@@ -176,14 +176,14 @@ My trip finished here, I hope you found useful these instructions and that make 
 You can see the *Autobrake* system stopped my ship at 2.26 Su from the destination. 2.3 Su was selected, approaching a planet/moon stronger is the gravity and heavier you are it may require some small adjustment on the final stop distance.
 The *autobrake* system is used also from the **Mode 2** in case something wrong happens during an orbit, to DISARM the **Autobrake** in the event that the **Mode 2** engaged it press **(ALT+7)**.
 
-> NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the **LUA parameter** you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot and then go back and point in the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
+> NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the *LUA parameter* you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot and then go back and point in the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 # Requirements
 
 ## Ship Requirements
-* To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs at least **4 slots**.
+* To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs at least **3 slots**, **4 slots** if you also connect at least 1 **Space Fuel Tank**.
 * To add the **Navigator Interface** additional **1 slot**
 * The rest of the **slots** are **optionals** and  up to you.
 > Note: The **HUD** and the **Navigator Interface** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** runs on a **Programming Board** and the only *Element* they share is a **Databank**.
@@ -192,12 +192,13 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 1. **Core** *(Linked Automatically)*;
 2. **Gyroscope** 1 *(Linked Automatically)*;
 3. **Atmo Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
-4. **Space Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
-> Note: 2 version of autoconfiguration file, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second one and *LINK* only **1 Atmo Fuel Tank** and **1 Space Fuel tank**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
+> Note: 2 version of autoconfiguration file, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second file and *LINK* only **1 Atmo Fuel Tank**, the **Space Fuel tanks** are not mandatory. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
 #### Required Slot and Element if the Navigator Interface is installed
-5. **Databank** 1 *(Linked Automatically refer to the Note)*;
+4. **Databank** 1 *(Linked Automatically refer to the Note)*;
 > Note: if your ship has more than 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before installing it if you were using the databank for another script please remove the **Dynamic Properties**.
-#### Optional Slots and Elements (Radioaltimeter, Cargo Containers, Rocket Fuel Tanks)
+#### Optional Slots and Elements (Space Fuel Tanks, Radioaltimeter, Cargo Containers, Rocket Fuel Tanks)
+5. **Space Fuel Tanks** *(Linked Automatically refer to the Note)*;
+> Note: automatically linked unless you are using the file **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**.
 6. **Vertical Booster** 1 or **Hover Engine** 1 or **Telemeter** 1 *(Linked Manually refer to the Note)*;
 > Note: **Vertical Booster** and **Hover Engine**, while they have a 60 meters range instead of 100 meters they returns water as an obstacle and the telemeter doesn't.
 7. **Cargo Containers** or **Container HUB** *(Linked Manually refer to the Note)*;
@@ -294,17 +295,6 @@ The *Autobrake* box is where you can set the distance you want your ship to stop
 2. The **Screen** will show you a table  with number of *WayPoints* received, the *WayPoint* list, a *Progress Bar* when syncing and the *WayPoints* stored.
 3. Once the *WayPoints* are stored the next time you will turn on the **Programming Board** the list of them will be displayed in a different colour (Cyan) to distinguish them from a new series of incoming *WayPoints*
 4. On the right side a simple series of *buttons*. To scroll the table up, down or to go back to the top. A *button* **Send** to send all the *WayPoints* stored to all the ship with the **Navigator Interface** turned ON. A *button* **CLR DB** to clear **ALL** the *WayPoints* stored. (It is my intention to add the possibility to clear only selected *WayPoints*)
-
-[Return to INDEX](#INDEX)
-
-## Piloting TIPS and how to use the instruments
-* **LOAD page**, nothing special, be familiar with your ship and determine wisely the *MTOW* that it may be different from planet to planet. Also be in mind that you will burn fuel this will make you lighter but better don't exaggerate carrying fuel you don't need, be as light as you can.
-
-* **AI page**, you will always be aware where your ship is flying. How many times you pitch up but you are still going down? Well here you can see it and you can also achieve a nicely level flight, it is pretty accurate. You want to have a level flight? Just bring the *Bird* on the horizon if it goes down you are going down if it goes up you are going up, easy. Note that the angle between the pitch and the *Bird* is your *Angle of Attack*. If you are very heavy and you want to reach the orbit don't climb too fast, try to keep high speed, if very heavy you may need to fly with a pitch not more then 10 degrees, keep your vertical speed positive and the bird above the horizon, don't be in rush to climb if you don't have speed. Once your Space engine turns on be gentle but don't let the ship go down again so reduce carefully your pitch help yourself with the *Bird* and keep it on the horizon until you will have a good speed. Once the speed is increasing pitch up, you want to be out of the atmosphere to don't burn, when the atmosphere is at 0% then level off again and accelerate to get the *AP Altitude* you desire (here you may switch in **ORB page** to check it), once you have established the *AP altitude* cut the thrust and wait to reach it. When you reach the *AP* burn *ProGrade* and increase your *PE Altitude* to the desired one.
-
-* **SPC page**, is time to travel between planets and moons. Did you set a destination? If not or if you can't because you are not using the **Navigator Interface** as default your destination will be the closest planet. If so, point by yourself where you want to go and pilot to have the *velocity vector* (White circle) in the correct direction. If you could set a destination, align the white circle with the cyan circle and you can also activate the **Mode 3** of the autopilot. If you are too lazy to follow the flight, activate the **Autobrake** function. Recall that it will stop you about 2 Su from the destination (Center of the planet/moon). It means if you couldn't set the destination it will engage at the closest planet, so if you are going away from it wait to be more than 2.3 Su (or the Su you edited in **LUA Parameters**) then activate it if there are no other planets between you and your destination. Once you will be closest to the next planet the destination will update so the **Autobrake**.
-
-* **ORB page**, now you are approaching your planet/moon. Check that the gravity affecting your ship is actually from that planet you intend to go, one way to do it is to switch to **AI mode** and see where the terrain is in the **Attitude Indicator**. It may happen planets near moons will influence your ship even when you are well close to the moon. Once the gravity is the correct one the data for the orbit are correct. Initially you will only have a *PE Altitude* so what to do now? You can increase or decrease that altitude based on your preference. All you need to do is to align the ship 90 degrees in reference to your *Velocity Vector* and burn to increase or decrease it, just choose the correct side. While burning look at the *PE Altitude* when you are satisfied cut the thrust. Now you need to wait, you will have the *distance to the PE* and the calculated speed for a *circular orbit*. Also you have the *braking distance* to achieve that speed. Once you are approaching the desired braking distance brake! Be aware for planets with a strong gravity while braking your *PE Altitude* may decrease a bit. So you can initially have a higher altitude or while braking you can burn again 90 degrees respect your *Velocity Vector* to keep that altitude. While braking monitor the *braking distance*, the *PE distance* and the *Eccentricity* (ECC), once the *ECC* will be less than 1 it means you are in orbit and the graphic changes to represent it. If you previously ARMED the **Orbit Maintaining** function it will take controls and will adjust, at the proper time, the orbit, if not **you have control!** Once satisfied with the orbib if already not engaged you can engage the **Mode 1** of the autopilot. Be aware that it will aim for the *Target Altitude* you set or the *default 20.000 mt*. You can set a lower altitude down to 10.000 mt, less than that better not to be in orbit, on some planet you may hit the atmosphere or if something happens you don't really have time to recover.
 
 [Return to INDEX](#INDEX)
 
