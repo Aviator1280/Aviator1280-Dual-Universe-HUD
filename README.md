@@ -49,7 +49,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it.
 
 ### Autopilot / Autobrake / Parking Brake
-|          | [Autopilot](#-autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
+|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
 | :---     | :---:     | :---:     | :---:             | :---:       | :---:                 |
 |          | **ALT+6** | **ALT+6** | **ALT+6**         | **ALT+6**   | **ALT+7**             |
 | **LOAD** |           |           |                   |             | Parking Brake         |
