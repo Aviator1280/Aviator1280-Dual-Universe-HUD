@@ -49,12 +49,16 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it.
 
 ### Autopilot / Autobrake / Parking Brake
-| [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
-| :---:     | :---:                 | :---:                 | :---:                           |
-| **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | **ALT+7**                       |
-| ProGrade  | ProGrade              | Destination           | Parking Brake  (LOAD, AI Mode)  |
-|           | Orbiting ARM          |                       | Destination Autobrake (SPC Mode)|
-|           | Maintaining Orbit     |                       |                                 |
+|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
+| :---     | :---:     | :---:     | :---:             | :---:       | :---:                 |
+|          | **ALT+6** | **ALT+6** | **ALT+6**         | **ALT+6**   | **ALT+7**             |
+| **LOAD** |           |           |                   |             | Parking Brake         |
+| **AI**   | Alt. Hold |           |                   |             | Parking Brake         |
+| **SPC**  |           | ProGrade  | ProGrade          | Destination | Destination Autobrake |
+|          |           |           | Orbiting ARM      |             |                       |
+| **ORB**  |           |           | ProGrade          | Destination | Destination Autobrake |
+|          |           |           | Maintaining Orbit |             |                       |
+| **DMG**  |           |           | Orbiting ARM      |             |                       |
 
 > Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
@@ -72,6 +76,8 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 ![LOAD_page](/gallery/load_explained.png)
 
 ***(Load)*** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
+The left screen where messages appear, like in the picture above *"Parking brake ON"* it is called **ECAM** (*Electronic centralised aircraft monitor*). It is present in **ALL** the fligth modes.
+On the **ECAM** you will have useful **information**, **cautions** and **warnings**. It is always a good idea give it a look. For example it will show you if any of your *LINKED* fuel tank is going to have less then 20% of fuel and when it will be empty. When you seat it will also inform you on some system that eventually has not been *LINKED* for example it will tell you the *"R.A. not Installed"* (Radioaltimeter) which means you didn't *LINK* any **Vertical Booster** or **Hover Engine** or **Telemeter** that will make the Radioaltimeter work.
 > Note: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
@@ -109,6 +115,16 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 ### Automations
+
+#### Autopilot **(ALT+6)**
+
+* **Alt. Hold** (Altitude Hold)
+Provided you are in **AI** *MFD Page* oce pressed the ship will:
+1. Inform you on the *ECAM* that the system is on;
+2. Inform you on the *ECAM* which is the altitude that will be maintained (it will be the altitude recorded when the system has been activated);
+3. Protect you from *Bank Angle* higher then **45** deg;
+4. Letting you make turns just banking the ship using the standard **Q** and **E**. At the moment for *bank angle* higer than **10** deg.
+> NOTE: the system it is not connected to the thrust, it will correct the *pitch* to maintain the altitude but eventually will *stall* if the speed is too low.
 
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
