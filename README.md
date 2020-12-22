@@ -49,7 +49,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it.
 
 ### Autopilot / Autobrake / Parking Brake
-|          | Autopilot | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
+|          | [Autopilot](#-autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
 | :---     | :---:     | :---:     | :---:             | :---:       | :---:                 |
 |          | **ALT+6** | **ALT+6** | **ALT+6**         | **ALT+6**   | **ALT+7**             |
 | **LOAD** |           |           |                   |             | Parking Brake         |
@@ -113,6 +113,16 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 ### Automations
+
+#### Autopilot **(ALT+6)**
+
+* **Alt. Hold** (Altitude Hold)
+Provided you are in **AI** *MFD Page* oce pressed the ship will:
+1. Inform you on the *ECAM* that the system is on;
+2. Inform you on the *ECAM* which is the altitude that will be maintained (it will be the altitude recorded when the system has been activated);
+3. Protect you from *Bank Angle* higher then **45** deg;
+4. Letting you make turns just banking the ship using the standard **Q** and **E**. At the moment for *bank angle* higer than **10** deg.
+> NOTE: the system it is not connected to the thrust, it will correct the *pitch* to maintain the altitude but eventually will *stall* if the speed is too low.
 
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
