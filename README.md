@@ -49,12 +49,16 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it.
 
 ### Autopilot / Autobrake / Parking Brake
-| [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
-| :---:     | :---:                 | :---:                 | :---:                           |
-| **ALT+6** | **ALT+6** (3 seconds) | **ALT+6** (3 seconds) | **ALT+7**                       |
-| ProGrade  | ProGrade              | Destination           | Parking Brake  (LOAD, AI Mode)  |
-|           | Orbiting ARM          |                       | Destination Autobrake (SPC Mode)|
-|           | Maintaining Orbit     |                       |                                 |
+|          | Autopilot | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
+| :---     | :---:     | :---:     | :---:             | :---:       | :---:                 |
+|          | **ALT+6** | **ALT+6** | **ALT+6**         | **ALT+6**   | **ALT+7**             |
+| **LOAD** |           |           |                   |             | Parking Brake         |
+| **AI**   | Alt. Hold |           |                   |             | Parking Brake         |
+| **SPC**  |           | ProGrade  | ProGrade          | Destination | Destination Autobrake |
+|          |           |           | Orbiting ARM      |             |                       |
+| **ORB**  |           |           | ProGrade          | Destination | Destination Autobrake |
+|          |           |           | Maintaining Orbit |             |                       |
+| **DMG**  |           |           | Orbiting ARM      |             |                       |
 
 > Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
