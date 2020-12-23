@@ -56,9 +56,9 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | **AI**   | Alt. Hold |           |                   |             | Parking Brake         |
 | **SPC**  |           | ProGrade  | ProGrade          | Destination | Destination Autobrake |
 |          |           |           | Orbiting ARM      |             |                       |
-| **ORB**  |           |           | ProGrade          | Destination | Destination Autobrake |
+| **ORB**  |           |           | ProGrade          | Destination |                       |
 |          |           |           | Maintaining Orbit |             |                       |
-| **DMG**  |           |           | Orbiting ARM      |             |                       |
+| **DMG**  |           |           | Orbiting ARM      |             | Parking Brake         |
 
 > Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
