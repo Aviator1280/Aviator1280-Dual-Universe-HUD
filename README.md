@@ -259,7 +259,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 # Helmet HUD Installation
 1. Place the **Programming Board**;
 2. Past the content of the file **Helmet HUD.txt** on the **Programming Board**;
-3. *Link* the **Databank** to it and be sure it is also *Linked* to the **Cockpit/Seat**. (If yo uare using the **Navigator Interface** the **Databank** is the same)
+3. *Link* the **Databank** to it and be sure it is also *Linked* to the **Cockpit/Seat**. (If you are using the **Navigator Interface** the **Databank** is the same).
 
 [Return to INDEX](#INDEX)
 
