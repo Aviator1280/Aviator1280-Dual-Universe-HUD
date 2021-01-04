@@ -290,8 +290,8 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 [Return to INDEX](#INDEX)
 
 ## How To Use The Helmet HUD
-> NOTE: You can chose the color you prefer editing the **LUA Parameters** and when swhitching between the others (**SHIFT + L**) the color you edited will cycle with the others. When you type the **NAME** of the color keep the quotation marks (es. **"aqua"**).
-1. Recall to turn on the **Programming Board** dedicated to the **Helmet HUD**. If yo uare using a **Seat** you can just place it wherever you prefer but if you are using a **Cockpit** recall to turn it on before to enter otherwhise you will be unable to turn it on in flight;
+> NOTE: You can chose the color you prefer editing the **LUA Parameters** and when switching between the others (**SHIFT + L**) the color you edited will cycle with the others. When you type the **NAME** of the color keep the quotation marks (es. **"aqua"**).
+1. Recall to turn on the **Programming Board** dedicated to the **Helmet HUD**. If you are using a **Seat** you can just place it wherever you prefer but if you are using a **Cockpit** recall to turn it on before to enter otherwise you will be unable to turn it on in flight;
 > NOTE: In this case *Switches*, *detection Zones* and so on will turn on the **Programming Board** but the script will not run. You need to turn the **Programming Board** pressing **F**.
 2. When you switch to a *Flight Mode* for example **AI** Mode the **Helmet HUD** will be off. To show/hide it press again the key for the *Flight Mode* you are using;
 3. To switch between colors press **SHIFT + L** which is the same key used for the ship *Headlights*.
