@@ -1,4 +1,4 @@
-# Overview (HUD + Navigator Interface + WayPoint Sync)
+# Overview (HUD + Helmet HUD + Navigator Interface + WayPoint Sync)
 
 ## Command/Hover Seat and Cockpit supported
 
@@ -27,8 +27,10 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [KEYS](#keys)|
 | [Requirements](#requirements)|
 | [HUD Installation](#hud-installation)|
+| [HELMET HUD Installation](#helmet-hud-installation)|
 | [NAVIGATOR INTERFACE Installation](#navigator-interface-installation)|
 | [WAYPOINT SYNC Installation](#waypoint-sync-installation)|
+| [How To Use - Helmet HUD](#how-to-use-helmet-hud)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [How To Use - WayPoint Sync](#how-to-use-the-waypoint-sync)|
 | [Warnings](#Warnings)|
@@ -37,16 +39,17 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 ## KEYS
 ### Functions
-| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3)   | [ORB](#orb-alt4)  | [DMG](#dmg-alt5)     |
-| :---:     | :---:              | :---:                     | :---:             | :---:                |
-| **ALT+1** | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            |
-| DOW       | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        |
-| Loading   | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       |
-| ZFW       | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List |
-| FUEL      | WP Distance        | Space Orientation         | ... and more      |                      |
-| GW        | Acc                | Braking Distance and more |                   |                      |
+| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | Helmet HUD |
+| :---:       | :---:              | :---:                     | :---:             | :---:                | :---:            |
+| **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **ALT + Mode n** |
+| DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | HUD On / Off     |
+| Loading     | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       | **SHIFT + L**    |
+| ZFW         | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List | Switch Colors    |
+| FUEL        | WP Distance        | Space Orientation         | ... and more      |                      |                  |
+| GW          | Acc                | Braking Distance and more |                   |                      |                  |
+| Coming Soon | Helmet HUD         | Coming Soon               | Coming Soon       | Coming Soon          |                  |
 
-> NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it.
+> NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
 
 ### Autopilot / Autobrake / Parking Brake
 |          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
@@ -63,12 +66,12 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 > Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
 ### DU Widgets
-|**ALT+8**    | **ALT+9**  |
-| ---         | ---        |
-| Hide/Show   | Hide/Show  |
-|Radar Widget | DU Widgets |
+|**ALT+8**    | **ALT+9**  | **SPC** Mode     |
+| ---         | ---        | ---              |
+| Hide/Show   | Hide/Show  | Auto Warp Widget |
+|Radar Widget | DU Widgets |                  |
 
-> Note: When you seat the DU Widgets are hided by default. You can change this behaviour in *Lua Paramenters* flagging (*Widgets_ON_OFF*). 
+> Note: When you seat the DU Widgets are hided by default. You can change this behaviour in *Lua Paramenters* flagging (*Widgets_ON_OFF*). The **Warp** Widget will come out automatically when a *Warp destination* has been set and the *Jump* is possible. Any *Warp Status* Message is displayed in the **SPC** Mode.
 
 [Return to INDEX](#INDEX)
 
@@ -200,9 +203,10 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 
 ## Ship Requirements
 * To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs at least **2 slots**, **3 slots** if you also connect at least 1 **Space Fuel Tank**.
-* To add the **Navigator Interface** additional **1 slot**
+* To add the **Navigator Interface** additional **1 slot** for the *databank*.
+* To add the **Helmet HUD** you can use the same *databank* used for the **Navigator Interface**
 * The rest of the **slots** are **optionals** and  up to you.
-> Note: The **HUD** and the **Navigator Interface** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** runs on a **Programming Board** and the only *Element* they share is a **Databank**.
+> Note: The **HUD**, the **Navigator Interface** and the **Helmet HUD** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** and the **Helmet HUD** run on different **Programming Boards** (1 each) and the only *Element* they share is a **Databank**.
 ### HUD
 #### Required Slots and Elements
 1. **Core** *(Linked Automatically)*;
@@ -219,6 +223,11 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 6. **Cargo Containers** or **Container HUB** *(Linked Manually refer to the Note)*;
 > Note: according your free **slots** available you can chose to connect them all or not or connect 1 single **Container HUB** (recommended). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*.
 7. **Rocket Fuel Tanks** if you wish to see the *Level* the *Time Left* and if the *Rockets* are engaged *LINK* at least 1 **Rocket Fuel Tank**
+
+## Helmet HUD
+#### Required Elements
+1. **Programming Board**
+2. **Databank** (This databank need to be connected to the Command/Hover seat or Cockpit can be the same used for the **Navigator Interface**)
 
 ## Navigator Interface
 #### Required Elements
@@ -244,6 +253,13 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 2. Past it in **Dual Universe\Game\data\lua\autoconf\custom**;
 3. Connect **manually** the **optional** *Elements* if you want them (1 **Vertical Booster** or 1 **Hover Engine** or 1 **Telemeter** to have the *Radio Altimeter*, **Containers** or 1 **Container HUB** to get their mass in the *LOAD*). If you choose the file **(Fuel Tank Manual)** *LINK* at least 1 **Atmo Fuel Tank** and 1 **Space Fuel Tank** 
 4. In the game Right click on the **Command/Hover Seat or Cockpit -> Advanced -> Update Custom Autoconf List**. Do it again and this time open **Run Custom Autoconfigure** choose the configuration you want to install.
+
+[Return to INDEX](#INDEX)
+
+# Helmet HUD Installation
+1. Place the **Programming Board**;
+2. Past the content of the file **Helmet HUD.txt** on the **Programming Board**;
+3. *Link* the **Databank** to it and be sure it is also *Linked* to the **Cockpit/Seat**. (If yo uare using the **Navigator Interface** the **Databank** is the same)
 
 [Return to INDEX](#INDEX)
 
@@ -273,8 +289,17 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 [Return to INDEX](#INDEX)
 
+## How To Use The Helmet HUD
+> NOTE: You can chose the color you prefer editing the **LUA Parameters** and when swhitching between the others (**SHIFT + L**) the color you edited will cycle with the others. When you type the **NAME** of the color keep the quotation marks (es. **"aqua"**).
+1. Recall to turn on the **Programming Board** dedicated to the **Helmet HUD**. If yo uare using a **Seat** you can just place it wherever you prefer but if you are using a **Cockpit** recall to turn it on before to enter otherwhise you will be unable to turn it on in flight;
+> NOTE: In this case *Switches*, *detection Zones* and so on will turn on the **Programming Board** but the script will not run. You need to turn the **Programming Board** pressing **F**.
+2. When you switch to a *Flight Mode* for example **AI** Mode the **Helmet HUD** will be off. To show/hide it press again the key for the *Flight Mode* you are using;
+3. To switch between colors press **SHIFT + L** which is the same key used for the ship *Headlights*.
+
+[Return to INDEX](#INDEX)
+
 ## How To Use The Navigator Interface
-> Note: You can set up your favourite colors editing the **Lua Parameters**. The colors need to be in the **\" \"** and need to be a **string** *(ex blue)*. If you insert colors in **RGB** or in the format **#00ffff** it will not work and to see them again in the **Lua Parameters** you will need to reload the script. A good tool to find your favourite name colors can be found [HERE](https://www.w3schools.com/colors/colors_picker.asp).
+> Note: You can set up your favourite colors in the **Settings** and inserting them in **RGB**. A good tool to find your favourite name colors can be found [HERE](https://www.w3schools.com/colors/colors_picker.asp).
 
 1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored WayPoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
@@ -296,7 +321,9 @@ When you have a *WayPoint* stored in the page *From* or *Destination* you can si
 * **Page 1** Here you can set your *MTOW* in Tons instead to use the **Lua Paramenters** (the **Lua Parameters** can be set before to seat but can't be changed while flying instead everything you set on the screen is live). The *MTOW* will be the reference for the maximum number of *Warp Cells* needed to cover a distance and it will be also sent to the HUD for the pilot to check if the ship is within the take off limits.
 The *Autobrake* box is where you can set the distance you want your ship to stop from your destination if the system is armed. Note that this is the distance from the center of the planet/moon/wp (es. Alioth radius 0,63 Su, it means the ship will stop at about 1.4 Su from the planet surface).
 * **Page 2** Here you can manually store *WayPoints* giving them a name and inserting the coordinates given from the Map.
-* **Page 3** Here you can syncronize *WayPoints* stored in your ship and in your base. Pressing **Downlink** you will send all your *WayPoint* list to your base where they will be stored and displayed. If some *WayPoint* has the same name of an existing one the existing one will be overwritten. Pressing **Uplink** all the stored *WayPoints* in your base **Databank** will be sent to your ship. The ship *WayPoint* list will not be overwritten and additional *WayPoints* will be added even if they have the same name. If you want to prevent this behaviour for any reason just be sure you sent all your *WayPoints* to your base **Databank** then before to **Uplink** clear your ship list so you will not have duplicates.
+* **Page 3** Here you can syncronize *WayPoints* stored in your ship and in your base and assign a *Ship ID*. Pressing **Downlink** you will **send** all your *WayPoint* list to your base where they will be stored and displayed. If some *WayPoint* has the same name of an existing one the existing one will be overwritten. Pressing **Uplink** all the stored *WayPoints* in your base **Databank** will be sent to your ship. The ship *WayPoint* list will not be overwritten and additional *WayPoints* will be added even if they have the same name. If you want to prevent this behaviour for any reason just be sure you sent all your *WayPoints* to your base **Databank** then before to **Uplink** clear your ship list so you will not have duplicates.
+* **Page 4** Here you can set up your favourite colors for the screen.
+* **Page 5** this is to Center accuratelly teh **DMG Reports** Ship layout in to the TOP and SIDE view.
 
 7. **Pe Target Altitude** is the lowest altitude you want to orbit around a planet/moon. It will be represented with a white circle on the HUD around the planet/moon in the **ORB** *MFD page*. It will also be the reference altitude for the **Mode 2** of the autopilot to keep a circular orbit. Also this can be setted in the **Lua Parameter** but doing on the screen is live and no need to stand up or go out of the Cockpit. This parameter can also be changed while the autopilot is ON and it will adapt to the new altitude.
 
