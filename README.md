@@ -30,7 +30,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [HELMET HUD Installation](#helmet-hud-installation)|
 | [NAVIGATOR INTERFACE Installation](#navigator-interface-installation)|
 | [WAYPOINT SYNC Installation](#waypoint-sync-installation)|
-| [How To Use - Helmet HUD](#how-to-use-helmet-hud)|
+| [How To Use - Helmet HUD](#how-to-use-the-helmet-hud)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [How To Use - WayPoint Sync](#how-to-use-the-waypoint-sync)|
 | [Warnings](#Warnings)|
