@@ -202,20 +202,19 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 # Requirements
 
 ## Ship Requirements
-* To run the **HUD** your **Command/Hover Seat** or **Cockpit** needs at least **2 slots**, **3 slots** if you also connect at least 1 **Space Fuel Tank**.
-* To add the **Navigator Interface** additional **1 slot** for the *databank*.
+* To add the **Navigator Interface** **1 slot** for the *databank*.
 * To add the **Helmet HUD** you can use the same *databank* used for the **Navigator Interface**
 * The rest of the **slots** are **optionals** and  up to you.
 > Note: The **HUD**, the **Navigator Interface** and the **Helmet HUD** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** and the **Helmet HUD** run on different **Programming Boards** (1 each) and the only *Element* they share is a **Databank**.
 ### HUD
 #### Required Slots and Elements
-1. **Core** *(Linked Automatically)*;
-2. **Atmo Fuel Tank** at least 1 *(Linked Automatically refer to the Note)*;
-> Note: 2 version of autoconfiguration file, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second file and *LINK* only **1 Atmo Fuel Tank**, the **Space Fuel tanks** are not mandatory. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
+1. **Core** *(Linked Automatically)*.
 #### Required Slot and Element if the Navigator Interface is installed
-3. **Databank** 1 *(Linked Automatically refer to the Note)*;
+2. **Databank** 1 *(Linked Automatically refer to the Note)*;
 > Note: if your ship has more than 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before installing it if you were using the databank for another script please remove the **Dynamic Properties**.
-#### Optional Slots and Elements (Space Fuel Tanks, Radioaltimeter, Cargo Containers, Rocket Fuel Tanks)
+#### Optional Slots and Elements (Atmo Fuel Tank, Space Fuel Tanks, Radioaltimeter, Cargo Containers, Rocket Fuel Tanks)
+3. **Atmo Fuel Tank** *(Linked Automatically refer to the Note)*;
+> Note: 2 version of autoconfiguration file, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second file and *LINK* just the **Fuel Tanks** you need to monitor. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
 4. **Space Fuel Tanks** *(Linked Automatically refer to the Note)*;
 > Note: automatically linked unless you are using the file **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**.
 5. **Vertical Booster** 1 or **Hover Engine** 1 or **Telemeter** 1 *(Linked Manually refer to the Note)*;
