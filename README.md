@@ -4,6 +4,8 @@
 
 ### For support and keep updated please be my guest [Discord](https://discord.gg/Rve2jjZbvz)
 
+### If you like my work and you think it deserves something make a [DONATION](https://paypal.me/aviator1280hud?locale.x=en_GB). Very appreciate. Thank you.
+
 I'm an airline pilot and when for the first time I jumped in the DU cockpit everything I could think was "this thing is not made to fly".
 
 With the help of the LUA community I got an introduction to script in LUA so I decided to apply what I was learning to have a better flying experience with
