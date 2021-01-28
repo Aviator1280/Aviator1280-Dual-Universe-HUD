@@ -37,6 +37,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [How To Use - Helmet HUD](#how-to-use-the-helmet-hud)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [How To Use - WayPoint Sync](#how-to-use-the-waypoint-sync)|
+| [How To Use - Fuel Module](#how-to-use-the-fuel-module)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
 | [Credits](#Credits)|
