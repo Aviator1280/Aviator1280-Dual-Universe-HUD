@@ -44,7 +44,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 ## KEYS
 ### Functions
-| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | Helmet HUD | AGG |
+| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | [Helmet HUD](#how-to-use-the-helmet-hud) | AGG |
 | :---:       | :---:              | :---:                     | :---:             | :---:                | :---:            | :---:                       |
 | **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **ALT + Mode n** | **ALT+G**                   |
 | DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | HUD On / Off     | AGG STBY/OFF                |
