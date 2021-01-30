@@ -1,4 +1,5 @@
-# Overview (HUD + Helmet HUD + Navigator Interface + WayPoint Sync)
+# Overview 
+## HUD - Helmet HUD - Navigator Interface -WayPoint Sync - Fuel Module
 
 ## Command/Hover Seat and Cockpit supported
 
@@ -32,24 +33,26 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [HELMET HUD Installation](#helmet-hud-installation)|
 | [NAVIGATOR INTERFACE Installation](#navigator-interface-installation)|
 | [WAYPOINT SYNC Installation](#waypoint-sync-installation)|
+| [FUEL MODULE Installation](#fuel-module-installation)|
 | [How To Use - Helmet HUD](#how-to-use-the-helmet-hud)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [How To Use - WayPoint Sync](#how-to-use-the-waypoint-sync)|
+| [How To Use - Fuel Module](#how-to-use-the-fuel-module)|
 | [Warnings](#Warnings)|
 | [Contacts](#Contacts)|
 | [Credits](#Credits)|
 
 ## KEYS
 ### Functions
-| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | Helmet HUD |
-| :---:       | :---:              | :---:                     | :---:             | :---:                | :---:            |
-| **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **ALT + Mode n** |
-| DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | HUD On / Off     |
-| Loading     | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       | **SHIFT + L**    |
-| ZFW         | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List | Switch Colors    |
-| FUEL        | WP Distance        | Space Orientation         | ... and more      |                      |                  |
-| GW          | Acc                | Braking Distance and more |                   |                      |                  |
-| Coming Soon | Helmet HUD         | Coming Soon               | Coming Soon       | Coming Soon          |                  |
+| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | Helmet HUD | AGG |
+| :---:       | :---:              | :---:                     | :---:             | :---:                | :---:            | :---:                       |
+| **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **ALT + Mode n** | **ALT+G**                   |
+| DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | HUD On / Off     | AGG STBY/OFF                |
+| Loading     | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       | **SHIFT + L**    | **ALT+6**                   |
+| ZFW         | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List | Switch Colors    | AGG ON                      |
+| FUEL        | WP Distance        | Space Orientation         | ... and more      |                      |                  | **ALT+ Space/C**            |
+| GW          | Acc                | Braking Distance and more |                   |                      |                  | Set AGG Target Altitude     |
+|             | Helmet HUD         |  Helmet HUD               | Helmet HUD        |                      |                  | Or from Navigator Interface |
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
 
@@ -116,6 +119,7 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 ![DMG_page](/gallery/dmg_explained.png)
 
 ***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you switch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
+> Note: This Mode can be disabled from **LUA Parameters** in case the ship has about 500 *Elements* and the *CPU Overload* occurs.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -216,9 +220,9 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 > Note: if your ship has more than 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before installing it if you were using the databank for another script please remove the **Dynamic Properties**.
 #### Optional Slots and Elements (Atmo Fuel Tank, Space Fuel Tanks, Radioaltimeter, Cargo Containers, Rocket Fuel Tanks)
 3. **Atmo Fuel Tank** *(Linked Automatically refer to the Note)*;
-> Note: 2 version of autoconfiguration file, **Aviator1280_Command_Seat.conf** and **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**. If you don't have enough **slots** you can use the second file and *LINK* just the **Fuel Tanks** you need to monitor. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
+> Note: 2 version of autoconfiguration file, **Aviator1280.conf** and **Aviator1280_(Fuel Module).conf**. If you don't have enough **slots** you can use the second file and *LINK* just the **Fuel Tanks** you need to monitor or link the fuel tank to a dedicater **Programming Board**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
 4. **Space Fuel Tanks** *(Linked Automatically refer to the Note)*;
-> Note: automatically linked unless you are using the file **Aviator1280_Command_Seat_(Fuel Tank Manual).conf**.
+> Note: automatically linked unless you are using the file **Aviator1280_(Fuel Module).conf**.
 5. **Vertical Booster** 1 or **Hover Engine** 1 or **Telemeter** 1 *(Linked Manually refer to the Note)*;
 > Note: **Vertical Booster** and **Hover Engine**, while they have a 60 meters range instead of 100 meters they returns water as an obstacle and the telemeter doesn't.
 6. **Cargo Containers** or **Container HUB** *(Linked Manually refer to the Note)*;
@@ -243,8 +247,14 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 1. **Programming Board**
 2. **Screen**
 3. **Databank**
-4. **Emitter**
-5. **Receiver**
+4. **Emitter** (If you need to use the WP Sync)
+5. **Receiver** (If you need to use the WP Sync)
+6. **AGG** (If you havd an AGG and you want control it also when not at the pilot seat)
+
+## Fuel Module
+#### Required Emelents
+1. **Programming board**
+2. **Databank** (This databank need to be connected to the Command/Hover seat or Cockpit)
 
 [Return to INDEX](#INDEX)
 
@@ -290,6 +300,15 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 [Return to INDEX](#INDEX)
 
+# Fuel Module Installation
+1. Place the **Programming Board**;
+2. *Link* to it the *Ship Core* and the *Databank*;
+3. *Link* the **Fuel Tanks** you want to monitor;
+4. apply the code in the same way you probably already did for the other mmodules;
+> NOTE: The system will swap, when activated and the **HUD** is in **LOAD Mode** the *Fuel Tanks* that are showed in the HUD (if any) and thise *Linked* to the **Programming board** IF the *Fuel  Tanks* are the same type otherwhise what you will see will be a mix. You can also have more **Programming Board** (ex 1 for all the Atmo Fuel Tank, 1 for all the Space Fuel Tank). The possibilities are many. You can also use this system to create a group of Fuel tank that you want to monitor time to time simply turning the **Programming Board** on.
+
+[Return to INDEX](#INDEX)
+
 ## How To Use The Helmet HUD
 > NOTE: You can chose the color you prefer editing the **LUA Parameters** and when switching between the others (**SHIFT + L**) the color you edited will cycle with the others. When you type the **NAME** of the color keep the quotation marks (es. **"aqua"**).
 ![Heelmet_HUD](/gallery/helmet_hud.png)
@@ -306,7 +325,7 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored WayPoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
-2. **Stored WP 1/2** is one of the 2 pages where you can see the name you gave to the *WayPoints* you stored. You can scroll between the 2 pages with the up down arrow next to the keypad on the screen. Here you can also select with the small arrow the *WayPoints* you want to clear and press **CLR WP**.
+2. **WP/ATLAS** are the pages where you can see the name you gave to the *WayPoints* you stored or the **ATLAS** database. You can scroll between pages with the up down arrow next to the keypad on the screen. Here you can also select with the small arrow the *WayPoints* you want to clear and press **CLR WP**, instead if after selecting the *wayPoints*/*Planets*/*Moons* you push on **From** or **Destination** you will "Copy" the selected location in the new page to be *execute* pressing **ENT**.
 
 3. **Su Time Calculator** is a simple tool where to insert an Su distance a speed and you will get the time to travel it, the Warp Cells required in case you warp at the actual weight and at the MTOW (supposing you want to travel to load your ship and you want to go back for planning purpose). Note the MTOW is the one you set on the **Settings**.
 In the **Distance** box if you insert a destination it will automatically set the distance from your present position *(PPOS)* to the destination. To remove that distance you need to *CLR* the *Destination*.
@@ -330,7 +349,6 @@ The *Autobrake* box is where you can set the distance you want your ship to stop
 
 7. **Pe Target Altitude** is the lowest altitude you want to orbit around a planet/moon. It will be represented with a white circle on the HUD around the planet/moon in the **ORB** *MFD page*. It will also be the reference altitude for the **Mode 2** of the autopilot to keep a circular orbit. Also this can be setted in the **Lua Parameter** but doing on the screen is live and no need to stand up or go out of the Cockpit. This parameter can also be changed while the autopilot is ON and it will adapt to the new altitude.
 
-8. **Show WP** will simply bring you to the **Stored WP** page.
 
 [Return to INDEX](#INDEX)
 
@@ -340,6 +358,11 @@ The *Autobrake* box is where you can set the distance you want your ship to stop
 2. The **Screen** will show you a table  with number of *WayPoints* received, the *WayPoint* list, a *Progress Bar* when syncing and the *WayPoints* stored.
 3. Once the *WayPoints* are stored the next time you will turn on the **Programming Board** the list of them will be displayed in a different colour (Cyan) to distinguish them from a new series of incoming *WayPoints*
 4. On the right side a simple series of *buttons*. To scroll the table up, down or to go back to the top. A *button* **Send** to send all the *WayPoints* stored to all the ship with the **Navigator Interface** turned ON. A *button* **CLR DB** to clear **ALL** the *WayPoints* stored. (It is my intention to add the possibility to clear only selected *WayPoints*)
+
+[Return to INDEX](#INDEX)
+
+## How To Use The Fuel Module
+When at your pilot seat select **LOAD Mode** if you need to switch the **Programming board** ON or OFF. If you turn ON the **Programming Board** before to seat the data will be already presented. The only combination you can't do is to show the same *Fuel Tank Type* from 2 different sources at the same time. The system will pick up only those from the **Programming Board** or in case of multiple **Programming Boards** from the latest switched ON. 
 
 [Return to INDEX](#INDEX)
 
