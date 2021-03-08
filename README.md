@@ -56,19 +56,20 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
 
-### Autopilot / Autobrake / Parking Brake
+### Autopilot / Autobrake / Parking Brake / Gyro ON/OFF
 |          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
-| :---     | :---:     | :---:     | :---:             | :---:       | :---:                 |
-|          | **ALT+6** | **ALT+6** | **ALT+6**         | **ALT+6**   | **ALT+7**             |
-| **LOAD** |           |           |                   |             | Parking Brake         |
-| **AI**   | Alt. Hold |           |                   |             | Parking Brake         |
-| **SPC**  |           | ProGrade  | ProGrade          | Destination | Destination Autobrake |
-|          |           |           | Orbiting ARM      |             |                       |
-| **ORB**  |           |           | ProGrade          | Destination |                       |
-|          |           |           | Maintaining Orbit |             |                       |
-| **DMG**  |           |           | Orbiting ARM      |             | Parking Brake         |
+| :---     | :---:     | :---:           | :---:             | :---:       | :---:                 | :---:         |
+|          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             | **Shift + MMW** |
+| **LOAD** |           |                 |                   |             | Parking Brake         | Gyro ON/OFF   |
+| **AI**   | Alt. Hold | Fly Route or WP |                   |             | Parking Brake         | Gyro ON/OFF   |
+| **SPC**  |           | ProGrade        | ProGrade          | Destination | Destination Autobrake | Gyro ON/OFF   |
+|          |           |                 | Orbiting ARM      |             |                       | Gyro ON/OFF   |
+| **ORB**  |           |                 | ProGrade          | Destination |                       | Gyro ON/OFF   |
+|          |           |                 | Maintaining Orbit |             |                       | Gyro ON/OFF   |
+| **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Gyro ON/OFF   |
 
-> Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
+> Note 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
+> Note 2: **Gyro ON/OFF** will work only in first person view
 
 ### DU Widgets
 |**ALT+8**    | **ALT+9**  | **SPC** Mode     |
