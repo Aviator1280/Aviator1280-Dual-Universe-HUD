@@ -56,19 +56,20 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
 
-### Autopilot / Autobrake / Parking Brake
-|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)|
-| :---     | :---:     | :---:     | :---:             | :---:       | :---:                 |
-|          | **ALT+6** | **ALT+6** | **ALT+6**         | **ALT+6**   | **ALT+7**             |
-| **LOAD** |           |           |                   |             | Parking Brake         |
-| **AI**   | Alt. Hold |           |                   |             | Parking Brake         |
-| **SPC**  |           | ProGrade  | ProGrade          | Destination | Destination Autobrake |
-|          |           |           | Orbiting ARM      |             |                       |
-| **ORB**  |           |           | ProGrade          | Destination |                       |
-|          |           |           | Maintaining Orbit |             |                       |
-| **DMG**  |           |           | Orbiting ARM      |             | Parking Brake         |
+### Autopilot / Autobrake / Parking Brake / Gyro ON/OFF
+|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)| Gyro ON/OFF |
+| :---     | :---:     | :---:           | :---:             | :---:       | :---:                 | :---:         |
+|          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             | **Shift + MMW** |
+| **LOAD** |           |                 |                   |             | Parking Brake         | Gyro ON/OFF   |
+| **AI**   | Alt. Hold | Fly Route or WP |                   |             | Parking Brake         | Gyro ON/OFF   |
+| **SPC**  |           | ProGrade        | ProGrade          | Destination | Destination Autobrake | Gyro ON/OFF   |
+|          |           |                 | Orbiting ARM      |             |                       | Gyro ON/OFF   |
+| **ORB**  |           |                 | ProGrade          | Destination |                       | Gyro ON/OFF   |
+|          |           |                 | Maintaining Orbit |             |                       | Gyro ON/OFF   |
+| **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Gyro ON/OFF   |
 
-> Note: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
+> Note 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
+> Note 2: **Gyro ON/OFF** will work only in first person view
 
 ### DU Widgets
 |**ALT+8**    | **ALT+9**  | **SPC** Mode     |
@@ -345,7 +346,10 @@ The *Autobrake* box is where you can set the distance you want your ship to stop
 * **Page 2** Here you can manually store *WayPoints* giving them a name and inserting the coordinates given from the Map.
 * **Page 3** Here you can syncronize *WayPoints* stored in your ship and in your base and assign a *Ship ID*. Pressing **Downlink** you will **send** all your *WayPoint* list to your base where they will be stored and displayed. If some *WayPoint* has the same name of an existing one the existing one will be overwritten. Pressing **Uplink** all the stored *WayPoints* in your base **Databank** will be sent to your ship. The ship *WayPoint* list will not be overwritten and additional *WayPoints* will be added even if they have the same name. If you want to prevent this behaviour for any reason just be sure you sent all your *WayPoints* to your base **Databank** then before to **Uplink** clear your ship list so you will not have duplicates.
 * **Page 4** Here you can set up your favourite colors for the screen.
-* **Page 5** this is to Center accuratelly teh **DMG Reports** Ship layout in to the TOP and SIDE view.
+* **Page 5** This is to Center accuratelly teh **DMG Reports** Ship layout in to the TOP and SIDE view.
+* **Page 6** Very useful tool that allows you to keep clean the *Databank* improving performances. You can keep the data you want to keep. remove the Flag if you want to erase them.
+* **Page 7** A system that allows you to create Routes. Input text in this case only from your own keyboard. Select an empty slot and press Enter. type the Route name. Select agian the route if it shifted up due to alphabetic order and this time press **ENT**. Type the name of your WPs in the same way you did for the Route name. The name have to be exactly the same of the Stored WP to be recognised. To go back to the Route List press **CLR**.
+To select and fly the Route simply press **Destination**, the route will be presented in another page with its WPs and your distance respect each of them. You can select any WP at any time. When overflying a WP at the distance you preselected on the *LUA Parameters* (standard 0.5 km) the system will  sequence the next WP. If there are no more WPs or you left a discontinuity between WPs the system will restart from the WP1. If you want to terminate at your last WP without to follow the flight add as your last WP "HOLD" or "hold", the system will stop to sequensce the WPs and if you were flying with the **Autopilot ON** it will start to fly a circular orbit.
 
 7. **Pe Target Altitude** is the lowest altitude you want to orbit around a planet/moon. It will be represented with a white circle on the HUD around the planet/moon in the **ORB** *MFD page*. It will also be the reference altitude for the **Mode 2** of the autopilot to keep a circular orbit. Also this can be setted in the **Lua Parameter** but doing on the screen is live and no need to stand up or go out of the Cockpit. This parameter can also be changed while the autopilot is ON and it will adapt to the new altitude.
 
