@@ -58,20 +58,20 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
 
-### Autopilot / Autobrake / Parking Brake / Gyro ON/OFF
-|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)| Gyro ON/OFF |
-| :---     | :---:     | :---:           | :---:             | :---:       | :---:                 | :---:         |
-|          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             | **Shift + MMW** |
-| **LOAD** |           |                 |                   |             | Parking Brake         | Gyro ON/OFF   |
-| **AI**   | Alt. Hold | Fly Route or WP |                   |             | Parking Brake         | Gyro ON/OFF   |
-| **SPC**  |           | ProGrade        | ProGrade          | Destination | Destination Autobrake | Gyro ON/OFF   |
-|          |           |                 | Orbiting ARM      |             |                       | Gyro ON/OFF   |
-| **ORB**  |           |                 | ProGrade          | Destination |                       | Gyro ON/OFF   |
-|          |           |                 | Maintaining Orbit |             |                       | Gyro ON/OFF   |
-| **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Gyro ON/OFF   |
+### Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF
+|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)| Gyro or [VTOL](#vtol-shiftmmb) ON/OFF |
+| :---     | :---:     | :---:           | :---:             | :---:       | :---:                 | :---:               |
+|          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             | **Shift + MMB**     |
+| **LOAD** |           |                 |                   |             | Parking Brake         | Gyro or VTOL ON/OFF |
+| **AI**   | Alt. Hold | Fly Route or WP |                   |             | Parking Brake         | Gyro or VTOL ON/OFF |
+| **SPC**  |           | ProGrade        | ProGrade          | Destination | Destination Autobrake | Gyro or VTOL ON/OFF |
+|          |           |                 | Orbiting ARM      |             |                       | Gyro or VTOL ON/OFF |
+| **ORB**  |           |                 | ProGrade          | Destination |                       | Gyro or VTOL ON/OFF |
+|          |           |                 | Maintaining Orbit |             |                       | Gyro or VTOL ON/OFF |
+| **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Gyro or VTOL ON/OFF |
 
 > Note 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
-> Note 2: **Gyro ON/OFF** will work only in first person view
+> Note 2: **Gyro or VTOL ON/OFF** will work only in first person view. Using a Gyro disable the VTOL function.
 
 ### DU Widgets
 |**ALT+8**    | **ALT+9**  | **SPC** Mode     |
@@ -130,13 +130,18 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 
 #### Autopilot **(ALT+6)**
 
-* **Alt. Hold** (Altitude Hold)
+* **Alt. Hold** (Altitude Hold) (first press)
 Provided you are in **AI** *MFD Page* oce pressed the ship will:
 1. Inform you on the *ECAM* that the system is on;
 2. Inform you on the *ECAM* which is the altitude that will be maintained (it will be the altitude recorded when the system has been activated);
 3. Protect you from *Bank Angle* higher then **45** deg;
 4. Letting you make turns just banking the ship using the standard **Q** and **E**. At the moment for *bank angle* higer than **10** deg.
 > NOTE: the system it is not connected to the thrust, it will correct the *pitch* to maintain the altitude but eventually will *stall* if the speed is too low.
+
+* **Autopilot ON** (Fly to WP or follow Route) (second press)
+1. Inform you on the *ECAM* that the system is on;
+2. Max *Bank Angle* set to **30** deg.
+> NOTE: suggested the use of Cruise Mode whileAutopilot ON. This will let the system keep as much as possible the flight vector within a limit.
 
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
@@ -207,6 +212,12 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the *LUA parameter* you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot and then go back and point in the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
+
+#### VTOL **( Shift+MMB )**
+To make the **VTOL** system works you can't have a *Gyroscope* installed in your ship. You also need to **TAG** the engines you want to use for the Vertical take Off and Landing with the **TAG** "vtol_eng".
+When pressing ( *Shift+MMB* ) the engines will not go to 0 as it happens when pressing only the *MMB*.
+Altitude that can be reached depends on the amount of thrust and weight of your ship.
+Use ( *Space Bar* ) to climb and *C* to descent. 
 
 # Requirements
 
