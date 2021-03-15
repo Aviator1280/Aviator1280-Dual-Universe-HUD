@@ -143,6 +143,8 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 2. Max *Bank Angle* set to **30** deg.
 > NOTE: suggested the use of Cruise Mode whileAutopilot ON. This will let the system keep as much as possible the flight vector within a limit.
 
+**[Video 1](https://youtu.be/-_vdygYxul0)** | **[Video 2](https://youtu.be/DcNms8qMoBE)**
+
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
 
@@ -158,6 +160,8 @@ When **Mode 1** is active you don't have any more authority on direction.
 In the picture we are approaching a moon. Few minutes before reaching it (in this case 4 minutes 22 second) we need to adjust our trajectory. If we are pointing to the planet/moon we need to turn 90 degrees in the direction we want to "push" our trajectory and give thrust.
 Looking at the instrument on the left side when turning the ship you will see *Squares*, *lozenges* and a full *Dot*. The *Squares* and the *lozenges* indicate a turn of 90 degrees while the full *Dot* indicate the opposite direction of the velocity vector, practically a turn of 180 degrees.
 The *Yaw* and the *Pitch* can help you to see if we are pointing to the planet or not, if the numbers are equal it means our *Velocity Vector* (White) is centered on our destination (Cyan). At this moment we don't need to be very precise, we just don't want to crash into the planet/moon or go too far. Keep the *Yaw* and the *Pitch* slightly different. Consider farest you are smaller the different should be.
+
+**[Related Video](https://youtu.be/mVDru9Gs_ZI)**
 
 ![Mode 2](/gallery/mode2_explained.png)
 
@@ -214,10 +218,14 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 #### VTOL **(Shift+MMB)**
-To make the **VTOL** system works you can't have a *Gyroscope* installed in your ship. You also need to **TAG** the engines you want to use for the Vertical take Off and Landing with the **TAG** "vtol_eng".
+To make the **VTOL** system works you can't have a *Gyroscope* installed in your ship. You also need to *TAG* the engines you want to use for the Vertical take Off and Landing with the *TAG* **vtol_eng**.
 When pressing ( *Shift+MMB* ) the engines will not go to 0 as it happens when pressing only the *MMB*.
 Altitude that can be reached depends on the amount of thrust and weight of your ship.
-Use ( *Space Bar* ) to climb and *C* to descent. 
+Use ( *Space Bar* ) to climb and *C* to descent.
+
+**[Related Video](https://youtu.be/Q2eZ3fJU26c)**
+
+[Return to INDEX](#INDEX)
 
 # Requirements
 
@@ -354,13 +362,18 @@ When you have a *WayPoint* stored in the page *From* or *Destination* you can si
 5. **Destination** here you will set your destination that will be shown also in the HUD. Can be a planet/moon from the database or a **stored wp**.
 
 6. **Settings** is an important page, it has the basic settings of your ship.
-* **Page 1** Here you can set your *MTOW* in Tons instead to use the **Lua Paramenters** (the **Lua Parameters** can be set before to seat but can't be changed while flying instead everything you set on the screen is live). The *MTOW* will be the reference for the maximum number of *Warp Cells* needed to cover a distance and it will be also sent to the HUD for the pilot to check if the ship is within the take off limits.
-The *Autobrake* box is where you can set the distance you want your ship to stop from your destination if the system is armed. Note that this is the distance from the center of the planet/moon/wp (es. Alioth radius 0,63 Su, it means the ship will stop at about 1.4 Su from the planet surface).
+* **Page 1** Here you can set:
+1. *MTOW* in Tons instead to use the **Lua Paramenters** (the **Lua Parameters** can be set before to seat but can't be changed while flying instead everything you set on the screen is live). The *MTOW* will be the reference for the maximum number of *Warp Cells* needed to cover a distance and it will be also sent to the HUD for the pilot to check if the ship is within the take off limits.
+2. *Autobrake* box is where you can set the distance you want your ship to stop from your destination if the system is armed. Note that this is the distance from the center of the planet/moon/wp (es. Alioth radius 0,63 Su, it means the ship will stop at about 1.4 Su from the planet surface).
+3. *Dist. To WP* is the distance at which the system will activate the next WP in the Route. The distance has to be in *Km* and it is already corrected by the *Altitude*.
 * **Page 2** Here you can manually store *WayPoints* giving them a name and inserting the coordinates given from the Map.
+**[Video 1](https://youtu.be/Fd56X4Tc3us)** | **[Video 2](https://youtu.be/6RB8q8bMSC8)**
 * **Page 3** Here you can syncronize *WayPoints* stored in your ship and in your base and assign a *Ship ID*. Pressing **Downlink** you will **send** all your *WayPoint* list to your base where they will be stored and displayed. If some *WayPoint* has the same name of an existing one the existing one will be overwritten. Pressing **Uplink** all the stored *WayPoints* in your base **Databank** will be sent to your ship. The ship *WayPoint* list will not be overwritten and additional *WayPoints* will be added even if they have the same name. If you want to prevent this behaviour for any reason just be sure you sent all your *WayPoints* to your base **Databank** then before to **Uplink** clear your ship list so you will not have duplicates.
+**[Video 1](https://youtu.be/Eafc3xyuaCo)** | **[Video 2](https://youtu.be/-60T1CAxfd4)**
 * **Page 4** Here you can set up your favourite colors for the screen.
 * **Page 5** This is to Center accuratelly teh **DMG Reports** Ship layout in to the TOP and SIDE view.
 * **Page 6** Very useful tool that allows you to keep clean the *Databank* improving performances. You can keep the data you want to keep. remove the Flag if you want to erase them.
+**[Video](https://youtu.be/nmaxgpNMpnU)**
 * **Page 7** A system that allows you to create Routes. Input text in this case only from your own keyboard. Select an empty slot and press Enter. type the Route name. Select agian the route if it shifted up due to alphabetic order and this time press **ENT**. Type the name of your WPs in the same way you did for the Route name. The name have to be exactly the same of the Stored WP to be recognised. To go back to the Route List press **CLR**.
 To select and fly the Route simply press **Destination**, the route will be presented in another page with its WPs and your distance respect each of them. You can select any WP at any time. When overflying a WP at the distance you preselected on the *LUA Parameters* (standard 0.5 km) the system will  sequence the next WP. If there are no more WPs or you left a discontinuity between WPs the system will restart from the WP1. If you want to terminate at your last WP without to follow the flight add as your last WP "HOLD" or "hold", the system will stop to sequensce the WPs and if you were flying with the **Autopilot ON** it will start to fly a circular orbit.
 
