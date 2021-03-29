@@ -70,9 +70,9 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 |          |           |                 | Maintaining Orbit |             |                       | Gyro or VTOL ON/OFF |
 | **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Gyro or VTOL ON/OFF |
 
-> Note 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
+> NOTE 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
-> Note 2: **Gyro or VTOL ON/OFF** will work only in first person view. Using a Gyro disable the VTOL function.
+> NOTE 2: **Gyro or VTOL ON/OFF** will work only in first person view. Using a Gyro disable the VTOL function.
 
 ### DU Widgets
 |**ALT+8**    | **ALT+9**  | **SPC** Mode     |
@@ -80,7 +80,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | Hide/Show   | Hide/Show  | Auto Warp Widget |
 |Radar Widget | DU Widgets |                  |
 
-> Note: When you seat the DU Widgets are hided by default. You can change this behaviour in *Lua Paramenters* flagging (*Widgets_ON_OFF*). The **Warp** Widget will come out automatically when a *Warp destination* has been set and the *Jump* is possible. Any *Warp Status* Message is displayed in the **SPC** Mode.
+> NOTE: When you seat the DU Widgets are hided by default. You can change this behaviour in *Lua Paramenters* flagging (*Widgets_ON_OFF*). The **Warp** Widget will come out automatically when a *Warp destination* has been set and the *Jump* is possible. Any *Warp Status* Message is displayed in the **SPC** Mode.
 
 [Return to INDEX](#INDEX)
 
@@ -90,7 +90,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 ***(Load)*** Shows you the *DOW* (Dry Operating weight), *Load* (Cargo loaded), *ZFW* (Zero Fuel Weight), *Fuel* (Fuel Weight), *GW* (Gross Weight), *MTOW* (Maximum Take Off Weight) and the percentage of the *GW* respect to the *MTOW*.
 The left screen where messages appear, like in the picture above *"Parking brake ON"* it is called **ECAM** (*Electronic centralised aircraft monitor*). It is present in **ALL** the fligth modes.
 On the **ECAM** you will have useful **information**, **cautions** and **warnings**. It is always a good idea give it a look. For example it will show you if any of your *LINKED* fuel tank is going to have less then 20% of fuel and when it will be empty. When you seat it will also inform you on some system that eventually has not been *LINKED* for example it will tell you the *"R.A. not Installed"* (Radioaltimeter) which means you didn't *LINK* any **Vertical Booster** or **Hover Engine** or **Telemeter** that will make the Radioaltimeter work.
-> Note: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
+> NOTE: Editing the Command/Hover Seat or Cockpit **LUA Parameters** you can set up the desired *MTOW* (Maximum Take Off Weight). You can also set it up using the **Settings** in the **Navigator Interface** if installed. The **LUA Parameters** will reset if the script is reloaded while the setting in the **Navigator Interface** are instead stored in the *Databank*.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -108,7 +108,7 @@ You can also find the selected *WayPoint* distance and its direction (Cyan lozen
 
 ***(Space)*** This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is to align your velocity properly. Plus there are some indicators that will show you are 90 or 180 degrees respect to the *Velocity Vector*, this with the scope to make the most important space maneuvers.
 You can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure point and destination Planet/Moon with distances and the time you will need to travel to arrive at the current speed.
-> Note: If the **Navigator Interface** is not installed or the *Departure*/*Arrival* points are not selected the system will automatically choose for you. The *Departure* point will be your Present Position *(PPOS)* or if you are in an orbit the *(PPOS)* at the moment you will leave the orbit. The *Arrival* point will be the closest planet/moon. As a consequence when flying between planets/moons you will always see there the closest one.
+> NOTE: If the **Navigator Interface** is not installed or the *Departure*/*Arrival* points are not selected the system will automatically choose for you. The *Departure* point will be your Present Position *(PPOS)* or if you are in an orbit the *(PPOS)* at the moment you will leave the orbit. The *Arrival* point will be the closest planet/moon. As a consequence when flying between planets/moons you will always see there the closest one.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -123,7 +123,7 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 ![DMG_page](/gallery/dmg_explained.png)
 
 ***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you switch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
-> Note: This Mode can be disabled from **LUA Parameters** in case the ship has about 500 *Elements* and the *CPU Overload* occurs.
+> NOTE: This Mode can be disabled from **LUA Parameters** in case the ship has about 500 *Elements* and the *CPU Overload* occurs.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -186,7 +186,7 @@ For example you are climbing from a planet with a good trajectory, you can *ARM*
 Its logic, to make it simple, is that 2 seconds before to reach the *PE* or the *AP* if the opposite (*AP* or *PE*) is too high it will brake to reduce its altitude instead passing them if the opposite is too low it will give thrust to raise them. Messages on the screen will inform you what the automation is doing.
 In this picture you can see the ship maintaining the orbit we achieved before. Since we entered on an orbit at about 21000 mt the automation passing the *PE* gave thrust and increased the *AP* close to the preselecter *Target PE Altitude* of 35000 mt. If continuing the orbit when the ship will pass the *AP*, in an estimated time of almost 16 minutes, it will give thrust to bring the *PE* as well to an altitude of about 35000 mt. Note when the *PE* and the *AP* altitude are similar and you are in a circular orbit the *PE* and *AP* can change any time since they simply are the lowest and highest altitude of your orbit but they will be always opposite each other.
 The *Target PE Altitude* is represented on the screen by the white circle, when your orbit will be above that circle it will become Cyan. The yellow line starting from the center of the planet/moon is your position in reference to the *PE* and *AP*.
-> Note: If your ship has really strong brakes using **Mode 2** it may not be advisable. You can try but monitor it and in case take over. In the future I may find the way to reduce the effect of the brakes.
+> NOTE: If your ship has really strong brakes using **Mode 2** it may not be advisable. You can try but monitor it and in case take over. In the future I may find the way to reduce the effect of the brakes.
 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
@@ -234,22 +234,22 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 * To add the **Navigator Interface** **1 slot** for the *databank*.
 * To add the **Helmet HUD** you can use the same *databank* used for the **Navigator Interface**
 * The rest of the **slots** are **optionals** and  up to you.
-> Note: The **HUD**, the **Navigator Interface** and the **Helmet HUD** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** and the **Helmet HUD** run on different **Programming Boards** (1 each) and the only *Element* they share is a **Databank**.
+> NOTE: The **HUD**, the **Navigator Interface** and the **Helmet HUD** run separately. Listed below are the **slots** needed in your **Command/Hover seat** or  **Cockpit**, the **Navigator Interface** and the **Helmet HUD** run on different **Programming Boards** (1 each) and the only *Element* they share is a **Databank**.
 ### HUD
 #### Required Slots and Elements
 1. **Core** *(Linked Automatically)*.
 #### Required Slot and Element if the Navigator Interface is installed
 2. **Databank** 1 *(Linked Automatically refer to the Note)*;
-> Note: if your ship has more than 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before installing it if you were using the databank for another script please remove the **Dynamic Properties**.
+> NOTE: if your ship has more than 1 databank installed the autoconfig may link the wrong databank. Be sure the databank linked is the same databank you are using for the **Navigator Interface**. Before installing it if you were using the databank for another script please remove the **Dynamic Properties**.
 #### Optional Slots and Elements (Atmo Fuel Tank, Space Fuel Tanks, Radioaltimeter, Cargo Containers, Rocket Fuel Tanks)
 3. **Atmo Fuel Tank** *(Linked Automatically refer to the Note)*;
-> Note: 2 version of autoconfiguration file, **Aviator1280.conf** and **Aviator1280_(Fuel Module).conf**. If you don't have enough **slots** you can use the second file and *LINK* just the **Fuel Tanks** you need to monitor or link the fuel tank to a dedicater **Programming Board**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
+> NOTE: 2 version of autoconfiguration file, **Aviator1280.conf** and **Aviator1280_(Fuel Module).conf**. If you don't have enough **slots** you can use the second file and *LINK* just the **Fuel Tanks** you need to monitor or link the fuel tank to a dedicater **Programming Board**. The first file instead will connect **ALL** the **Atmo and Space Fuel Tanks** present on the ship.
 4. **Space Fuel Tanks** *(Linked Automatically refer to the Note)*;
-> Note: automatically linked unless you are using the file **Aviator1280_(Fuel Module).conf**.
+> NOTE: automatically linked unless you are using the file **Aviator1280_(Fuel Module).conf**.
 5. **Vertical Booster** 1 or **Hover Engine** 1 or **Telemeter** 1 *(Linked Manually refer to the Note)*;
-> Note: **Vertical Booster** and **Hover Engine**, while they have a 60 meters range instead of 100 meters they returns water as an obstacle and the telemeter doesn't.
+> NOTE: **Vertical Booster** and **Hover Engine**, while they have a 60 meters range instead of 100 meters they returns water as an obstacle and the telemeter doesn't.
 6. **Cargo Containers** or **Container HUB** *(Linked Manually refer to the Note)*;
-> Note: according your free **slots** available you can chose to connect them all or not or connect 1 single **Container HUB** (recommended). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*.
+> NOTE: according your free **slots** available you can chose to connect them all or not or connect 1 single **Container HUB** (recommended). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*.
 7. **Rocket Fuel Tanks** if you wish to see the *Level* the *Time Left* and if the *Rockets* are engaged *LINK* at least 1 **Rocket Fuel Tank**
 
 ## Helmet HUD
@@ -264,7 +264,7 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 3. **Databank** (This databank need to be connected to the Command/Hover seat or Cockpit)
 4. **Emitter** *(Not Required if you don't need to sync your WPs with the WP Base Sync)*
 5. **Receiver** *(Not Required if you don't need to sync your WPs with the WP Base Sync)
->Note: The **Screen** it is not mandatory. You can still use most of the functionalities typing commands in the *LUA Console*. The commands will be presented in the cconsole no need to recall them.
+> NOTE: The **Screen** it is not mandatory. You can still use most of the functionalities typing commands in the *LUA Console*. The commands will be presented in the cconsole no need to recall them.
 
 ## WayPoint Sync
 #### Required Emelents
@@ -344,8 +344,9 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 [Return to INDEX](#INDEX)
 
 ## How To Use The Navigator Interface
-> Note: You can set up your favourite colors in the **Settings** and inserting them in **RGB**. A good tool to find your favourite name colors can be found [HERE](https://www.w3schools.com/colors/colors_picker.asp).
-> If a **Screen** is *Linked* to don't use it you can deflag the option in the **LUA Parameters**. 
+> NOTE 1: You can set up your favourite colors in the **Settings** and inserting them in **RGB**. A good tool to find your favourite name colors can be found [HERE](https://www.w3schools.com/colors/colors_picker.asp).
+
+> NOTE 2: If a **Screen** is *Linked* to don't use it you can deflag the option in the **LUA Parameters**. 
 
 1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored WayPoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
