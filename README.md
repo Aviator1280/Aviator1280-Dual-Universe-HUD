@@ -218,7 +218,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 #### VTOL **(Shift+MMB)**
-To make the **VTOL** system works you can't have a *Gyroscope* installed in your ship. You also need to *TAG* the engines you want to use for the Vertical take Off and Landing with the *TAG* **vtol_eng**.
+To make the **VTOL** system work you can't have a *Gyroscope* installed in your ship. You also need to *TAG* the engines you want to use for the Vertical take Off and Landing with the *TAG* **vtol_eng**.
 When pressing ( *Shift+MMB* ) the engines will not go to 0 as it happens when pressing only the *MMB*.
 Altitude that can be reached depends on the amount of thrust and weight of your ship.
 Use ( *Space Bar* ) to climb and *C* to descent.
