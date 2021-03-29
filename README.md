@@ -71,6 +71,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Gyro or VTOL ON/OFF |
 
 > Note 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
+
 > Note 2: **Gyro or VTOL ON/OFF** will work only in first person view. Using a Gyro disable the VTOL function.
 
 ### DU Widgets
