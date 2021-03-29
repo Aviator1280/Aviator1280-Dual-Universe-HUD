@@ -260,10 +260,11 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 ## Navigator Interface
 #### Required Elements
 1. **Programming Board**
-2. **Screen** (Tested on XS, S, M, Transparent and not Transparent)
+2. **Screen** (Tested on XS, S, M, Transparent and not Transparent) 
 3. **Databank** (This databank need to be connected to the Command/Hover seat or Cockpit)
-4. **Emitter**
-5. **Receiver**
+4. **Emitter** *(Not Required if you don't need to sync your WPs with the WP Base Sync)*
+5. **Receiver** *(Not Required if you don't need to sync your WPs with the WP Base Sync)
+>Note: The **Screen** it is not mandatory. You can still use most of the functionalities typing commands in the *LUA Console*. The commands will be presented in the cconsole no need to recall them.
 
 ## WayPoint Sync
 #### Required Emelents
@@ -300,15 +301,14 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 # Navigator Interface Installation
 * Before to place the *Elements* be sure to remove from them the *Dynamic Properties*.
 1. Download **Navigator_Interface.txt** and save it wherever you prefer **or** copy the **RAW** format from GitHub;
-2. In the game place the **Programming Board**, the **Databank**, the **Screen**, the **Emitter**, the **Receiver** and don't *LINK* them yet;
-> Note: Remove the **Dynamic Properties** if any.
+2. In the game place the **Programming Board**, the **Databank**, the **Screen** (if required), the **Emitter** (if required), the **Receiver** (if required) and don't *LINK* them yet;
 3. Copy the content of the **.txt** file **or** if you already copied the **RAW** format make a Right click on the **Programming Board**. Go to **Advanced -> Paste Lua Configuration From Clipboard**;
 4. Enter in the **Lua Editor** of the **Programming Board** *( Look at it and press CTRL+L)* and check that **5** of the slots are grey and have the name of **core**, **screen**, **databank**, **emitter** and **receiver**. Check their order;
-3. Now *LINK* the *Elements* to the **Programming Board** according the sequence you saw in the **Lua Editor**;
-5. Activate the **Programming Board**. The first time you turn it on the top left button for some reason may not appear in that case switch it off then on.
+5. Now *LINK* the *Elements* to the **Programming Board** according the sequence you saw in the **Lua Editor**;
+>Note: If you are not using a **Screen** you still need to *Link* any element to fill the *screen Slot*, after all the *Elements* are *Linked* you can remove the *Element* linked to the *screen Slot*. 
+6. Activate the **Programming Board**. The first time you turn it on the top left button for some reason may not appear in that case switch it off then on.
 
-> NOTE: one day may be I will also find the solution to solve the error *HTML CONTENT CANNOT EXCEED 20000 CHARACTERS*, unfortunately the *SGUI* function at the moment is a bit bugged and I couldn't do exactly how I wanted to do and for now the work around is simply turn off then on the **Programming Board**. All the data inserted are stored.
-Going in pages like *From*, *Destination* you may find the first box already filled, that is because that data is stored but the coordinates box will show *nil* in that case to write you may use *CLR* or if you press *ENT* you simply confirm that string and the coordinates will appear. If for any reason you can't do anything, maybe you are having the error mentioned before so just turn it off then on.
+> NOTE: Going in pages like *From*, *Destination* you may find the first box already filled, that is because that data is stored but the coordinates box will show *nil* in that case to write you may use *CLR* or if you press *ENT* you simply confirm that string and the coordinates will appear. If for any reason you can't do anything, maybe you are having the error mentioned before so just turn it off then on.
 
 [Return to INDEX](#INDEX)
 
@@ -345,6 +345,7 @@ Going in pages like *From*, *Destination* you may find the first box already fil
 
 ## How To Use The Navigator Interface
 > Note: You can set up your favourite colors in the **Settings** and inserting them in **RGB**. A good tool to find your favourite name colors can be found [HERE](https://www.w3schools.com/colors/colors_picker.asp).
+> If a **Screen** is *Linked* to don't use it you can deflag the option in the **LUA Parameters**. 
 
 1. Activate the **Programming Board**, the screen will turn ON and will show you a first page with buttons and *Stored WayPoints*. Usually the top left button when turning ON the first time it doesn't render, restart the **Programming Board** to solve.
 
