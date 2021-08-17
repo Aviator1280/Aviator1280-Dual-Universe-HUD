@@ -46,17 +46,27 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 ## KEYS
 ### Functions
-| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | [Helmet HUD](#how-to-use-the-helmet-hud) | AGG |
-| :---:       | :---:              | :---:                     | :---:             | :---:                | :---:            | :---:                       |
-| **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **ALT + Mode n** | **ALT+G**                   |
-| DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | HUD On / Off     | AGG STBY/OFF                |
-| Loading     | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       | **SHIFT + L**    | **ALT+6**                   |
-| ZFW         | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List | Switch Colors    | AGG ON                      |
-| FUEL        | WP Distance        | Space Orientation         | ... and more      |                      |                  | **ALT+ Space/C**            |
-| GW          | Acc                | Braking Distance and more |                   |                      |                  | Set AGG Target Altitude     |
-|             | Helmet HUD         |  Helmet HUD               | Helmet HUD        |                      |                  | Or from Navigator Interface |
+| [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | [Helmet HUD](#how-to-use-the-helmet-hud) |
+| :---:       | :---:              | :---:                     | :---:             | :---:                | :---:            |
+| **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **ALT + Mode n** |
+| DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | HUD On / Off     |
+| Loading     | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       | **SHIFT + L**    |
+| ZFW         | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List | Switch Colors    |
+| FUEL        | WP Distance        | Space Orientation         | ... and more      |                      |                  |
+| GW          | Acc                | Braking Distance and more |                   |                      |                  |
+|             | Helmet HUD         |  Helmet HUD               | Helmet HUD        |                      |                  |
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
+
+| AGG | Remote Controller |
+| :---:                       | :---:          |
+ | **ALT+G**                   | **ALT+8**      |
+| AGG STBY/OFF                | Player         |
+| **ALT+6**                   |Freeze/Unfreeze |
+| AGG ON                      |                |
+| **ALT+ Space/C**            |                |
+| Set AGG Target Altitude     |                |
+| Or from Navigator Interface |                |
 
 ### Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF
 |          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)| Gyro or [VTOL](#vtol-shiftmmb) ON/OFF |
