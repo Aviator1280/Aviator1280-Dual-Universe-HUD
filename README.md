@@ -212,7 +212,7 @@ If everything is ok you will see your ship pointing in the direction of the dest
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 #### Brake System **(ALT+7)**
-It will ENG the **Parking Brake** in all Flight Mode.
+It will ENG the **Parking Brake** in all Flight Modes.
 
 #### Auto Brake System **(ALT+SHIFT+7)**
 The **Autobrake** is set to stop the ship at about **2 Su** from the **center** of the destination planet/moon, it can be modified by editing the *LUA Parameters* or in the **Settings** of the **Navigator Interface**.
