@@ -58,39 +58,39 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 > NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
 
-| AGG | Remote Controller |
-| :---:                       | :---:          |
- | **ALT+G**                   | **ALT+8**      |
-| AGG STBY/OFF                | Player         |
-| **ALT+6**                   |Freeze/Unfreeze |
-| AGG ON                      |                |
-| **ALT+ Space/C**            |                |
-| Set AGG Target Altitude     |                |
-| Or from Navigator Interface |                |
+| AGG                         | Remote Controller | PVP Station                     |
+| :---:                       | :---:             | :---:                           |
+| **ALT+G**                   | **ALT+8**         | **ALT+8**                       |
+| AGG STBY/OFF                | Player            | If PVP Station Module Installed |
+| **ALT+6**                   |Freeze/Unfreeze    |                                 |
+| AGG ON                      |                   |                                 |
+| **ALT+ Space/C**            |                   |                                 |
+| Set AGG Target Altitude     |                   |                                 |
+| Or from Navigator Interface |                   |                                 |
 
 ### Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF
-|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7)| Gyro or [VTOL](#vtol-shiftmmb) ON/OFF |
-| :---     | :---:     | :---:           | :---:             | :---:       | :---:                 | :---:               |
-|          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             | **Shift + MMB**     |
-| **LOAD** |           |                 |                   |             | Parking Brake         | Gyro or VTOL ON/OFF |
-| **AI**   | Alt. Hold | Fly Route or WP |                   |             | Parking Brake         | Gyro or VTOL ON/OFF |
-| **SPC**  |           | ProGrade        | ProGrade          | Destination | Destination Autobrake | Gyro or VTOL ON/OFF |
-|          |           |                 | Orbiting ARM      |             |                       | Gyro or VTOL ON/OFF |
-| **ORB**  |           |                 | ProGrade          | Destination |                       | Gyro or VTOL ON/OFF |
-|          |           |                 | Maintaining Orbit |             |                       | Gyro or VTOL ON/OFF |
-| **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Gyro or VTOL ON/OFF |
+|          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7) | Auto[Brake System](#brake-system-alt7)| Gyro or [VTOL](#vtol-shiftmmb) ON/OFF |
+| :---     | :---:     | :---:           | :---:             | :---:       | :---:                 |:---:                  | :---:               |
+|          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             |**ALT+SHIFT+7**        | **Shift + MMB**     |
+| **LOAD** |           |                 |                   |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
+| **AI**   | Alt. Hold | Fly Route or WP |                   |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
+| **SPC**  |           | ProGrade        | ProGrade          | Destination | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
+|          |           |                 | Orbiting ARM      |             |                       |                       |                     |
+| **ORB**  |           |                 | ProGrade          | Destination | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
+|          |           |                 | Maintaining Orbit |             |                       |                       |                     |
+| **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
 
 > NOTE 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
 
-> NOTE 2: **Gyro or VTOL ON/OFF** will work only in first person view. Using a Gyro disable the VTOL function.
+> NOTE 2: **Gyro or VTOL ON/OFF** To have it working on 3rd Person modify the DU Keys of Camera Reset to don't match with SHIFT+MMB. Using a Gyro disable the VTOL function.
 
 ### DU Widgets
-|**ALT+8**    | **ALT+9**  | **SPC** Mode     |
-| ---         | ---        | ---              |
-| Hide/Show   | Hide/Show  | Auto Warp Widget |
-|Radar Widget | DU Widgets |                  |
+|**ALT+8** (If not PVP Station Installed) | **ALT+9**  | **SPC** Mode     |
+| ---                                     | ---        | ---              |
+| Hide/Show                               | Hide/Show  | Auto Warp Widget |
+|Radar Widget                             | DU Widgets |                  |
 
-> NOTE: When you seat the DU Widgets are hided by default. You can change this behaviour in *Lua Paramenters* flagging (*Widgets_ON_OFF*). The **Warp** Widget will come out automatically when a *Warp destination* has been set and the *Jump* is possible. Any *Warp Status* Message is displayed in the **SPC** Mode.
+> NOTE: When you seat the DU Widgets are hided by default. You can change this behaviour in *Lua Paramenters* flagging (*Widgets_ON_OFF*). The **Warp** Widget will come out automatically when a *Warp destination* has been set, the *Jump* is possible and you are in *SPC Mode*. Any *Warp Status* Message is displayed in the **SPC** Mode.
 
 [Return to INDEX](#INDEX)
 
@@ -212,11 +212,13 @@ If everything is ok you will see your ship pointing in the direction of the dest
 [Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
 
 #### Brake System **(ALT+7)**
-It will ENG the **Parking Brake** if **LOAD** or **AI** Mode are active, it will ARM or ENGAGE the **Autobrake** if the **SPC** Mode is active.
+It will ENG the **Parking Brake** in all Flight Modes.
+
+#### Auto Brake System **(ALT+SHIFT+7)**
 The **Autobrake** is set to stop the ship at about **2 Su** from the **center** of the destination planet/moon, it can be modified by editing the *LUA Parameters* or in the **Settings** of the **Navigator Interface**.
 ![Autobrake ARM](/gallery/autobrake_arm_spc_explained.png)
 We left our orbit and on course to Alioth. On the left lower panel you can read *Autobrake ARM*, this means that a *Destination* has been set (if no *Destination* they will not ARM, sometime you will need to go in the **SPC** *MFD page* to activate the *Destination*).
-On the upper right panel you can read *Autobrake in:*, this is the distance left before they will engage, it will show *Autobrake OFF* if they are not active. Next to it you can read the distance at which you want to stop your ship. Be aware that this is the distance from the **center** of the target planet/moon (ex. going to Alioth that has a radius of 0.63Su your ship will stop at 2.3 - 0.63 Su from the surface so be careful). On my trip the selected destination is my base on Alioth that's why the ship is not pointing to the center of the planet. In this case be even more careful if the destination you set in on the other side of the planet/moon.
+On the upper right panel you can read *Autobrake in:*, this is the distance left before they will engage, it will show *Autobrake OFF* if they are not active. Next to it you can read the distance at which you want to stop your ship. Be aware that this is the distance from the **center** of the target planet/moon (ex. going to Alioth that has a radius of 0.63Su your ship will stop at 2.3 - 0.63 Su from the surface so be careful). On my trip the selected destination is my base on Alioth that's why the ship is not pointing to the center of the planet. In this case be even more careful if the destination you set is on the other side of the planet/moon.
 My direction is managed by the system and the thrust is set to 100%, when it will be time to stop the system will automatically cut the thrust and brake. You can disconnect the *Autobrake* at any time pressing **(ALT+7)**.
 
 ![Autobrake ON](/gallery/autobrake_on_stop_explained.png)
@@ -299,12 +301,16 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 3. Connect **manually** the **optional** *Elements* if you want them (1 **Vertical Booster** or 1 **Hover Engine** or 1 **Telemeter** to have the *Radio Altimeter*, **Containers** or 1 **Container HUB** to get their mass in the *LOAD*). If you choose the file **(Fuel Tank Manual)** *LINK* at least 1 **Atmo Fuel Tank** and 1 **Space Fuel Tank** 
 4. In the game Right click on the **Command/Hover Seat or Cockpit -> Advanced -> Update Custom Autoconf List**. Do it again and this time open **Run Custom Autoconfigure** choose the configuration you want to install.
 
+**[Related Video](https://youtu.be/xHha08kVJH0)**
+
 [Return to INDEX](#INDEX)
 
 # Helmet HUD Installation
 1. Place the **Programming Board**;
 2. Paste the content of the file **Helmet HUD.txt** on the **Programming Board**;
 3. *Link* the **Databank** to it and be sure it is also *Linked* to the **Cockpit/Seat**. (If you are using the **Navigator Interface** the **Databank** is the same).
+
+**[Related Video](https://youtu.be/gv-QjB9MB34)**
 
 [Return to INDEX](#INDEX)
 
@@ -320,6 +326,8 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 
 > NOTE: Going in pages like *From*, *Destination* you may find the first box already filled, that is because that data is stored but the coordinates box will show *nil* in that case to write you may use *CLR* or if you press *ENT* you simply confirm that string and the coordinates will appear. If for any reason you can't do anything, maybe you are having the error mentioned before so just turn it off then on.
 
+**[Related Video](https://youtu.be/25d4O7AlEOY)**
+
 [Return to INDEX](#INDEX)
 
 # WayPoint Sync Installation
@@ -331,6 +339,8 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 5. Now *LINK* the *Elements* to the **Programming Board** according the sequence you saw in the **Lua Editor**.
 > NOTE: when connecting the **Emitter** and the **Receiver** do it starting from the **Programming Board**, in this way you will have a **green** *Link* and it will be connected to a *slot*. Doing the opposite will create a **blue** *Link* which will not connect to any *slot*, useful only to send impulse to an interactive *Element* such as lights, doors, screens and so on.
 
+**[Related Video](https://youtu.be/U-w2eNu7uhw)**
+
 [Return to INDEX](#INDEX)
 
 # Fuel Module Installation
@@ -339,6 +349,8 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 3. *Link* the **Fuel Tanks** you want to monitor;
 4. apply the code in the same way you probably already did for the other mmodules;
 > NOTE: The system will swap, when activated and the **HUD** is in **LOAD Mode** the *Fuel Tanks* that are showed in the HUD (if any) and thise *Linked* to the **Programming board** IF the *Fuel  Tanks* are the same type otherwhise what you will see will be a mix. You can also have more **Programming Board** (ex 1 for all the Atmo Fuel Tank, 1 for all the Space Fuel Tank). The possibilities are many. You can also use this system to create a group of Fuel tank that you want to monitor time to time simply turning the **Programming Board** on.
+
+**[Related Video](https://youtu.be/HsOpztNAfKs)**
 
 [Return to INDEX](#INDEX)
 
