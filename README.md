@@ -32,11 +32,9 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | [KEYS](#keys)|
 | [Requirements](#requirements)|
 | [HUD Installation](#hud-installation)|
-| [HELMET HUD Installation](#helmet-hud-installation)|
 | [NAVIGATOR INTERFACE Installation](#navigator-interface-installation)|
 | [WAYPOINT SYNC Installation](#waypoint-sync-installation)|
 | [FUEL MODULE Installation](#fuel-module-installation)|
-| [How To Use - Helmet HUD](#how-to-use-the-helmet-hud)|
 | [How To Use - Navigator Interface](#how-to-use-the-navigator-interface)|
 | [How To Use - WayPoint Sync](#how-to-use-the-waypoint-sync)|
 | [How To Use - Fuel Module](#how-to-use-the-fuel-module)|
@@ -48,15 +46,15 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 ### Functions
 | [LOAD](#load-alt1) | [AI](#ai-alt2) | [SPC](#spc-alt3) | [ORB](#orb-alt4) | [DMG](#dmg-alt5) | [Helmet HUD](#how-to-use-the-helmet-hud) |
 | :---:       | :---:              | :---:                     | :---:             | :---:                | :---:            |
-| **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **ALT + Mode n** |
-| DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | HUD On / Off     |
-| Loading     | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       | **SHIFT + L**    |
-| ZFW         | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List | Switch Colors    |
+| **ALT+1**   | **ALT+2**          | **ALT+3**                 | **ALT+4**         | **ALT+5**            | **SHIFT + L**    |
+| DOW         | Artificial Horizon | FROM - TO                 | Orbital Data      | Ship Top View        | Switch Colors    |
+| Loading     | Velocity Vector    | Time Left                 | Orbit Scheme      | Ship Side View       |Last color is transparent|
+| ZFW         | WP direction       | Ship Position             | Space Orientation | Dmaged Elements List |                  |
 | FUEL        | WP Distance        | Space Orientation         | ... and more      |                      |                  |
 | GW          | Acc                | Braking Distance and more |                   |                      |                  |
 |             | Helmet HUD         |  Helmet HUD               | Helmet HUD        |                      |                  |
 
-> NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it. The **Helmet HUD** is an add on to install on an additional *Programming Board*.
+> NOTE: Using the **Navigator Interface** will enhance the **HUD** functionality. I strongly suggest installing it.
 
 | AGG                         | Remote Controller | PVP Station                     |
 | :---:                       | :---:             | :---:                           |
@@ -264,11 +262,6 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 > NOTE: according your free **slots** available you can chose to connect them all or not or connect 1 single **Container HUB** (recommended). The weight calculations will be still correct but in case you will not connect them or part of them their weight will be included in the *DOW* and not in *LOAD*.
 7. **Rocket Fuel Tanks** if you wish to see the *Level* the *Time Left* and if the *Rockets* are engaged *LINK* at least 1 **Rocket Fuel Tank**
 
-## Helmet HUD
-#### Required Elements
-1. **Programming Board**
-2. **Databank** (This databank need to be connected to the Command/Hover seat or Cockpit can be the same used for the **Navigator Interface**)
-
 ## Navigator Interface
 #### Required Elements
 1. **Programming Board**
@@ -302,15 +295,6 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 4. In the game Right click on the **Command/Hover Seat or Cockpit -> Advanced -> Update Custom Autoconf List**. Do it again and this time open **Run Custom Autoconfigure** choose the configuration you want to install.
 
 **[Related Video](https://youtu.be/xHha08kVJH0)**
-
-[Return to INDEX](#INDEX)
-
-# Helmet HUD Installation
-1. Place the **Programming Board**;
-2. Paste the content of the file **Helmet HUD.txt** on the **Programming Board**;
-3. *Link* the **Databank** to it and be sure it is also *Linked* to the **Cockpit/Seat**. (If you are using the **Navigator Interface** the **Databank** is the same).
-
-**[Related Video](https://youtu.be/gv-QjB9MB34)**
 
 [Return to INDEX](#INDEX)
 
@@ -351,17 +335,6 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 > NOTE: The system will swap, when activated and the **HUD** is in **LOAD Mode** the *Fuel Tanks* that are showed in the HUD (if any) and thise *Linked* to the **Programming board** IF the *Fuel  Tanks* are the same type otherwhise what you will see will be a mix. You can also have more **Programming Board** (ex 1 for all the Atmo Fuel Tank, 1 for all the Space Fuel Tank). The possibilities are many. You can also use this system to create a group of Fuel tank that you want to monitor time to time simply turning the **Programming Board** on.
 
 **[Related Video](https://youtu.be/HsOpztNAfKs)**
-
-[Return to INDEX](#INDEX)
-
-## How To Use The Helmet HUD
-> NOTE: You can chose the color you prefer editing the **LUA Parameters** and when switching between the others (**SHIFT + L**) the color you edited will cycle with the others. When you type the **NAME** of the color keep the quotation marks (es. **"aqua"**).
-![Heelmet_HUD](/gallery/helmet_hud.png)
->TIP: The pitcure above shows a good use of the **Helmet HUD**. While flying you can simply lead the *Bird* on the spot you waant to arrive and your ship will fly there, it also corrects your *drift*. (Ex. you point it on the runway you want to land)
-1. Recall to turn on the **Programming Board** dedicated to the **Helmet HUD**. If you are using a **Seat** you can just place it wherever you prefer but if you are using a **Cockpit** recall to turn it on before to enter otherwise you will be unable to turn it on in flight;
-> NOTE: In this case *Switches*, *detection Zones* and so on will turn on the **Programming Board** but the script will not run. You need to turn the **Programming Board** pressing **F**.
-2. When you switch to a *Flight Mode* for example **AI** Mode the **Helmet HUD** will be off. To show/hide it press again the key for the *Flight Mode* you are using;
-3. To switch between colors press **SHIFT + L** which is the same key used for the ship *Headlights*.
 
 [Return to INDEX](#INDEX)
 
