@@ -168,7 +168,7 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 
 **[Video](https://youtu.be/7pnaS5NFP-k)**
 
-[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot---autobrake---parking-brake---gyro-or-vtol-on-off) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot-alt6) | [Return to INDEX](#INDEX)
 
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
