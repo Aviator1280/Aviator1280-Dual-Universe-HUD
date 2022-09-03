@@ -71,14 +71,14 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | :---     | :---:     | :---:           | :---:             | :---:       | :---:                 |:---:                  | :---:               |
 |          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             |**ALT+SHIFT+7**        | **Shift + MMB**     |
 | **LOAD** |           |                 |                   |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
-| **AI**   | Alt. Hold | Fly Route or WP |                   |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
+| **AI**   | Alt. Hold OR Deorbiting | Fly Route or WP |                   |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
 | **SPC**  |           | ProGrade        | ProGrade          | Destination | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
 |          |           |                 | Orbiting ARM      |             |                       |                       |                     |
 | **ORB**  |           |                 | ProGrade          | Destination | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
 |          |           |                 | Maintaining Orbit |             |                       |                       |                     |
 | **DMG**  |           |                 | Orbiting ARM      |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
 
-> NOTE 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them.
+> NOTE 1: **(ALT+6)** cycles between the **3 Modes** and also disengages them. When in Orbit around a Planet with atmosphere AND in between the Atmosphere Altitude and Atmosphere Altitude + 20Km AND the M1 (Prograde) or M2 (Orbiting) are active AND AI is selected, pressing the key combination will activate the Deorbiting Maneuver.
 
 > NOTE 2: **Gyro or VTOL ON/OFF** To have it working on 3rd Person modify the DU Keys of Camera Reset to don't match with SHIFT+MMB. Using a Gyro disable the VTOL function.
 
@@ -108,6 +108,7 @@ On the **ECAM** you will have useful **information**, **cautions** and **warning
 ***(Attitude Indicator)*** The most useful instrument while flying in the atmosphere. Not only gives you the attitude of the ship but I integrated it with the *Flight Path Vector* (in an Airbus airplane called "Bird"). It shows you the direction where your ship is really flying to.
 Integrated in the *AI* you will find the *RA* (Radioaltimeter) that will come out when at 60 mt (Using Vertical Booster) from the ground/water.
 You can also find the selected *WayPoint* distance and its direction (Cyan lozenge), the direction is precise when wings are level, during turns higher is the bank angle less precise is the direction.
+ **(Now these instruments are integrated in the HUD in front of you)**.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -117,6 +118,7 @@ You can also find the selected *WayPoint* distance and its direction (Cyan lozen
 ***(Space)*** This page is useful when flying in space. I made an instrument that shows you where your *Velocity Vector* is pointing respect to your nose and where the destination is to align your velocity properly. Plus there are some indicators that will show you are 90 or 180 degrees respect to the *Velocity Vector*, this with the scope to make the most important space maneuvers.
 You can also find the *Braking Distance* to reach speed 0 plus a graphical representation of your position respect the departure point and destination Planet/Moon with distances and the time you will need to travel to arrive at the current speed.
 > NOTE: If the **Navigator Interface** is not installed or the *Departure*/*Arrival* points are not selected the system will automatically choose for you. The *Departure* point will be your Present Position *(PPOS)* or if you are in an orbit the *(PPOS)* at the moment you will leave the orbit. The *Arrival* point will be the closest planet/moon. As a consequence when flying between planets/moons you will always see there the closest one.
+**(Now the display will always show in the middle the destination and a line connecting your nose to the destination and another line connecting your nose to the velocity vector)**
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
@@ -124,13 +126,15 @@ You can also find the *Braking Distance* to reach speed 0 plus a graphical repre
 ![ORB_page](/gallery/orb_explained.png)
 
 ***(Orbit)*** Page used for Orbital operations. Here you have all the information to pilot your ship precisely to achieve an orbit. It includes the graphic representation of the ellipse with your actual position in relation to *AP* and *PE*. It shows in scale the planet/moon depending on your distance, it shows the *Target PE Altitude* preselected at 20.000 mt and can be changed editing the **LUA Parameters** or from the **Navigator Interface**. Also here is the instrument to orientate your ship in space and the *Braking Distance*. This time the *Braking Distance* is the distance to achieve the *Circular Orbit Speed*.
+**(Now the display will always show in the middle the destination and a line connecting your nose to the destination and another line connecting your nose to the velocity vector)**
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
 
 #### DMG **(ALT+5)**
 ![DMG_page](/gallery/dmg_explained.png)
 
-***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you switch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*. 
+***(Damages Report)*** When on any other HUD pages if any damage to the ship occurres the text **DMG** will become red to warn you that something happened. If you switch to the **DMG** page you can see the Top View and the Side View of your ship and a list of damaged *Elements*. When installing the script for the first time (or reloading it) you may need to center the layout. To do this I included in the **Lua Parameters** the *Size* in case is too big or too small (negative numbers are acceptable), and the *X*, *Y*, for the pivot where the rotation occurs and the *X*, *Y* to translate it. Note that since the *SVG* (Scalable Vector Graphics) is already rotated by -90 deg if you want to translate it for example in a lower position you need to change the *X* value (negative values are acceptable) and not *Y*.
+The easiest way to position the ship layout is entering in the **Settings** of the **Navigator Interface** if installed.
 > NOTE: This Mode can be disabled from **LUA Parameters** in case the ship has about 500 *Elements* and the *CPU Overload* occurs.
 
 [Return to Functions](#functions) | [Return to INDEX](#INDEX)
@@ -153,6 +157,16 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 > NOTE: suggested the use of Cruise Mode whileAutopilot ON. This will let the system keep as much as possible the flight vector within a limit.
 
 **[Video 1](https://youtu.be/-_vdygYxul0)** | **[Video 2](https://youtu.be/DcNms8qMoBE)**
+
+* **Deorbiting**
+1. Inform you on the *ECAM* that the system is on;
+2. Ship is in orbit around a Planet with atmosphere;
+3. Ship Altitude above Atmosphere Altitude AND below Atomosphere Altitude + 20Km;
+4. M1 (Prograde) OR M2 (Orbiting) activated;
+5. AI selected.
+> NOTE: If the **Deorbiting** is available the ECAM will show the Deorbiting Distance which is the estimated distance you will fly to enter the atmosphere. The distance is estimated with the ship in level flight. If the ship is having some roll you need to consider you will fly a longer distance depending on how long it will take the ship to level off before to start the maneuver.
+
+**[Video](https://youtu.be/7pnaS5NFP-k)**
 
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
