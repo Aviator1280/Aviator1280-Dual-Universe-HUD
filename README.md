@@ -66,7 +66,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | Set AGG Target Altitude     |                   |                                 |
 | Or from Navigator Interface |                   |                                 |
 
-### Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF
+### [Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot-autobrake)
 |          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7) | Auto[Brake System](#brake-system-alt7)| Gyro or [VTOL](#vtol-shiftmmb) ON/OFF |
 | :---     | :---:     | :---:           | :---:             | :---:       | :---:                 |:---:                  | :---:               |
 |          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             |**ALT+SHIFT+7**        | **Shift + MMB**     |
@@ -168,7 +168,7 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 
 **[Video](https://youtu.be/7pnaS5NFP-k)**
 
-[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-on-off) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot-autobrake) | [Return to INDEX](#INDEX)
 
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
