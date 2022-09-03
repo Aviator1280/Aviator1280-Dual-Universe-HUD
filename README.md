@@ -175,7 +175,7 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 Provided you are in the **SPC** or **ORB** *MFD page* this will turn your ship in a *ProGrade* direction, useful during a trip to accelerate or keep your ship facing the orbit direction and to adjust it by yourself accelerating or braking.
 When **Mode 1** is active you don't have any more authority on direction.
 
-[Return to Autopilot / Autobrake](#autopilot--autobrake) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake](#autopilot) | [Return to INDEX](#INDEX)
 
 #### Mode 2 **(ALT+6)** (second press + 3 seconds delay)
 ![Trajectory](/gallery/trajectory_adjust_explained.png)
@@ -184,7 +184,7 @@ In the picture we are approaching a moon. Few minutes before reaching it (in thi
 Looking at the instrument on the left side when turning the ship you will see *Squares*, *lozenges* and a full *Dot*. The *Squares* and the *lozenges* indicate a turn of 90 degrees while the full *Dot* indicate the opposite direction of the velocity vector, practically a turn of 180 degrees.
 The *Yaw* and the *Pitch* can help you to see if we are pointing to the planet or not, if the numbers are equal it means our *Velocity Vector* (White) is centered on our destination (Cyan). At this moment we don't need to be very precise, we just don't want to crash into the planet/moon or go too far. Keep the *Yaw* and the *Pitch* slightly different. Consider farest you are smaller the different should be.
 
-**[Related Video](https://youtu.be/mVDru9Gs_ZI)**
+**[Video](https://youtu.be/mVDru9Gs_ZI)**
 
 ![Mode 2](/gallery/mode2_explained.png)
 
@@ -248,7 +248,7 @@ When pressing ( *Shift+MMB* ) the engines will not go to 0 as it happens when pr
 Altitude that can be reached depends on the amount of thrust and weight of your ship.
 Use ( *Space Bar* ) to climb and *C* to descent.
 
-**[Related Video](https://youtu.be/Q2eZ3fJU26c)**
+**[Video](https://youtu.be/Q2eZ3fJU26c)**
 
 [Return to INDEX](#INDEX)
 
@@ -308,7 +308,7 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 3. Connect **manually** the **optional** *Elements* if you want them (1 **Vertical Booster** or 1 **Hover Engine** or 1 **Telemeter** to have the *Radio Altimeter*, **Containers** or 1 **Container HUB** to get their mass in the *LOAD*). If you choose the file **(Fuel Tank Manual)** *LINK* at least 1 **Atmo Fuel Tank** and 1 **Space Fuel Tank** 
 4. In the game Right click on the **Command/Hover Seat or Cockpit -> Advanced -> Update Custom Autoconf List**. Do it again and this time open **Run Custom Autoconfigure** choose the configuration you want to install.
 
-**[Related Video](https://youtu.be/xHha08kVJH0)**
+**[Video](https://youtu.be/xHha08kVJH0)**
 
 [Return to INDEX](#INDEX)
 
@@ -324,7 +324,7 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 
 > NOTE: Going in pages like *From*, *Destination* you may find the first box already filled, that is because that data is stored but the coordinates box will show *nil* in that case to write you may use *CLR* or if you press *ENT* you simply confirm that string and the coordinates will appear. If for any reason you can't do anything, maybe you are having the error mentioned before so just turn it off then on.
 
-**[Related Video](https://youtu.be/25d4O7AlEOY)**
+**[Video](https://youtu.be/25d4O7AlEOY)**
 
 [Return to INDEX](#INDEX)
 
@@ -337,7 +337,7 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 5. Now *LINK* the *Elements* to the **Programming Board** according the sequence you saw in the **Lua Editor**.
 > NOTE: when connecting the **Emitter** and the **Receiver** do it starting from the **Programming Board**, in this way you will have a **green** *Link* and it will be connected to a *slot*. Doing the opposite will create a **blue** *Link* which will not connect to any *slot*, useful only to send impulse to an interactive *Element* such as lights, doors, screens and so on.
 
-**[Related Video](https://youtu.be/U-w2eNu7uhw)**
+**[Video](https://youtu.be/U-w2eNu7uhw)**
 
 [Return to INDEX](#INDEX)
 
@@ -348,7 +348,7 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 4. apply the code in the same way you probably already did for the other mmodules;
 > NOTE: The system will swap, when activated and the **HUD** is in **LOAD Mode** the *Fuel Tanks* that are showed in the HUD (if any) and thise *Linked* to the **Programming board** IF the *Fuel  Tanks* are the same type otherwhise what you will see will be a mix. You can also have more **Programming Board** (ex 1 for all the Atmo Fuel Tank, 1 for all the Space Fuel Tank). The possibilities are many. You can also use this system to create a group of Fuel tank that you want to monitor time to time simply turning the **Programming Board** on.
 
-**[Related Video](https://youtu.be/HsOpztNAfKs)**
+**[Video](https://youtu.be/HsOpztNAfKs)**
 
 [Return to INDEX](#INDEX)
 
