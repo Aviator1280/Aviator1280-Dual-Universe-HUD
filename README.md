@@ -168,6 +168,8 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 
 **[Video](https://youtu.be/7pnaS5NFP-k)**
 
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot---autobrake---parking-brake---gyro-or-vtol-on-off) | [Return to INDEX](#INDEX)
+
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
 
@@ -175,7 +177,6 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 Provided you are in the **SPC** or **ORB** *MFD page* this will turn your ship in a *ProGrade* direction, useful during a trip to accelerate or keep your ship facing the orbit direction and to adjust it by yourself accelerating or braking.
 When **Mode 1** is active you don't have any more authority on direction.
 
-[Return to Autopilot / Autobrake](#autopilot) | [Return to INDEX](#INDEX)
 
 #### Mode 2 **(ALT+6)** (second press + 3 seconds delay)
 ![Trajectory](/gallery/trajectory_adjust_explained.png)
