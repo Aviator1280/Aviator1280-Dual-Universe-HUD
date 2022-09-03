@@ -168,7 +168,7 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 
 **[Video](https://youtu.be/7pnaS5NFP-k)**
 
-[Return to Functions](#functions) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) | [Return to INDEX](#INDEX)
 
 #### Mode 1 **(ALT+6)** (first press)
 ![Mode 1](/gallery/mode1_explained.png)
@@ -177,7 +177,7 @@ Provided you are in **AI** *MFD Page* oce pressed the ship will:
 Provided you are in the **SPC** or **ORB** *MFD page* this will turn your ship in a *ProGrade* direction, useful during a trip to accelerate or keep your ship facing the orbit direction and to adjust it by yourself accelerating or braking.
 When **Mode 1** is active you don't have any more authority on direction.
 
-[Return to Functions](#functions) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) | [Return to INDEX](#INDEX)
 
 #### Mode 2 **(ALT+6)** (second press + 3 seconds delay)
 ![Trajectory](/gallery/trajectory_adjust_explained.png)
@@ -212,7 +212,7 @@ In this picture you can see the ship maintaining the orbit we achieved before. S
 The *Target PE Altitude* is represented on the screen by the white circle, when your orbit will be above that circle it will become Cyan. The yellow line starting from the center of the planet/moon is your position in reference to the *PE* and *AP*.
 > NOTE: If your ship has really strong brakes using **Mode 2** it may not be advisable. You can try but monitor it and in case take over. In the future I may find the way to reduce the effect of the brakes.
 
-[Return to Functions](#functions) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) | [Return to INDEX](#INDEX)
 
 #### Mode 3 **(ALT+6)** (third press + 3 seconds delay)
 ![Mode 3](/gallery/mode3_leaving_orbit_autobrake_armed_explained.png)
@@ -223,7 +223,7 @@ What I did in this picture I waited the right moment to give full thrust, you wi
 You can notice also I armed the *Autobrake*, they will engage only when close to the destination so again, if you can't select a destination don't arm them now or you will stop.
 If everything is ok you will see your ship pointing in the direction of the destination and leaving the actual orbit. Just keep the thrust at full power.
 
-[Return to Functions](#functions) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) | [Return to INDEX](#INDEX)
 
 #### Brake System **(ALT+7)**
 It will ENG the **Parking Brake** in all Flight Modes.
@@ -242,7 +242,7 @@ The *autobrake* system is used also from the **Mode 2** in case something wrong 
 
 > NOTE: I'm still refining some value and some logic, based on your ship mass, inertia, engines, brakes it may need some adjustment. Editing the *LUA parameter* you can find for example how fast you want the ship turns, be aware that for big turns it may overshoot and then go back and point in the correct direction. You can play with those values and have for example a slower turn and it will not overshoot but it takes longer. This is up to you and based on how you built your ship. I tested the Orbit maintaining function a lot and for sure if you are in a circular orbit it will keep you there, it is also capable to adjust the orbit but still monitor it.
 
-[Return to Functions](#functions) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) | [Return to INDEX](#INDEX)
 
 #### VTOL **(Shift+MMB)**
 To make the **VTOL** system work you can't have a *Gyroscope* installed in your ship. You also need to *TAG* the engines you want to use for the Vertical take Off and Landing with the *TAG* **vtol_eng**.
@@ -252,7 +252,7 @@ Use ( *Space Bar* ) to climb and *C* to descent.
 
 **[Video](https://youtu.be/Q2eZ3fJU26c)**
 
-[Return to Functions](#functions) | [Return to INDEX](#INDEX)
+[Return to Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) | [Return to INDEX](#INDEX)
 
 # Requirements
 
