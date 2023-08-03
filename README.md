@@ -30,7 +30,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | |
 |------|
 | [KEYS](#keys)|
-| [Controller Mapping](#controller)|
+| [Controller Mapping](#controller-mapping)|
 | [Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) |
 | [Requirements](#requirements)|
 | [HUD Installation](#hud-installation)|
