@@ -30,6 +30,7 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | |
 |------|
 | [KEYS](#keys)|
+| [Controller Mapping](#controller-mapping)|
 | [Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF](#autopilot--autobrake--parking-brake--gyro-or-vtol-onoff) |
 | [Requirements](#requirements)|
 | [HUD Installation](#hud-installation)|
@@ -67,12 +68,19 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 | Set AGG Target Altitude     |                   |                                 |
 | Or from Navigator Interface |                   |                                 |
 
+## CONTROLLER MAPPING
+### Axis
+![Controller Axis](https://github.com/Aviator1280/Aviator1280-Dual-Universe-HUD/assets/52861675/38094c7f-00e0-42a6-b36b-6f977e1145f2)
+
+### Options to bind to Controller buttons
+![Controller Options](https://github.com/Aviator1280/Aviator1280-Dual-Universe-HUD/assets/52861675/cb1a0133-6841-444e-b7e1-b527a311dd48)
+
 ### Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF
 |          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7) | Auto[Brake System](#brake-system-alt7)| Gyro or [VTOL](#vtol-shiftmmb) ON/OFF |
 | :---     | :---:     | :---:           | :---:             | :---:       | :---:                 |:---:                  | :---:               |
 |          | **ALT+6** | **ALT+6**       | **ALT+6**         | **ALT+6**   | **ALT+7**             |**ALT+SHIFT+7**        | **Shift + MMB**     |
 | **LOAD** |           |                 |                   |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
-| **AI**   | Alt. Hold OR Deorbiting | Fly Route or WP |                   |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
+| **AI**   | Alt. Hold OR Deorbiting | Fly Route or WP |     |             | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
 | **SPC**  |           | ProGrade        | ProGrade          | Destination | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
 |          |           |                 | Orbiting ARM      |             |                       |                       |                     |
 | **ORB**  |           |                 | ProGrade          | Destination | Parking Brake         | Destination Autobrake | Gyro or VTOL ON/OFF |
