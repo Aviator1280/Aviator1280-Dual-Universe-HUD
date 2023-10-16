@@ -3,6 +3,8 @@
 
 ## Command/Hover Seat and Cockpit supported
 
+## HOTAS Supported
+
 ### For support and keep updated please be my guest [Discord](https://discord.gg/Rve2jjZbvz)
 
 ### If you like my work and you think it deserves something make a [DONATION](https://paypal.me/aviator1280hud?locale.x=en_GB). Very appreciate. Thank you.
@@ -74,6 +76,10 @@ and easy to use but a powerful instrument for your flights and yes it does make 
 
 ### Options to bind to Controller buttons
 ![Controller Options](https://github.com/Aviator1280/Aviator1280-Dual-Universe-HUD/assets/52861675/cb1a0133-6841-444e-b7e1-b527a311dd48)
+
+### Example (My HOTAS Setting)
+![Joystik](https://github.com/Aviator1280/Aviator1280-Dual-Universe-HUD/assets/52861675/19ff5585-7e62-4c84-b5f7-ab86e20e45e6)
+![Thrust Lever](https://github.com/Aviator1280/Aviator1280-Dual-Universe-HUD/assets/52861675/863bae54-cea4-4994-8937-76b5e8b62940)
 
 ### Autopilot / Autobrake / Parking Brake / Gyro or VTOL ON/OFF
 |          | [Autopilot](#autopilot-alt6) | [Mode 1](#mode-1-alt6-first-press)| [Mode 2](#mode-2-alt6-second-press--3-seconds-delay)| [Mode 3](#mode-3-alt6-third-press--3-seconds-delay)| [Brake System](#brake-system-alt7) | Auto[Brake System](#brake-system-alt7)| Gyro or [VTOL](#vtol-shiftmmb) ON/OFF |
